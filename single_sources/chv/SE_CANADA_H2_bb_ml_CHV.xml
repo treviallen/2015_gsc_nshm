@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml"
+      xmlns="http://openquake.org/xmlns/nrml/0.4">
+
+    <sourceModel name="SE_CANADA_H2_bb_ml">
+
+        <areaSource id="CHV" name="CHV    - CHARLEVOIX" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -69.9500 48.0500
+                                -69.4600 47.7900
+                                -70.2800 47.0900
+                                -70.7700 47.3800
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>9.49475e-03 8.17220e-03 7.03388e-03 6.05412e-03 5.21083e-03 4.48500e-03 3.86028e-03 3.32257e-03 2.85976e-03 2.46142e-03 2.11856e-03 1.82346e-03 1.56947e-03 1.35086e-03 1.16269e-03 1.00074e-03 8.61344e-04 7.41366e-04 6.38099e-04 5.49217e-04 4.72716e-04 4.06870e-04 3.50196e-04 3.01417e-04 2.59432e-04 2.23295e-04 2.02205e-17</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+    </sourceModel>
+</nrml>
