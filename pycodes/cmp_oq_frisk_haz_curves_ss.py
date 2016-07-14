@@ -10,7 +10,8 @@ warnings.filterwarnings("ignore")
 
 """
 this code is a little hokey, and only compares specialty hazard calculations run 
-in both GSCFRISK and OpenQuake for single sources
+in both GSCFRISK and OpenQuake for single sources - full currently must be edited 
+manually prior to each test
 """
 
 ###############################################################################
@@ -20,7 +21,7 @@ in both GSCFRISK and OpenQuake for single sources
 period = '1.0'
 job = 'chv_nbcc'
 job_num = '601'
-fpath = 'CHVcomparison'#'VICMsimple' # VICMsimple, VICM_d50, VICMsimple2
+fpath = 'CHVcomparison' #'VICMsimple' # VICMsimple, VICM_d50, VICMsimple2
 
 '''
    397 | successful | 2016-05-11 18:38:32 | VICMbest 2015 NBCC Hazard - BEST BRANCHES
@@ -38,9 +39,9 @@ fpath = 'CHVcomparison'#'VICMsimple' # VICMsimple, VICM_d50, VICMsimple2
 
 #friskfile = 'OQ_'+job.upper()+'besttest'+period+'_000thperc.sol'
 #friskfile = 'OQ_VICMbesttest'+period+'_000thperc.sol' # 3 GMMs
-friskfile = 'OQ_CHVregion_'+period+'_100s_000thperc.sol' # full model - 20 slices
+friskfile = 'OQ_CHVregion_'+period+'_20s_000thperc.sol' # full model - 20 slices
 #friskfile = 'OQ_VICMbGMPE_'+period+'_000thperc.sol' # best GMM
-friskpath = path.join('..','..','openquake','OQ_GSCFRISK_comparisons',fpath,friskfile)
+friskpath = path.join('..','..','..','openquake','OQ_GSCFRISK_comparisons',fpath,friskfile)
 #friskhaz = loadtxt(friskpath, delimiter=',', skiprows=4, usecols = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
 friskprobs = [0.02, 0.01375, 0.01, 0.00445, 0.0021, 0.001, 0.0005, 0.000404, 0.0002, 0.0001]
 
@@ -63,7 +64,7 @@ for line in lines:
 ###############################################################################
 # read OQ data
 ###############################################################################
-hazcurvefile = path.join('jobs_hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
+hazcurvefile = path.join('..','jobs_hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
 
 # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
 try:
@@ -98,7 +99,7 @@ for lon, lat, curve in zip(curlon, curlat, curves):
             ax = plt.subplot(2,3,ii)
             h1 = plt.semilogy(imls, curve, 'r-', lw=2.0)
             h2 = plt.semilogy(fh, friskprobs, 'k-', lw=2.0)
-            plt.title(pl)
+            plt.title(' '.join(pl))
             plt.grid(which='both')
             plt.semilogy([0, 2.5], [yhaz, yhaz], 'k--')
             
@@ -122,8 +123,8 @@ for lon, lat, curve in zip(curlon, curlat, curves):
             if ii == 6:
               i += 1
               ii = 0
-              plt.savefig(path.join(job,'cmp_oq_frisk_hazcurves'+str(i)+'_'+period+'_10km.png'), format='png',bbox_inches='tight')
+              plt.savefig(path.join('..','jobs_hazard',job,'cmp_oq_frisk_hazcurves'+str(i)+'_'+period+'_2km.png'), format='png',bbox_inches='tight')
               fig = plt.figure(i, figsize=(14, 10))
 
-plt.savefig(path.join('jobs_hazard',job,'cmp_oq_frisk_hazcurves'+str(i)+'_'+period+'_10km.png'), format='png',bbox_inches='tight')
+plt.savefig(path.join('..','jobs_hazard',job,'cmp_oq_frisk_hazcurves'+str(i)+'_'+period+'_2km.png'), format='png',bbox_inches='tight')
 plt.show()
