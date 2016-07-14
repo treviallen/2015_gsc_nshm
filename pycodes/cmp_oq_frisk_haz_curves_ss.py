@@ -10,7 +10,7 @@ warnings.filterwarnings("ignore")
 
 """
 this code is a little hokey, and only compares specialty hazard calculations run 
-in both GSCFRISK and OpenQuake for single sources - full currently must be edited 
+in both GSCFRISK and OpenQuake for single sources - file currently must be edited 
 manually prior to each test
 """
 
