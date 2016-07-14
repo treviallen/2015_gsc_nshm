@@ -2,7 +2,7 @@
 <nrml xmlns:gml="http://www.opengis.net/gml"
       xmlns="http://openquake.org/xmlns/nrml/0.4">
 
-    <sourceModel name="SE_CANADA_HY_bb_mu">
+    <sourceModel name="SE_CANADA_HY_bl_mu">
 
         <areaSource id="ADRN" name="ADRN   - NORTHERN ADIRONDACKS NORTH" tectonicRegion="Stable Shallow Crust">
             <areaGeometry>
@@ -24,7 +24,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>6.83327e-04 5.57997e-04 4.55654e-04 3.72082e-04 3.03838e-04 2.48110e-04 2.02604e-04 1.65444e-04 1.35100e-04 1.10321e-04 9.00868e-05 7.35638e-05 6.00714e-05 4.90536e-05 4.00566e-05 3.27098e-05 2.67104e-05 2.18114e-05 1.78109e-05 1.45442e-05</occurRates>
+                <occurRates>1.47127e-04 1.12389e-04 8.58531e-05 6.55824e-05 5.00978e-05 3.82693e-05 2.92336e-05 2.23313e-05 1.70587e-05 1.30310e-05 9.95423e-06 7.60395e-06 5.80859e-06 4.43713e-06 3.38948e-06 2.58920e-06 1.97786e-06 1.51087e-06 1.15414e-06 8.81640e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -60,7 +60,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>7.35564e-04 5.96236e-04 4.83300e-04 3.91755e-04 3.17551e-04 2.57402e-04 2.08646e-04 1.69125e-04 1.37090e-04 1.11123e-04 9.00745e-05 7.30130e-05 5.91832e-05 4.79729e-05 3.88861e-05 3.15205e-05 2.55500e-05 2.07104e-05 1.67875e-05 1.36077e-05</occurRates>
+                <occurRates>2.32108e-04 1.78627e-04 1.37469e-04 1.05795e-04 8.14184e-05 6.26586e-05 4.82213e-05 3.71106e-05 2.85598e-05 2.19793e-05 1.69150e-05 1.30176e-05 1.00182e-05 7.70987e-06 5.93342e-06 4.56629e-06 3.51416e-06 2.70446e-06 2.08132e-06 1.60176e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -105,7 +105,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.69134e-03 1.37097e-03 1.11129e-03 9.00792e-04 7.30168e-04 5.91862e-04 4.79754e-04 3.88881e-04 3.15221e-04 2.55513e-04 2.07115e-04 1.67884e-04 1.36084e-04 1.10308e-04 8.94137e-05 7.24773e-05 5.87490e-05 4.76210e-05 3.86008e-05 3.12892e-05</occurRates>
+                <occurRates>5.05238e-04 3.88825e-04 2.99235e-04 2.30288e-04 1.77227e-04 1.36391e-04 1.04965e-04 8.07800e-05 6.21673e-05 4.78432e-05 3.68195e-05 2.83359e-05 2.18070e-05 1.67824e-05 1.29155e-05 9.93962e-06 7.64941e-06 5.88690e-06 4.53048e-06 3.48661e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -137,7 +137,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.56753e-03 2.09163e-03 1.70394e-03 1.38811e-03 1.13082e-03 9.21219e-04 7.50469e-04 6.11367e-04 4.98049e-04 4.05734e-04 3.30530e-04 2.69266e-04 2.19356e-04 1.78698e-04 1.45576e-04 1.18593e-04 9.66115e-05 7.87043e-05 6.41163e-05 5.22321e-05</occurRates>
+                <occurRates>1.16409e-03 9.23982e-04 7.33401e-04 5.82129e-04 4.62059e-04 3.66754e-04 2.91107e-04 2.31063e-04 1.83404e-04 1.45575e-04 1.15549e-04 9.17156e-05 7.27983e-05 5.77829e-05 4.58645e-05 3.64045e-05 2.88957e-05 2.29356e-05 1.82049e-05 1.44500e-05</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -172,7 +172,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.28428e-03 1.84069e-03 1.48324e-03 1.19521e-03 9.63108e-04 7.76080e-04 6.25371e-04 5.03929e-04 4.06070e-04 3.27214e-04 2.63672e-04 2.12469e-04 1.71209e-04 1.37962e-04 1.11171e-04 8.95821e-05 7.21859e-05 5.81680e-05 4.68722e-05 3.77700e-05</occurRates>
+                <occurRates>1.05691e-03 8.24772e-04 6.43619e-04 5.02254e-04 3.91939e-04 3.05854e-04 2.38676e-04 1.86253e-04 1.45345e-04 1.13421e-04 8.85092e-05 6.90691e-05 5.38987e-05 4.20604e-05 3.28223e-05 2.56132e-05 1.99875e-05 1.55974e-05 1.21716e-05 9.49824e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -204,7 +204,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>4.22166e-04 3.38573e-04 2.71532e-04 2.17766e-04 1.74646e-04 1.40064e-04 1.12330e-04 9.00873e-05 7.22491e-05 5.79430e-05 4.64697e-05 3.72682e-05 2.98887e-05 2.39704e-05 1.92240e-05 1.54174e-05 1.23646e-05 9.91630e-06 7.95276e-06 6.37803e-06</occurRates>
+                <occurRates>6.95650e-05 5.17804e-05 3.85425e-05 2.86889e-05 2.13545e-05 1.58951e-05 1.18315e-05 8.80669e-06 6.55522e-06 4.87935e-06 3.63192e-06 2.70340e-06 2.01227e-06 1.49782e-06 1.11490e-06 8.29868e-07 6.17709e-07 4.59789e-07 3.42242e-07 2.54746e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -236,7 +236,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>5.45521e-04 4.42190e-04 3.58433e-04 2.90540e-04 2.35507e-04 1.90898e-04 1.54739e-04 1.25429e-04 1.01671e-04 8.24128e-05 6.68025e-05 5.41491e-05 4.38924e-05 3.55785e-05 2.88393e-05 2.33767e-05 1.89488e-05 1.53596e-05 1.24502e-05 1.00920e-05</occurRates>
+                <occurRates>1.49000e-04 1.14668e-04 8.82474e-05 6.79141e-05 5.22659e-05 4.02232e-05 3.09553e-05 2.38228e-05 1.83338e-05 1.41094e-05 1.08585e-05 8.35653e-06 6.43109e-06 4.94929e-06 3.80891e-06 2.93129e-06 2.25589e-06 1.73610e-06 1.33609e-06 1.02823e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -268,7 +268,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>4.30250e-04 3.48019e-04 2.81504e-04 2.27702e-04 1.84183e-04 1.48981e-04 1.20507e-04 9.74751e-05 7.88453e-05 6.37760e-05 5.15869e-05 4.17274e-05 3.37523e-05 2.73014e-05 2.20834e-05 1.78627e-05 1.44487e-05 1.16872e-05 9.45352e-06 7.64672e-06</occurRates>
+                <occurRates>6.30476e-05 4.66914e-05 3.45784e-05 2.56079e-05 1.89645e-05 1.40446e-05 1.04011e-05 7.70277e-06 5.70447e-06 4.22458e-06 3.12861e-06 2.31697e-06 1.71589e-06 1.27074e-06 9.41077e-07 6.96937e-07 5.16133e-07 3.82235e-07 2.83073e-07 2.09636e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -300,7 +300,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>9.49495e-03 8.17238e-03 7.03404e-03 6.05425e-03 5.21094e-03 4.48510e-03 3.86036e-03 3.32264e-03 2.85983e-03 2.46147e-03 2.11861e-03 1.82351e-03 1.56951e-03 1.35089e-03 1.16272e-03 1.00076e-03 8.61363e-04 7.41382e-04 6.38113e-04 5.49229e-04</occurRates>
+                <occurRates>5.38774e-03 4.50022e-03 3.75890e-03 3.13970e-03 2.62250e-03 2.19049e-03 1.82965e-03 1.52825e-03 1.27651e-03 1.06623e-03 8.90588e-04 7.43881e-04 6.21342e-04 5.18989e-04 4.33496e-04 3.62086e-04 3.02440e-04 2.52619e-04 2.11005e-04 1.76246e-04</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -332,7 +332,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.31061e-04 1.06236e-04 8.61135e-05 6.98023e-05 5.65806e-05 4.58634e-05 3.71761e-05 3.01344e-05 2.44264e-05 1.97997e-05 1.60493e-05 1.30093e-05 1.05452e-05 8.54774e-06 6.92866e-06 5.61626e-06 4.55245e-06 3.69015e-06 2.99118e-06 2.42460e-06</occurRates>
+                <occurRates>2.80039e-05 2.15515e-05 1.65857e-05 1.27642e-05 9.82317e-06 7.55979e-06 5.81793e-06 4.47741e-06 3.44576e-06 2.65181e-06 2.04080e-06 1.57058e-06 1.20870e-06 9.30199e-07 7.15870e-07 5.50925e-07 4.23985e-07 3.26294e-07 2.51112e-07 1.93253e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -364,7 +364,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.18494e-03 1.01564e-03 8.70533e-04 7.46157e-04 6.39551e-04 5.48176e-04 4.69856e-04 4.02726e-04 3.45187e-04 2.95869e-04 2.53597e-04 2.17365e-04 1.86309e-04 1.59690e-04 1.36875e-04 1.17319e-04 1.00557e-04 8.61901e-05 7.38758e-05 6.33209e-05</occurRates>
+                <occurRates>2.94474e-04 2.37529e-04 1.91596e-04 1.54546e-04 1.24660e-04 1.00554e-04 8.11088e-05 6.54241e-05 5.27725e-05 4.25675e-05 3.43359e-05 2.76961e-05 2.23403e-05 1.80202e-05 1.45355e-05 1.17246e-05 9.45734e-06 7.62850e-06 6.15332e-06 4.96340e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -396,7 +396,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>5.04480e-04 4.08923e-04 3.31467e-04 2.68682e-04 2.17789e-04 1.76536e-04 1.43098e-04 1.15993e-04 9.40219e-05 7.62126e-05 6.17768e-05 5.00753e-05 4.05902e-05 3.29018e-05 2.66697e-05 2.16180e-05 1.75232e-05 1.42041e-05 1.15136e-05 9.33273e-06</occurRates>
+                <occurRates>1.32007e-04 1.01591e-04 7.81832e-05 6.01688e-05 4.63052e-05 3.56359e-05 2.74250e-05 2.11059e-05 1.62429e-05 1.25003e-05 9.62010e-06 7.40351e-06 5.69765e-06 4.38485e-06 3.37453e-06 2.59699e-06 1.99862e-06 1.53811e-06 1.18371e-06 9.10970e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -430,7 +430,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.62021e-04 1.31332e-04 1.06455e-04 8.62910e-05 6.99461e-05 5.66972e-05 4.59579e-05 3.72527e-05 3.01965e-05 2.44768e-05 1.98405e-05 1.60824e-05 1.30361e-05 1.05669e-05 8.56535e-06 6.94294e-06 5.62784e-06 4.56184e-06 3.69775e-06 2.99734e-06</occurRates>
+                <occurRates>3.21781e-05 2.47639e-05 1.90580e-05 1.46668e-05 1.12874e-05 8.68664e-06 6.68513e-06 5.14480e-06 3.95937e-06 3.04709e-06 2.34500e-06 1.80468e-06 1.38886e-06 1.06885e-06 8.22576e-07 6.33045e-07 4.87184e-07 3.74931e-07 2.88542e-07 2.22059e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -465,7 +465,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>4.53877e-03 3.62787e-03 2.89978e-03 2.31782e-03 1.85265e-03 1.48083e-03 1.18364e-03 9.46093e-04 7.56219e-04 6.04451e-04 4.83142e-04 3.86179e-04 3.08676e-04 2.46727e-04 1.97210e-04 1.57632e-04 1.25996e-04 1.00710e-04 8.04979e-05 6.43426e-05 5.14295e-05 4.11079e-05 3.28579e-05 2.62635e-05 2.09926e-05 1.67796e-05 1.34120e-05 1.07203e-05 8.56883e-06 6.84913e-06 5.47456e-06 4.37585e-06</occurRates>
+                <occurRates>2.75722e-03 2.15942e-03 1.69124e-03 1.32456e-03 1.03738e-03 8.12468e-04 6.36317e-04 4.98357e-04 3.90308e-04 3.05685e-04 2.39410e-04 1.87503e-04 1.46851e-04 1.15012e-04 9.00762e-05 7.05468e-05 5.52516e-05 4.32725e-05 3.38906e-05 2.65427e-05 2.07880e-05 1.62810e-05 1.27511e-05 9.98652e-06 7.82134e-06 6.12560e-06 4.79751e-06 3.75736e-06 2.94273e-06 2.30471e-06 1.80503e-06 1.41368e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -499,7 +499,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.20507e-04 1.75288e-04 1.39342e-04 1.10767e-04 8.80522e-05 6.99954e-05 5.56415e-05 4.42312e-05 3.51607e-05 2.79504e-05 2.22186e-05 1.76623e-05 1.40403e-05 1.11610e-05 8.87226e-06 7.05284e-06 5.60652e-06 4.45680e-06 3.54284e-06 2.81632e-06 2.23878e-06 1.77967e-06 1.41472e-06 1.12460e-06 8.93982e-07 7.10654e-07 5.64921e-07 4.49073e-07</occurRates>
+                <occurRates>1.93834e-05 1.39063e-05 9.97677e-06 7.15763e-06 5.13510e-06 3.68407e-06 2.64306e-06 1.89621e-06 1.36040e-06 9.75992e-07 7.00206e-07 5.02349e-07 3.60400e-07 2.58562e-07 1.85500e-07 1.33083e-07 9.54778e-08 6.84987e-08 4.91430e-08 3.52567e-08 2.52942e-08 1.81468e-08 1.30191e-08 9.34026e-09 6.70098e-09 4.80749e-09 3.44903e-09 2.47444e-09</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -531,7 +531,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>4.55738e-04 3.69414e-04 2.99441e-04 2.42722e-04 1.96747e-04 1.59480e-04 1.29272e-04 1.04786e-04 8.49378e-05 6.88492e-05 5.58081e-05 4.52372e-05 3.66685e-05 2.97229e-05 2.40929e-05 1.95294e-05 1.58302e-05 1.28317e-05 1.04012e-05 8.43103e-06</occurRates>
+                <occurRates>1.16726e-04 8.98306e-05 6.91325e-05 5.32036e-05 4.09448e-05 3.15106e-05 2.42502e-05 1.86627e-05 1.43626e-05 1.10533e-05 8.50646e-06 6.54647e-06 5.03808e-06 3.87725e-06 2.98388e-06 2.29636e-06 1.76725e-06 1.36006e-06 1.04668e-06 8.05514e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -564,7 +564,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>4.82649e-04 3.91228e-04 3.17123e-04 2.57055e-04 2.08365e-04 1.68897e-04 1.36905e-04 1.10973e-04 8.99532e-05 7.29147e-05 5.91035e-05 4.79083e-05 3.88337e-05 3.14780e-05 2.55156e-05 2.06825e-05 1.67649e-05 1.35894e-05 1.10153e-05 8.92887e-06 7.23760e-06 5.86668e-06 4.75544e-06 3.85469e-06 3.07674e-19</occurRates>
+                <occurRates>1.29024e-04 9.92955e-05 7.64166e-05 5.88093e-05 4.52589e-05 3.48307e-05 2.68053e-05 2.06291e-05 1.58759e-05 1.22179e-05 9.40273e-06 7.23623e-06 5.56892e-06 4.28577e-06 3.29828e-06 2.53831e-06 1.95346e-06 1.50336e-06 1.15697e-06 8.90386e-07 6.85231e-07 5.27345e-07 4.05839e-07 3.12329e-07 2.43217e-20</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -596,7 +596,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>8.49426e-04 7.16967e-04 6.05165e-04 5.10796e-04 4.31143e-04 3.63911e-04 3.07164e-04 2.59265e-04 2.18836e-04 1.84711e-04 1.55907e-04 1.31595e-04 1.11074e-04 9.37536e-05 7.91338e-05 6.67938e-05 5.63781e-05 4.75866e-05 4.01660e-05 3.39026e-05</occurRates>
+                <occurRates>2.18499e-04 1.75204e-04 1.40488e-04 1.12651e-04 9.03291e-05 7.24307e-05 5.80788e-05 4.65706e-05 3.73428e-05 2.99434e-05 2.40102e-05 1.92527e-05 1.54378e-05 1.23789e-05 9.92603e-06 7.95921e-06 6.38212e-06 5.11752e-06 4.10350e-06 3.29040e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -628,7 +628,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>9.70220e-04 7.86445e-04 6.37480e-04 5.16731e-04 4.18854e-04 3.39517e-04 2.75207e-04 2.23078e-04 1.80824e-04 1.46573e-04 1.18810e-04 9.63053e-05 7.80635e-05 6.32771e-05 5.12914e-05 4.15760e-05 3.37008e-05 2.73174e-05 2.21430e-05 1.79488e-05</occurRates>
+                <occurRates>3.40925e-04 2.62372e-04 2.01918e-04 1.55394e-04 1.19589e-04 9.20343e-05 7.08285e-05 5.45088e-05 4.19493e-05 3.22837e-05 2.48451e-05 1.91205e-05 1.47149e-05 1.13244e-05 8.71514e-06 6.70707e-06 5.16168e-06 3.97236e-06 3.05708e-06 2.35270e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -660,7 +660,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>8.97818e-04 7.12063e-04 5.64741e-04 4.47899e-04 3.55231e-04 2.81735e-04 2.23445e-04 1.77216e-04 1.40551e-04 1.11471e-04 8.84084e-05 7.01171e-05 5.56102e-05 4.41047e-05 3.49797e-05 2.77425e-05 2.20027e-05 1.74505e-05 1.38401e-05 1.09766e-05 8.70560e-06 6.90446e-06 5.47596e-06 4.34301e-06 3.44446e-06 2.73182e-06 2.16662e-06 1.71835e-06 1.36283e-06 1.08087e-06 8.57244e-07 6.79884e-07</occurRates>
+                <occurRates>1.27094e-04 9.11344e-05 6.53492e-05 4.68596e-05 3.36013e-05 2.40943e-05 1.72772e-05 1.23888e-05 8.88359e-06 6.37010e-06 4.56777e-06 3.27539e-06 2.34866e-06 1.68414e-06 1.20764e-06 8.65953e-07 6.20944e-07 4.45257e-07 3.19278e-07 2.28942e-07 1.64166e-07 1.17718e-07 8.44113e-08 6.05283e-08 4.34027e-08 3.11225e-08 2.23168e-08 1.60026e-08 1.14749e-08 8.22823e-09 5.90017e-09 4.23080e-09</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -693,7 +693,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.38682e-04 1.12414e-04 9.11207e-05 7.38610e-05 5.98706e-05 4.85301e-05 3.93378e-05 3.18866e-05 2.58468e-05 2.09510e-05 1.69825e-05 1.37658e-05 1.11583e-05 9.04475e-06 7.33153e-06 5.94283e-06 4.81716e-06 3.90472e-06 3.16510e-06 2.56558e-06 2.07962e-06 1.68571e-06 1.36641e-06 1.10759e-06 8.97794e-07 7.27737e-07 5.89892e-07 4.78157e-07</occurRates>
+                <occurRates>2.40536e-05 1.85114e-05 1.42461e-05 1.09636e-05 8.43749e-06 6.49339e-06 4.99724e-06 3.84581e-06 2.95969e-06 2.27774e-06 1.75292e-06 1.34903e-06 1.03820e-06 7.98983e-07 6.14888e-07 4.73210e-07 3.64177e-07 2.80266e-07 2.15690e-07 1.65992e-07 1.27746e-07 9.83114e-08 7.56593e-08 5.82265e-08 4.48104e-08 3.44855e-08 2.65397e-08 2.04246e-08</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -727,7 +727,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>5.91974e-03 5.16494e-03 4.50637e-03 3.93178e-03 3.43045e-03 2.99305e-03 2.61142e-03 2.27844e-03 1.98793e-03 1.73445e-03 1.51330e-03 1.32034e-03 1.15199e-03 1.00511e-03 8.76948e-04 7.65132e-04 6.67572e-04 5.82453e-04 5.08186e-04 4.43389e-04</occurRates>
+                <occurRates>2.93214e-03 2.46880e-03 2.07868e-03 1.75021e-03 1.47364e-03 1.24077e-03 1.04470e-03 8.79619e-04 7.40621e-04 6.23587e-04 5.25047e-04 4.42079e-04 3.72221e-04 3.13403e-04 2.63878e-04 2.22180e-04 1.87071e-04 1.57510e-04 1.32620e-04 1.11663e-04</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -759,7 +759,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.29267e-03 1.80889e-03 1.42720e-03 1.12605e-03 8.88444e-04 7.00974e-04 5.53063e-04 4.36362e-04 3.44285e-04 2.71638e-04 2.14320e-04 1.69097e-04 1.33416e-04 1.05264e-04 8.30524e-05 6.55276e-05 5.17007e-05 4.07914e-05 3.21841e-05 2.53929e-05</occurRates>
+                <occurRates>5.46906e-04 4.02654e-04 2.96449e-04 2.18258e-04 1.60690e-04 1.18306e-04 8.71017e-05 6.41277e-05 4.72134e-05 3.47603e-05 2.55919e-05 1.88418e-05 1.38721e-05 1.02132e-05 7.51933e-06 5.53602e-06 4.07584e-06 3.00079e-06 2.20930e-06 1.62658e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -796,7 +796,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.78194e-03 1.46185e-03 1.19926e-03 9.83834e-04 8.07107e-04 6.62127e-04 5.43189e-04 4.45616e-04 3.65570e-04 2.99902e-04 2.46031e-04 2.01836e-04 1.65580e-04 1.35837e-04 1.11437e-04 9.14193e-05 7.49977e-05 6.15258e-05 5.04739e-05 4.14073e-05</occurRates>
+                <occurRates>3.77320e-04 2.91356e-04 2.24976e-04 1.73720e-04 1.34141e-04 1.03580e-04 7.99814e-05 6.17593e-05 4.76887e-05 3.68238e-05 2.84342e-05 2.19561e-05 1.69538e-05 1.30913e-05 1.01087e-05 7.80562e-06 6.02727e-06 4.65408e-06 3.59374e-06 2.77498e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -835,7 +835,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.68744e-03 2.17839e-03 1.76577e-03 1.43131e-03 1.16019e-03 9.40435e-04 7.62302e-04 6.17910e-04 5.00868e-04 4.05996e-04 3.29094e-04 2.66758e-04 2.16230e-04 1.75273e-04 1.42073e-04 1.15162e-04 9.33488e-05 7.56670e-05 6.13345e-05 4.97168e-05</occurRates>
+                <occurRates>8.35759e-04 6.43190e-04 4.94991e-04 3.80939e-04 2.93166e-04 2.25617e-04 1.73632e-04 1.33625e-04 1.02836e-04 7.91417e-05 6.09065e-05 4.68729e-05 3.60728e-05 2.77612e-05 2.13647e-05 1.64420e-05 1.26536e-05 9.73804e-06 7.49428e-06 5.76751e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -874,7 +874,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.23663e-03 1.00239e-03 8.12523e-04 6.58619e-04 5.33866e-04 4.32743e-04 3.50775e-04 2.84333e-04 2.30475e-04 1.86820e-04 1.51433e-04 1.22749e-04 9.94987e-05 8.06521e-05 6.53753e-05 5.29922e-05 4.29546e-05 3.48183e-05 2.82232e-05 2.28773e-05 1.85440e-05 1.50314e-05 1.21843e-05 9.87636e-06 8.00563e-06 6.48923e-06 5.26007e-06 4.26373e-06</occurRates>
+                <occurRates>3.97284e-04 3.05745e-04 2.35298e-04 1.81082e-04 1.39359e-04 1.07249e-04 8.25375e-05 6.35198e-05 4.88841e-05 3.76206e-05 2.89524e-05 2.22814e-05 1.71475e-05 1.31965e-05 1.01559e-05 7.81584e-06 6.01497e-06 4.62905e-06 3.56246e-06 2.74163e-06 2.10992e-06 1.62377e-06 1.24964e-06 9.61705e-07 7.40116e-07 5.69585e-07 4.38346e-07 3.37345e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -908,7 +908,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>8.29788e-04 6.68062e-04 5.37856e-04 4.33027e-04 3.48630e-04 2.80681e-04 2.25976e-04 1.81933e-04 1.46474e-04 1.17926e-04 9.49424e-05 7.64380e-05 6.15402e-05 4.95459e-05 3.98894e-05 3.21149e-05 2.58557e-05 2.08164e-05 1.67593e-05 1.34929e-05</occurRates>
+                <occurRates>2.41054e-04 1.84592e-04 1.41356e-04 1.08246e-04 8.28921e-05 6.34765e-05 4.86086e-05 3.72231e-05 2.85044e-05 2.18279e-05 1.67152e-05 1.28001e-05 9.80193e-06 7.50605e-06 5.74793e-06 4.40161e-06 3.37063e-06 2.58114e-06 1.97656e-06 1.51360e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -940,7 +940,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>7.64876e-04 6.51576e-04 5.55059e-04 4.72839e-04 4.02798e-04 3.43132e-04 2.92304e-04 2.49005e-04 2.12120e-04 1.80699e-04 1.53932e-04 1.31131e-04 1.11706e-04 9.51595e-05 8.10636e-05 6.90557e-05 5.88266e-05 5.01127e-05 4.26895e-05 3.63660e-05</occurRates>
+                <occurRates>1.54768e-04 1.22831e-04 9.74839e-05 7.73675e-05 6.14023e-05 4.87316e-05 3.86755e-05 3.06946e-05 2.43606e-05 1.93336e-05 1.53440e-05 1.21777e-05 9.66477e-06 7.67039e-06 6.08756e-06 4.83135e-06 3.83438e-06 3.04313e-06 2.41516e-06 1.91678e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -972,7 +972,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>5.77353e-04 4.67993e-04 3.79348e-04 3.07494e-04 2.49249e-04 2.02038e-04 1.63769e-04 1.32748e-04 1.07604e-04 8.72218e-05 7.07006e-05 5.73088e-05 4.64536e-05 3.76546e-05 3.05222e-05 2.47408e-05 2.00545e-05 1.62559e-05 1.31768e-05 1.06809e-05</occurRates>
+                <occurRates>1.68463e-04 1.29647e-04 9.97750e-05 7.67856e-05 5.90933e-05 4.54775e-05 3.49989e-05 2.69348e-05 2.07287e-05 1.59525e-05 1.22769e-05 9.44813e-06 7.27117e-06 5.59581e-06 4.30646e-06 3.31420e-06 2.55057e-06 1.96289e-06 1.51062e-06 1.16255e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1004,7 +1004,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.84446e-03 2.54307e-03 2.27362e-03 2.03271e-03 1.81734e-03 1.62478e-03 1.45262e-03 1.29871e-03 1.16110e-03 1.03808e-03 9.28089e-04 8.29752e-04 7.41835e-04 6.63234e-04 5.92960e-04 5.30133e-04 4.73962e-04 4.23743e-04 3.78845e-04 3.38704e-04</occurRates>
+                <occurRates>7.22022e-04 6.06107e-04 5.08801e-04 4.27116e-04 3.58546e-04 3.00984e-04 2.52663e-04 2.12100e-04 1.78049e-04 1.49464e-04 1.25469e-04 1.05326e-04 8.84163e-05 7.42217e-05 6.23059e-05 5.23031e-05 4.39062e-05 3.68574e-05 3.09402e-05 2.59730e-05</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1048,7 +1048,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>7.50487e-04 6.08333e-04 4.93105e-04 3.99703e-04 3.23993e-04 2.62624e-04 2.12879e-04 1.72556e-04 1.39871e-04 1.13377e-04 9.19020e-05 7.44943e-05 6.03839e-05 4.89463e-05 3.96751e-05 3.21600e-05 2.60684e-05 2.11306e-05 1.71281e-05 1.38838e-05 1.12540e-05 9.12231e-06 7.39440e-06 5.99378e-06 4.85847e-06 3.93820e-06 3.19224e-06 2.58758e-06</occurRates>
+                <occurRates>2.27214e-04 1.74861e-04 1.34571e-04 1.03564e-04 7.97017e-05 6.13375e-05 4.72046e-05 3.63281e-05 2.79577e-05 2.15159e-05 1.65584e-05 1.27431e-05 9.80695e-06 7.54731e-06 5.80832e-06 4.47001e-06 3.44007e-06 2.64744e-06 2.03743e-06 1.56799e-06 1.20670e-06 9.28664e-07 7.14688e-07 5.50016e-07 4.23285e-07 3.25755e-07 2.50697e-07 1.92934e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1080,7 +1080,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>6.50227e-04 5.27064e-04 4.27230e-04 3.46306e-04 2.80710e-04 2.27539e-04 1.84439e-04 1.49504e-04 1.21185e-04 9.82310e-05 7.96245e-05 6.45423e-05 5.23170e-05 4.24073e-05 3.43747e-05 2.78636e-05 2.25858e-05 1.83077e-05 1.48399e-05 1.20290e-05</occurRates>
+                <occurRates>1.86096e-04 1.43217e-04 1.10218e-04 8.48225e-05 6.52783e-05 5.02374e-05 3.86621e-05 2.97539e-05 2.28982e-05 1.76222e-05 1.35618e-05 1.04370e-05 8.03222e-06 6.18150e-06 4.75721e-06 3.66109e-06 2.81753e-06 2.16834e-06 1.66873e-06 1.28423e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1112,7 +1112,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>6.52608e-04 5.28994e-04 4.28794e-04 3.47574e-04 2.81738e-04 2.28372e-04 1.85115e-04 1.50051e-04 1.21629e-04 9.85907e-05 7.99161e-05 6.47787e-05 5.25086e-05 4.25626e-05 3.45006e-05 2.79656e-05 2.26685e-05 1.83747e-05 1.48943e-05 1.20731e-05 9.78624e-06 7.93257e-06 6.43001e-06 5.21207e-06 4.16018e-19</occurRates>
+                <occurRates>1.90981e-04 1.46977e-04 1.13112e-04 8.70495e-05 6.69922e-05 5.15564e-05 3.96772e-05 3.05351e-05 2.34994e-05 1.80849e-05 1.39179e-05 1.07111e-05 8.24310e-06 6.34379e-06 4.88210e-06 3.75721e-06 2.89150e-06 2.22527e-06 1.71254e-06 1.31795e-06 1.01428e-06 7.80576e-07 6.00722e-07 4.62308e-07 3.60010e-20</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1144,7 +1144,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.94670e-04 2.38855e-04 1.93612e-04 1.56939e-04 1.27212e-04 1.03116e-04 8.35843e-05 6.77521e-05 5.49188e-05 4.45163e-05 3.60842e-05 2.92493e-05 2.37090e-05 1.92182e-05 1.55779e-05 1.26272e-05 1.02354e-05 8.29669e-06 6.72516e-06 5.45131e-06</occurRates>
+                <occurRates>7.41120e-05 5.70357e-05 4.38940e-05 3.37803e-05 2.59969e-05 2.00069e-05 1.53971e-05 1.18494e-05 9.11915e-06 7.01799e-06 5.40096e-06 4.15652e-06 3.19880e-06 2.46176e-06 1.89454e-06 1.45802e-06 1.12207e-06 8.63533e-07 6.64565e-07 5.11441e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1177,7 +1177,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>6.01029e-04 4.93860e-04 4.05801e-04 3.33443e-04 2.73988e-04 2.25133e-04 1.84990e-04 1.52005e-04 1.24901e-04 1.02630e-04 8.43304e-05 6.92936e-05 5.69380e-05 4.67855e-05 3.84432e-05 3.15885e-05 2.59560e-05 2.13278e-05 1.75249e-05 1.44001e-05</occurRates>
+                <occurRates>1.14462e-04 8.79361e-05 6.75576e-05 5.19017e-05 3.98739e-05 3.06334e-05 2.35343e-05 1.80804e-05 1.38904e-05 1.06714e-05 8.19842e-06 6.29850e-06 4.83887e-06 3.71750e-06 2.85600e-06 2.19414e-06 1.68567e-06 1.29503e-06 9.94914e-07 7.64350e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1217,7 +1217,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.85" binWidth="0.1">
-                <occurRates>3.87288e-04 3.37704e-04 2.94468e-04 2.56767e-04 2.23893e-04 1.95228e-04 1.70233e-04 1.48438e-04</occurRates>
+                <occurRates>2.45311e-04 2.09249e-04 1.78489e-04 1.52250e-04 1.29869e-04 1.10778e-04 9.44930e-05 8.06022e-05</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1275,7 +1275,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.85" binWidth="0.1">
-                <occurRates>1.71059e-03 1.46937e-03 1.26218e-03 1.08419e-03 9.31310e-04 7.99984e-04 6.87177e-04 5.90277e-04 5.07041e-04 4.35542e-04 3.74126e-04 3.21370e-04 1.32580e-17</occurRates>
+                <occurRates>8.20757e-04 6.90370e-04 5.80696e-04 4.88445e-04 4.10850e-04 3.45581e-04 2.90681e-04 2.44503e-04 2.05661e-04 1.72989e-04 1.45507e-04 1.22392e-04 4.96430e-18</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1330,7 +1330,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.85" binWidth="0.1">
-                <occurRates>5.66411e-04 4.93893e-04 4.30660e-04 3.75523e-04 3.27445e-04 2.85522e-04 2.48967e-04 2.17092e-04 1.89297e-04 1.65062e-04 1.43929e-04 1.25502e-04 5.21931e-18</occurRates>
+                <occurRates>2.39117e-04 2.03966e-04 1.73982e-04 1.48406e-04 1.26590e-04 1.07981e-04 9.21073e-05 7.85672e-05 6.70175e-05 5.71657e-05 4.87621e-05 4.15939e-05 1.71490e-18</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1395,7 +1395,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.85" binWidth="0.1">
-                <occurRates>5.66411e-04 4.93893e-04 4.30660e-04 3.75523e-04 3.27445e-04 2.85522e-04 2.48967e-04 2.17092e-04 1.89297e-04 1.65062e-04 1.43929e-04 1.25502e-04 5.21931e-18</occurRates>
+                <occurRates>2.39117e-04 2.03966e-04 1.73982e-04 1.48406e-04 1.26590e-04 1.07981e-04 9.21073e-05 7.85672e-05 6.70175e-05 5.71657e-05 4.87621e-05 4.15939e-05 1.71490e-18</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1435,7 +1435,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.85" binWidth="0.1">
-                <occurRates>2.32347e-04 2.02600e-04 1.76661e-04 1.54043e-04 1.34321e-04 1.17124e-04 1.02129e-04 8.90530e-05 7.76516e-05 6.77099e-05 5.90410e-05 5.14820e-05 2.14101e-18</occurRates>
+                <occurRates>1.47174e-04 1.25539e-04 1.07084e-04 9.13426e-05 7.79149e-05 6.64611e-05 5.66911e-05 4.83573e-05 4.12486e-05 3.51849e-05 3.00126e-05 2.56006e-05 1.05550e-18</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1471,7 +1471,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.85" binWidth="0.1">
-                <occurRates>1.54938e-04 1.35102e-04 1.17805e-04 1.02722e-04 8.95706e-05 7.81029e-05 6.81034e-05 5.93841e-05</occurRates>
+                <occurRates>9.81065e-05 8.36845e-05 7.13826e-05 6.08891e-05 5.19382e-05 4.43031e-05 3.77903e-05 3.22350e-05</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1480,6 +1480,181 @@
                 <hypoDepth probability="0.50" depth="5.0"/>
                 <hypoDepth probability="0.25" depth="20.0"/>
                 <hypoDepth probability="0.25" depth="10.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="SCCEHYBH" name="SCCEHYBH - Stable Cratonic Core Eastern Canada Hybrid Simplified magnitude recurrence parameters" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -57.4300 55.4000
+                                -61.6300 53.0000
+                                -62.7100 51.4400
+                                -69.9500 51.0300
+                                -72.2100 48.9700
+                                -72.6200 48.4300
+                                -75.2600 47.7800
+                                -79.7800 48.4800
+                                -80.2100 48.9100
+                                -81.5800 50.3300
+                                -80.7300 51.3600
+                                -78.4900 51.4100
+                                -78.5700 54.0000
+                                -82.2600 54.0000
+                                -82.1900 52.6200
+                                -80.7301 51.3601
+                                -81.5801 50.3301
+                                -82.5000 49.9500
+                                -81.1000 48.5200
+                                -79.5000 46.8400
+                                -83.0000 46.0000
+                                -86.0000 43.0000
+                                -89.0000 47.0000
+                                -89.3300 48.1600
+                                -88.9700 52.2800
+                                -94.4700 51.9100
+                                -94.4100 48.3400
+                                -89.3301 48.1601
+                                -89.0001 47.0001
+                                -110.0000 47.0000
+                                -110.0000 74.8450
+                                -98.6050 74.6700
+                                -97.6760 71.6410
+                                -97.6780 71.6420
+                                -97.9670 69.9570
+                                -95.2170 68.4350
+                                -96.4890 65.8820
+                                -91.4210 66.0530
+                                -87.6680 63.6120
+                                -86.6120 63.6260
+                                -83.5540 63.0420
+                                -78.1300 59.0060
+                                -70.8420 57.9530
+                                -63.8950 59.5910
+                                -61.7730 59.5650
+                                -60.7410 57.2710
+                                -58.7460 55.7950
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.32115e-02 1.05391e-02 8.40722e-03 6.70659e-03 5.34997e-03 4.26777e-03 3.40447e-03 2.71581e-03 2.16645e-03 1.72822e-03 1.37863e-03 1.09976e-03 8.77297e-04 6.99836e-04 5.58272e-04 4.45344e-04 3.55259e-04 2.83396e-04 2.26070e-04 1.80340e-04 1.43861e-04 1.14760e-04 9.15464e-05 7.30282e-05 5.78725e-18</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="SCCEHYBR" name="SCCEHYBR  (R)  (area 4.9497M km^2)" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -57.4300 55.4000
+                                -61.6300 53.0000
+                                -62.7100 51.4400
+                                -69.9500 51.0300
+                                -72.2100 48.9700
+                                -72.6200 48.4300
+                                -75.2600 47.7800
+                                -79.7800 48.4800
+                                -80.2100 48.9100
+                                -81.5800 50.3300
+                                -80.7300 51.3600
+                                -78.4900 51.4100
+                                -78.5700 54.0000
+                                -82.2600 54.0000
+                                -82.1900 52.6200
+                                -80.7301 51.3601
+                                -81.5801 50.3301
+                                -82.5000 49.9500
+                                -81.1000 48.5200
+                                -79.5000 46.8400
+                                -83.0000 46.0000
+                                -86.0000 43.0000
+                                -89.0000 47.0000
+                                -89.3300 48.1600
+                                -88.9700 52.2800
+                                -94.4700 51.9100
+                                -94.4100 48.3400
+                                -89.3301 48.1601
+                                -89.0001 47.0001
+                                -110.0000 47.0000
+                                -110.0000 74.7050
+                                -103.8010 74.7580
+                                -96.8800 65.4700
+                                -78.0950 59.0230
+                                -67.3160 58.5770
+                                -65.3620 61.5040
+                                -60.2860 56.6130
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.27903e-02 1.02031e-02 8.13917e-03 6.49276e-03 5.17939e-03 4.13170e-03 3.29593e-03 2.62922e-03 2.09738e-03 1.67312e-03 1.33468e-03 1.06469e-03 8.49326e-04 6.77523e-04 5.40472e-04 4.31144e-04 3.43932e-04 2.74361e-04 2.18862e-04 1.74590e-04 1.39274e-04 1.11101e-04 8.86276e-05 7.06998e-05 5.60273e-18</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="SCCEHYBRL" name="SCCEHYBRL Stable Cratonic Core Hybrid R  Labrador (area 0.0701M km^2) simplified magnitude recurrence parameters" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -60.3300 51.5500
+                                -57.4000 51.5500
+                                -54.6500 52.6500
+                                -54.0000 52.0000
+                                -52.4300 52.4600
+                                -53.1980 53.0820
+                                -55.3500 54.3100
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.81314e-04 1.44637e-04 1.15380e-04 9.20407e-05 7.34225e-05 5.85705e-05 4.67227e-05 3.72716e-05 2.97322e-05 2.37179e-05 1.89202e-05 1.50930e-05 1.20400e-05 9.60449e-06 7.66167e-06 6.11186e-06 4.87554e-06 3.88931e-06 3.10257e-06 2.47498e-06 1.97433e-06 1.57496e-06 1.25637e-06 1.00223e-06 7.94237e-20</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
             </hypoDepthDist>
         </areaSource>
 
