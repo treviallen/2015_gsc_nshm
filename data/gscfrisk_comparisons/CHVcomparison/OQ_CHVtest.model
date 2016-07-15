@@ -1,0 +1,39 @@
+o treat this model file as old type model file that does not contain completeness date data
+Model for: CHV source zone test for OQ comparison
+Data for INTERP subroutine  
+4  0.01  0.0021  0.001 0.000404  
+Main data set for FRISKGSC program
+3   Value of natts that is used
+3  50  5.0  5.0  0.10  4  1
+24  0.1 1. 3. 10. 17.5 23.5 30. 42. 60. 75. 100. 135. 175. 235. 300. 420. 600. 750. 1000. 1350. 1750. 2350. 3000. 4200.
+0.50 0.20 0.30
+A 
+DUMMY LINE - SEE TABLES FOR VALUES AB94R PSA 0.2s NBCC soil class C Mlg Median grd motion for Pseudo Acc 0.2s ATKINSON BOORE 1994Mlg
+4.038 0.418 -0.0644 -0.000457 0.0 0.0 0.0 0.0 0.0 6 0.69 0 0.0 0
+DUMMY LINE - SEE TABLES FOR VALUES AB94R PSA 0.2s NBCC soil class C Mlg L grd motion for PSA 0.2s ATKINSON BOORE 1994 Mlg Lower limit
+3.718 0.418 -0.0644 -0.000457 0.0 0.0 0.0 0.0 0.0 6 0.69 0 0.0 0
+DUMMY LINE - SEE TABLES FOR VALUES AB94R PSA 0.2s NBCC soil class C Mlg U grd motion for PSA 0.2s ATKINSON BOORE 1994 Mlg Upper limit
+4.288 0.418 -0.0644 -0.000457 0.0 0.0 0.0 0.0 0.0 6 0.69 0 0.0 0
+1 1.0  
+H2 MODEL EASTERN CANADA V5.01  37 ZONES (0.4 weight)
+1  3  3  3  1  50
+0.6 0.3 0.1
+0.68 0.16 0.16
+0.5 0.25 0.25
+1  1  1  1
+CHV    - CHARLEVOIX
+1            
+SE CANADA H2
+1.           
+area         
+10.0 20.0 5.0
+4            
+-69.95 48.05
+-69.46 47.79
+-70.28 47.09
+-70.77 47.38
+4.8 7.8 7.4 8.0
+1            
+91.30 1.5000  184.9 1.8000  184.9 1.8000 ! EXCEPTION - best curve fixed to match rates of large historical events, lower curve given 0.32 weight 
+ENA_med_clC.txt, ENA_low_clC.txt, ENA_high_clC.txt
+
