@@ -1,10 +1,9 @@
 from __future__ import unicode_literals
-from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
 #from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
-from numpy import array, diff, exp, log, interp, loadtxt, vstack, mean
+from numpy import array, exp, log, interp, loadtxt, vstack, mean
 from oq_tools import return_annualised_haz_curves
 import matplotlib.pylab as plt
-from os import path, sep
+from os import path
 import warnings, sys
 reload(sys) # for unicode chars
 sys.setdefaultencoding("latin-1")
@@ -21,7 +20,7 @@ file paths must be manually specified
 
 period = '0.2'
 job = 'chv_nbcc'
-job_num = '601'
+job_num = '602'
 
 tmpper = period.replace('.','')
 
@@ -48,21 +47,27 @@ period = sys.argv[3]
 # read frisk data
 ###############################################################################
 
-friskpath = path.join('','data','gscfrisk_comparisons',friskfolder,friskfile)
-friskhaz = loadtxt(friskpath, delimiter=',', skiprows=4, usecols = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
+friskpath = path.join('..','data','gscfrisk_comparisons',friskfolder,friskfile)
 friskprobs = array([0.02, 0.01375, 0.01, 0.00445, 0.0021, 0.001, 0.0005, 0.000404, 0.0002, 0.0001])
 
-# get place names
+friskhaz = []
 places = []
-lines = open(friskpath).readlines()[4:]
+flat = []
+flon = []
+lines = open(friskpath).readlines()[12:]
 for line in lines:
-    places.append(', '.join(line.strip().split(',')[-2:]))
+    if len(line) > 30:
+        dat = line.strip().split()
+        places.append(dat[-1])
+        flon.append(float(dat[0]))
+        flat.append(float(dat[1]))
+        friskhaz.append([float(x) for x in dat[2:12]])
 
 
 ###############################################################################
 # read OQ data
 ###############################################################################
-hazcurvefile = path.join('','jobs_hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
+hazcurvefile = path.join('..','jobs_hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
 
 # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
 try:
@@ -90,10 +95,10 @@ yhaz = 1./2475.
 
 # set headers
 jobhead = ' '.join((job.upper(), 'Mean','SA['+period+']', 'Hazard (g)'))
-oqhead = '\n\n---OpenQuake---\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
-frhead = '\n\n---2015 NBCC---\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
-rathead = '\n\n---Ratios---\tGSCFRISK / OQ\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
-pcdhead = '\n\n---% Difference---\tGSCFRISK / OQ\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
+oqhead = '\n\n---OpenQuake---\n\nLocation,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
+frhead = '\n\n---2015 NBCC---\n\nLocation,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
+rathead = '\n\n---Ratios---\tGSCFRISK / OQ\n\nLocation,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
+pcdhead = '\n\n---% Difference---\tGSCFRISK / OQ\n\nLocation,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
 oqt = ''
 frt  = ''
 rat = ''
@@ -103,23 +108,23 @@ pcd = ''
 for lon, lat, curve in zip(curlon, curlat, curves):
     
     # loop thru FRISK curves
-    for p, fh in enumerate(friskhaz):
-        if fh[0] == lon and fh[1] == lat:
+    for place, flo, fla, fh in zip(places, flon, flat, friskhaz):
+        if flo == lon and fla == lat:
             # interp to frisk probs
             oqinterp = exp(interp(log(friskprobs[::-1]), log(curve[::-1]), log(imls[::-1])))[::-1]
             
             # set OQ text
-            oqt += places[p] + ',' + ','.join((str('%0.4f' % x) for x in oqinterp)) + '\n'
+            oqt += place + ',' + ','.join((str('%0.4f' % x) for x in oqinterp)) + '\n'
                     
             # set frisk test
-            frhaz = fh[3:-1]
-            frt += places[p] + ',' + ','.join((str('%0.4f' % x) for x in frhaz)) + '\n'
+            frhaz = fh
+            frt += place + ',' + ','.join((str('%0.4f' % x) for x in frhaz)) + '\n'
             
             # get ratios
             hazrat = frhaz / oqinterp
             
             # set ratio text
-            rat += places[p] + ',' + ','.join((str('%0.4f' % x) for x in hazrat)) + '\n'
+            rat += place + ',' + ','.join((str('%0.4f' % x) for x in hazrat)) + '\n'
             
             # calc % difference
             numer = frhaz - oqinterp
@@ -127,14 +132,14 @@ for lon, lat, curve in zip(curlon, curlat, curves):
             pcdiff = 100. * (numer / denom)
             
             # set % diff text
-            pcd += places[p] + ',' + ','.join((str('%0.2f' % x) for x in pcdiff)) + '\n'
+            pcd += place + ',' + ','.join((str('%0.2f' % x) for x in pcdiff)) + '\n'
             
 
 # combine text
 outtxt = jobhead + oqhead + oqt + frhead + frt + rathead + rat + pcdhead + pcd
 
 # write to file
-csvfile =  path.join('','jobs_hazard',job, job + '_hazard_ratio_' + str(period) + '_' + job_num +'.csv')
+csvfile =  path.join('..','jobs_hazard',job, job + '_hazard_ratio_' + str(period) + '_' + job_num +'.csv')
 f = open(csvfile, 'wb')
 f.write(outtxt)
 f.close()
