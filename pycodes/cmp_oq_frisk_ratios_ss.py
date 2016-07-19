@@ -20,13 +20,13 @@ file paths must be manually specified
 
 period = '0.2'
 job = 'chv_nbcc'
-job_num = '602'
+job_num = '604'
 
 tmpper = period.replace('.','')
 
 # set frisk files
 friskfolder = 'CHVcomparison'
-friskfile   = 'OQ_CHVregion_0.2_20s_000thperc.sol'
+friskfile   = 'OQ_CHVregion_0.2_100s_000thperc.sol'
 
 
 '''
