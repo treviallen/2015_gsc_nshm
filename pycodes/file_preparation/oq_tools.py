@@ -360,6 +360,11 @@ def map_haz(fig, plt, haz_map_file, sitelon, sitelat, **kwargs):
         
     return plt 
 
+# convert beta to b-value
+def beta2bval(beta):
+    from numpy import log10, exp
+    return log10(exp(beta))
+
 # gets incremental earthquake rates for openquake source files
 def get_oq_incrementalMFD(beta, N0, mmin, mmax, binwid):
     from numpy import arange, exp
