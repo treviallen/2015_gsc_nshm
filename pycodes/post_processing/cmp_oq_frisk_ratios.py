@@ -1,5 +1,4 @@
 from __future__ import unicode_literals
-from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
 #from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
 from numpy import array, diff, exp, log, interp, loadtxt, vstack, mean
 from oq_tools import return_annualised_haz_curves
@@ -15,9 +14,11 @@ warnings.filterwarnings("ignore")
 # settings
 ###############################################################################
 
+"""
 period = '0.2'
 job = 'swcan'
 job_num = '425'
+"""
 
 job = sys.argv[1]
 job_num = sys.argv[2]
@@ -37,7 +38,7 @@ period = sys.argv[3]
 
 tmpper = period.replace('.','')
 friskfile = 'NBCC2015Loc_mean_hazcurves_'+tmpper+'.csv'
-friskpath = sep+path.join('','home','tallen','2015_nbcc','final_hazard',friskfile)
+friskpath = path.join('..','..','data','nbcc_mean_haz_curves',friskfile)
 friskhaz = loadtxt(friskpath, delimiter=',', skiprows=4, usecols = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
 friskprobs = array([0.02, 0.01375, 0.01, 0.00445, 0.0021, 0.001, 0.0005, 0.000404, 0.0002, 0.0001])
 
@@ -51,7 +52,7 @@ for line in lines:
 ###############################################################################
 # read OQ data
 ###############################################################################
-hazcurvefile = path.join(job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
+hazcurvefile = path.join('..','..','jobs','hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
 
 # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
 try:
@@ -123,7 +124,7 @@ for lon, lat, curve in zip(curlon, curlat, curves):
 outtxt = jobhead + oqhead + oqt + frhead + frt + rathead + rat + pcdhead + pcd
 
 # write to file
-csvfile =  path.join(job, job + '_hazard_ratio_' + str(period) + '_' + job_num +'.csv')
+csvfile =  path.join('..','..','jobs','hazard',job, job + '_hazard_ratio_' + str(period) + '_' + job_num +'.csv')
 f = open(csvfile, 'wb')
 f.write(outtxt)
 f.close()
