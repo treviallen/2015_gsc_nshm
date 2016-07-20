@@ -5,92 +5,7 @@
 # Usage: python make_openquake_source_file.py <path to pkl file> <output base name>
 #            e.g. python make_openquake_source_file.py SWCan_T3EclC1.pkl swcan
 #####################################################################################
-"""
-# renames obspy distance tool to something I remember
-# returns rngkm (km), az, baz (degrees)
-def distance(lat1, lon1, lat2, lon2):
-    from obspy.core.util.geodetics import gps2DistAzimuth
-    
-    rngm, az, baz = gps2DistAzimuth(lat1, lon1, lat2, lon2)
-    
-    rngkm = rngm / 1000.
-    
-    return rngkm, az, baz
 
-# generates a vector of distance, azimuth & back azimuth using "distance"
-# returns rngkm (km), az, baz (degrees)
-def dist_vect(lastlat, lastlon, latvect, lonvect):
-   from numpy import array
-   #from mapping_tools import distance
-
-   rng = []
-   az  = []
-   baz = []
-
-   for l in range(0,len(latvect)):
-       rngtmp, aztmp, baztmp = distance(lastlat, lastlon, latvect[l], lonvect[l])
-       rng.append(rngtmp)
-       az.append(aztmp)
-       baz.append(baztmp)
-
-   return array(rng), array(az), array(baz)
-   
-# convert beta to b-value
-def beta2bval(beta):
-    from numpy import log10, exp
-    return log10(exp(beta))
-
-# get lat/lons at points parallel to fault trace
-def get_line_parallels(pts, rngkm):
-    from obspy.core.util.geodetics import gps2DistAzimuth
-    from mapping_tools import reckon
-    '''
-    pts are an N x [lon, lat] matrix, i.e.:
-                   [[lon1, lat1],
-                    [lon2, lat2]]
-    '''    
-    # set outputs
-    posazpts = []
-    negazpts = []
-    
-    for j, pt in enumerate(pts):
-        # if 1st point
-        if j == 0:
-            rngm, az, baz = gps2DistAzimuth(pts[j][1], pts[j][0], \
-                                            pts[j+1][1], pts[j+1][0])
-            
-        # if last point
-        elif j == len(pts)-1:
-            rngm, az, baz = gps2DistAzimuth(pts[j-1][1], pts[j-1][0], \
-                                            pts[j][1], pts[j][0])
-                                           
-        # use points either side (assumes evenly spaced)
-        else:
-            rngm, az, baz = gps2DistAzimuth(pts[j-1][1], pts[j-1][0], \
-                                            pts[j+1][1], pts[j+1][0])
-           
-        # get azimuth for new points
-        azpos = az + 90.
-        azneg = az - 90.
-        # get points
-        posazpts.append(reckon(pts[j][1], pts[j][0], rngkm, azpos))
-        negazpts.append(reckon(pts[j][1], pts[j][0], rngkm, azneg))
-    
-    return posazpts, negazpts
-    
-
-# gets incremental MFD using curve params
-def get_oq_incrementalMFD(beta, N0, mmin, mmax, binwid):
-    from numpy import arange, exp
-
-    mrange = arange(mmin, mmax-binwid, binwid)
-
-    betacurve = N0 * exp(-beta  *mrange) * (1 - exp(-beta * (mmax - mrange))) \
-                / (1 - exp(-beta * mmax))
-
-    return betacurve, mrange
-"""
-#####################################################################################
 def make_collapse_occurrence_text(m, binwid):
     from numpy import zeros    
     
@@ -99,16 +14,16 @@ def make_collapse_occurrence_text(m, binwid):
     wtd_list  = []
     maglen = 0
 
-    for i, bl in enumerate(betalist):
+    for i, bwt in enumerate(bval_wt):
         # get effective rate
         effN0 = m['src_N0'][i] * m['src_weight']
         
-        for j, ml in enumerate(maglist):
+        for j, mwt in enumerate(max_mag_wt):
             
             betacurve, mrange = get_oq_incrementalMFD(m['src_beta'][i], effN0, \
                                                       m['min_mag'], m['max_mag'][j], \
                                                       binwid)
-            wtd_list.append(betacurve * bval_wt[i] * max_mag_wt[j])  
+            wtd_list.append(betacurve * bwt * mwt)  
             
             # get max length of arrays
             if len(betacurve) > maglen:
@@ -139,13 +54,10 @@ def make_collapse_occurrence_text(m, binwid):
 start main code here
 '''
 
-#import datetime as dt
 from sys import argv
-#import shapefile
 import pickle
-from oq_tools import beta2bval, get_oq_incrementalMFD
+from oq_tools import beta2bval, get_oq_incrementalMFD, get_line_parallels
 from numpy import array, log10, max, min, tan, radians, unique, isinf, isnan, concatenate
-from mapping_tools import get_line_parallels
 from os import path
 
 inputpkl = argv[1]
@@ -162,7 +74,7 @@ bbmaxlat = -90
 bbminlon = 180
 bbminlat = 90
 
-# Write 9 model files
+# Write 1 model files
 betalist = ['bb','bl','bu']
 maglist = ['mb','ml','mu']
 srcxmls = []
@@ -291,7 +203,9 @@ for m in model:
         """
         # set nodal planes
         newxml += '            <nodalPlaneDist>\n'
-        newxml += '                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />\n' # not necessary for replicating 2015NBCC
+        newxml += '                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />\n' 
+        
+        # not necessary for replicating 2015NBCC - uses point sources for area sources
         """
         newxml += '                <nodalPlane probability="0.125" strike="0.0" dip="90.0" rake="0.0" />\n'
         newxml += '                <nodalPlane probability="0.125" strike="45.0" dip="90.0" rake="0.0" />\n'
@@ -347,17 +261,6 @@ for m in model:
                 newxml += '                <faultTopEdge>\n'
                 newxml += '                    <gml:LineString>\n'
                 newxml += '                        <gml:posList>\n'
-            
-                '''
-                # not needed - appears to be fixed
-                # if CAS, remove second last point
-                if m['src_code'] == 'CASCADIA':
-                    print m['src_shape']
-                    a = m['src_shape'][:-2]
-                    b = m['src_shape'][-1]
-                    m['src_shape'] = vstack((a,b))
-                    print m['src_shape']
-                '''
                     
                 # calculate lat lons from surface projection
                 # get upper h-dist

@@ -375,3 +375,72 @@ def get_oq_incrementalMFD(beta, N0, mmin, mmax, binwid):
                 / (1 - exp(-beta * mmax))
 
     return betacurve, mrange
+    
+"""
+mapping functions
+"""
+
+# calculate lat lon from range (km) and bearing (degrees)
+# code adapted from: http://stackoverflow.com/questions/7222382/get-lat-long-given-current-point-distance-and-bearing
+def reckon(lat1d, lon1d, rngkm, brngd):
+    from math import radians, asin, sin, cos, atan2, degrees   
+    
+    R = 6378.1 #Radius of the Earth
+    brng = radians(brngd)
+    
+    lat1r = radians(lat1d) #Current lat point converted to radians
+    lon1r = radians(lon1d) #Current long point converted to radians
+    
+    lat2r = asin(sin(lat1r)*cos(rngkm/R) + cos(lat1r)*sin(rngkm/R)*cos(brng))
+
+    lon2r = lon1r + atan2(sin(brng)*sin(rngkm/R)*cos(lat1r), \
+            cos(rngkm/R)-sin(lat1r)*sin(lat2r))
+
+    lat2d = degrees(lat2r)
+    lon2d = degrees(lon2r)
+    
+    return [lon2d, lat2d]
+    
+def get_line_parallels(pts, rngkm):
+    from obspy.core.util.geodetics import gps2DistAzimuth
+    from oq_tools import reckon
+
+    # set outputs
+    posazpts = []
+    negazpts = []
+    
+    for j, pt in enumerate(pts):
+        # if 1st point
+        if j == 0:
+            rngm, az, baz = gps2DistAzimuth(pts[j][1], pts[j][0], \
+                                            pts[j+1][1], pts[j+1][0])
+            
+        # if last point
+        elif j == len(pts)-1:
+            rngm, az, baz = gps2DistAzimuth(pts[j-1][1], pts[j-1][0], \
+                                            pts[j][1], pts[j][0])
+                                           
+        # use points either side (assumes evenly spaced)
+        else:
+            rngm, az, baz = gps2DistAzimuth(pts[j-1][1], pts[j-1][0], \
+                                            pts[j+1][1], pts[j+1][0])
+           
+        # get azimuth for new points
+        azpos = az + 90.
+        azneg = az - 90.
+        # get points
+        posazpts.append(reckon(pts[j][1], pts[j][0], rngkm, azpos))
+        negazpts.append(reckon(pts[j][1], pts[j][0], rngkm, azneg))
+    
+    return posazpts, negazpts
+
+# renames obspy tool to something I remember
+# returns rngkm (km), az, baz (degrees)
+def distance(lat1, lon1, lat2, lon2):
+    from obspy.core.util.geodetics import gps2DistAzimuth
+    
+    rngm, az, baz = gps2DistAzimuth(lat1, lon1, lat2, lon2)
+    
+    rngkm = rngm / 1000.
+    
+    return rngkm, az, baz
