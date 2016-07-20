@@ -80,10 +80,10 @@ yhaz = 1./2475.
 
 # set headers
 jobhead = ' '.join((job.upper(), 'Mean','SA['+period+']', 'Hazard (g)'))
-oqhead = '\n\n---OpenQuake---\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
-frhead = '\n\n---2015 NBCC---\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
-rathead = '\n\n---Ratios---\tGSCFRISK / OQ\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
-pcdhead = '\n\n---% Difference---\tGSCFRISK / OQ\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
+oqhead = '\n\n---OpenQuake---,\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
+frhead = '\n\n---2015 NBCC---,\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
+rathead = '\n\n---Ratios---\tGSCFRISK / OQ,\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
+pcdhead = '\n\n---% Difference---\tGSCFRISK / OQ,\n\nLocation,Province,P 0.02,P 0.01375,P 0.01,P 0.00445,P 0.0021,P 0.001,P 0.0005,P 0.000404,P 0.0002,P 0.0001\n'
 oqt = ''
 frt  = ''
 rat = ''
