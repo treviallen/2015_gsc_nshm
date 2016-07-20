@@ -359,3 +359,14 @@ def map_haz(fig, plt, haz_map_file, sitelon, sitelat, **kwargs):
         cb.set_label(titlestr, fontsize=12)
         
     return plt 
+
+# gets incremental earthquake rates for openquake source files
+def get_oq_incrementalMFD(beta, N0, mmin, mmax, binwid):
+    from numpy import arange, exp
+
+    mrange = arange(mmin, mmax, binwid)
+
+    betacurve = N0 * exp(-beta  *mrange) * (1 - exp(-beta * (mmax - mrange))) \
+                / (1 - exp(-beta * mmax))
+
+    return betacurve, mrange
