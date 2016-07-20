@@ -30,7 +30,7 @@ period = sys.argv[3]
 
 tmpper = period.replace('.','')
 friskfile = 'NBCC2015Loc_mean_hazcurves_'+tmpper+'.csv'
-friskpath = sep+path.join('','home','tallen','2015_nbcc','final_hazard',friskfile)
+friskpath = sep+path.join('..','..','data','nbcc_mean_haz_curves',friskfile)
 friskhaz = loadtxt(friskpath, delimiter=',', skiprows=4, usecols = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
 friskprobs = [0.02, 0.01375, 0.01, 0.00445, 0.0021, 0.001, 0.0005, 0.000404, 0.0002, 0.0001]
 
@@ -44,7 +44,7 @@ for line in lines:
 ###############################################################################
 # read OQ data
 ###############################################################################
-hazcurvefile = path.join(job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
+hazcurvefile = path.join('..','..','job','hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
 
 # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
 #try:
