@@ -72,8 +72,10 @@ for i, bl in enumerate(betalist):
         # fix ugly naming convention
         if outbase == '20130408_EA_H_Model_v5':
             outbase = 'E_ARCTIC_H'
-        elif outbase == '20130528_WA_R_Model_v3':
+        elif outbase == '20130408_EA_R_Model_v3':
             outbase = 'E_ARCTIC_R'
+        elif outbase == '20131002_WA_H_Model_v7':
+            outbase = 'W_ARCTIC'
         
         newxml = header + '    <sourceModel name="'+outbase+'_'+betalist[i]+'_'+maglist[j]+'">\n\n'
         
