@@ -68,6 +68,11 @@ for i, bl in enumerate(betalist):
     for j, ml in enumerate(maglist):
         # loop through seiscomp xml template and make sourcefile
         outbase = model[0]['src_reg'].replace(' ','_')
+
+        # fix ugly naming convention
+        if outbase == '20130408_EA_H_Model_v5':
+            outbase = 'E_ARCTIC_H'
+        
         newxml = header + '    <sourceModel name="'+outbase+'_'+betalist[i]+'_'+maglist[j]+'">\n\n'
         
         # get src codes and rename if duplicated
@@ -481,7 +486,7 @@ for i, bl in enumerate(betalist):
         print '\nBBOX:', bbminlon, bbminlat, ',', bbminlon, bbmaxlat, ',', bbmaxlon, bbmaxlat, ',', bbmaxlon, bbminlat
     
         # write new data to file
-        outxml = path.join('temp_source_files', ''.join((outbase,'_',bl,'_',ml,'.xml')))
+        outxml = path.join('temp_source_files', '_'.join((outbase,bl,ml+'.xml')))
 
         f = open(outxml,'w')
         f.write(newxml)
