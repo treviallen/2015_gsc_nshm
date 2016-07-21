@@ -8,47 +8,47 @@
                                 branchSetID="bs1">
 
                 <logicTreeBranch branchID="b1">
-                    <uncertaintyModel>../../sources/full/southwestern_canada/W_CANADA_R2_bb_mb.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../sources/full/southwestern_canada/W_CANADA_R2_bb_mb.xml</uncertaintyModel>
                     <uncertaintyWeight>0.408</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b2">
-                    <uncertaintyModel>../../sources/full/southwestern_canada/W_CANADA_R2_bb_ml.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../sources/full/southwestern_canada/W_CANADA_R2_bb_ml.xml</uncertaintyModel>
                     <uncertaintyWeight>0.204</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b3">
-                    <uncertaintyModel>../../sources/full/southwestern_canada/W_CANADA_R2_bb_mu.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../sources/full/southwestern_canada/W_CANADA_R2_bb_mu.xml</uncertaintyModel>
                     <uncertaintyWeight>0.068</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b4">
-                    <uncertaintyModel>../../sources/full/southwestern_canada/W_CANADA_R2_bl_mb.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../sources/full/southwestern_canada/W_CANADA_R2_bl_mb.xml</uncertaintyModel>
                     <uncertaintyWeight>0.096</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b5">
-                    <uncertaintyModel>../../sources/full/southwestern_canada/W_CANADA_R2_bl_ml.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../sources/full/southwestern_canada/W_CANADA_R2_bl_ml.xml</uncertaintyModel>
                     <uncertaintyWeight>0.048</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b6">
-                    <uncertaintyModel>../../sources/full/southwestern_canada/W_CANADA_R2_bl_mu.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../sources/full/southwestern_canada/W_CANADA_R2_bl_mu.xml</uncertaintyModel>
                     <uncertaintyWeight>0.016</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b7">
-                    <uncertaintyModel>../../sources/full/southwestern_canada/W_CANADA_R2_bu_mb.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../sources/full/southwestern_canada/W_CANADA_R2_bu_mb.xml</uncertaintyModel>
                     <uncertaintyWeight>0.096</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b8">
-                    <uncertaintyModel>../../sources/full/southwestern_canada/W_CANADA_R2_bu_ml.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../sources/full/southwestern_canada/W_CANADA_R2_bu_ml.xml</uncertaintyModel>
                     <uncertaintyWeight>0.048</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b9">
-                    <uncertaintyModel>../../sources/full/southwestern_canada/W_CANADA_R2_bu_mu.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../sources/full/southwestern_canada/W_CANADA_R2_bu_mu.xml</uncertaintyModel>
                     <uncertaintyWeight>0.016</uncertaintyWeight>
                 </logicTreeBranch>
 
