@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml"
+      xmlns="http://openquake.org/xmlns/nrml/0.4">
+
+    <logicTree logicTreeID="lt1">
+        <logicTreeBranchingLevel branchingLevelID="bl1">
+            <logicTreeBranchSet uncertaintyType="sourceModel"
+                                branchSetID="bs1">
+
+                <logicTreeBranch branchID="b1">
+                    <uncertaintyModel>../../../sources/full/western_arctic_canada/W_ARCTIC_bb_mb.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.408</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b2">
+                    <uncertaintyModel>../../../sources/full/western_arctic_canada/W_ARCTIC_bb_ml.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.204</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b3">
+                    <uncertaintyModel>../../../sources/full/western_arctic_canada/W_ARCTIC_bb_mu.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.068</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b4">
+                    <uncertaintyModel>../../../sources/full/western_arctic_canada/W_ARCTIC_bl_mb.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.096</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b5">
+                    <uncertaintyModel>../../../sources/full/western_arctic_canada/W_ARCTIC_bl_ml.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.048</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b6">
+                    <uncertaintyModel>../../../sources/full/western_arctic_canada/W_ARCTIC_bl_mu.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.016</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b7">
+                    <uncertaintyModel>../../../sources/full/western_arctic_canada/W_ARCTIC_bu_mb.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.096</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b8">
+                    <uncertaintyModel>../../../sources/full/western_arctic_canada/W_ARCTIC_bu_ml.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.048</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b9">
+                    <uncertaintyModel>../../../sources/full/western_arctic_canada/W_ARCTIC_bu_mu.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.016</uncertaintyWeight>
+                </logicTreeBranch>
+
+            </logicTreeBranchSet>
+        </logicTreeBranchingLevel>
+    </logicTree>
+</nrml>

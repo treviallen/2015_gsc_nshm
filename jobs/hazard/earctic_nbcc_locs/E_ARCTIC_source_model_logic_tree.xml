@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml"
+      xmlns="http://openquake.org/xmlns/nrml/0.4">
+
+    <logicTree logicTreeID="lt1">
+        <logicTreeBranchingLevel branchingLevelID="bl1">
+            <logicTreeBranchSet uncertaintyType="sourceModel"
+                                branchSetID="bs1">
+
+                <logicTreeBranch branchID="b1">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_H_bb_mb.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.245</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b2">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_H_bb_ml.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.122</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b3">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_H_bb_mu.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.041</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b4">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_H_bl_mb.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.058</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b5">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_H_bl_ml.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.029</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b6">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_H_bl_mu.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.010</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b7">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_H_bu_mb.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.058</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b8">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_H_bu_ml.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.029</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b9">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_H_bu_mu.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.010</uncertaintyWeight>
+                </logicTreeBranch>
+                
+                <logicTreeBranch branchID="b10">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_R_bb_mb.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.163</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b11">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_R_bb_ml.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.082</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b12">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_R_bb_mu.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.027</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b13">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_R_bl_mb.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.038</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b14">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_R_bl_ml.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.019</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b15">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_R_bl_mu.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.006</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b16">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_R_bu_mb.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.038</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b17">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_R_bu_ml.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.019</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b18">
+                    <uncertaintyModel>../../../sources/full/eastern_arctic_canada/E_ARCTIC_R_bu_mu.xml</uncertaintyModel>
+                    <uncertaintyWeight>0.006</uncertaintyWeight>
+                </logicTreeBranch>
+
+            </logicTreeBranchSet>
+        </logicTreeBranchingLevel>
+    </logicTree>
+</nrml>
