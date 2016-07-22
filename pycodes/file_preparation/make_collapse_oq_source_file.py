@@ -471,7 +471,7 @@ for i, branch in enumerate(srcxmls):
     logictreepath = src_folder + '/' + path.split(branch)[-1]
     newxml += '                <logicTreeBranch branchID="b' + str(i+1) + '">\n'
     newxml += '                    <uncertaintyModel>'+logictreepath+'</uncertaintyModel>\n'
-    newxml += '                    <uncertaintyWeight>1.0</uncertaintyWeight>\n'
+    newxml += '                    <uncertaintyWeight>'+str(m['src_reg_wt'])+'</uncertaintyWeight>\n'
     newxml += '                </logicTreeBranch>\n\n'
 
 newxml += '            </logicTreeBranchSet>\n'
