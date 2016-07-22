@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml"
+      xmlns="http://openquake.org/xmlns/nrml/0.4">
+
+    <sourceModel name="SE_CANADA_H2_collapsed">
+
+        <areaSource id="ADRN" name="ADRN   - NORTHERN ADIRONDACKS NORTH" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -73.8500 44.9300
+                                -73.8300 43.7800
+                                -75.1700 43.7600
+                                -75.2900 44.5000
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>9.02123e-04 7.58736e-04 6.38978e-04 5.38823e-04 4.54950e-04 3.84621e-04 3.25570e-04 2.75924e-04 2.34132e-04 1.98905e-04 1.69174e-04 1.44050e-04 1.22793e-04 1.04785e-04 8.95122e-05 7.65430e-05 6.55174e-05 5.61334e-05 4.81378e-05 4.13178e-05 3.54944e-05 3.05169e-05 1.83806e-05 1.58275e-05 1.36390e-05 1.68016e-06 1.44981e-06 1.25184e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="ADRS" name="ADRS   - NORTHERN ADIRONDACKS SOUTH" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -75.1700 43.7600
+                                -73.8300 43.7800
+                                -73.1200 43.7800
+                                -72.2400 43.7600
+                                -72.2600 42.7100
+                                -72.2100 42.0300
+                                -74.5700 41.0500
+                                -75.0000 41.2800
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>9.14114e-04 7.55714e-04 6.25289e-04 5.17807e-04 4.29158e-04 3.55979e-04 2.95520e-04 2.45529e-04 2.04158e-04 1.69893e-04 1.41490e-04 1.17926e-04 9.83620e-05 8.21053e-05 6.85862e-05 5.73347e-05 4.79633e-05 4.01518e-05 3.36357e-05 2.81960e-05 2.36516e-05 1.98524e-05 1.16718e-05 9.80910e-06 8.24862e-06 9.91487e-07 8.34715e-07 7.03118e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="AOBH" name="AOBH   - ATLANTIC OFFSHORE BACKGROUND" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -53.0900 53.2100
+                                -48.3300 47.1900
+                                -50.2800 43.0500
+                                -53.7600 45.0000
+                                -55.0000 45.0000
+                                -56.3900 45.0500
+                                -56.8300 45.0000
+                                -57.2000 44.9500
+                                -57.7800 44.8800
+                                -66.4000 40.2600
+                                -70.4900 42.0000
+                                -70.4900 43.0000
+                                -66.9300 45.1000
+                                -64.5400 45.7000
+                                -63.1500 46.4700
+                                -60.0000 48.0000
+                                -56.1200 51.0700
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>2.04705e-03 1.69123e-03 1.39842e-03 1.15726e-03 9.58480e-04 7.94489e-04 6.59091e-04 5.47208e-04 4.54680e-04 3.78097e-04 3.14659e-04 2.62067e-04 2.18433e-04 1.82200e-04 1.52091e-04 1.27051e-04 1.06209e-04 8.88498e-05 7.43792e-05 6.23079e-05 5.22306e-05 4.38118e-05 3.67735e-05 3.08852e-05 2.59556e-05 2.18258e-05 1.28546e-05 1.08217e-05 9.11524e-06 7.68200e-06 9.25352e-07 7.80650e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="AOH" name="AOH    - ANNA OHIO" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -84.8900 40.8100
+                                -83.5000 40.8100
+                                -83.5000 40.0000
+                                -84.8900 40.0000
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>2.76923e-03 2.27001e-03 1.86119e-03 1.52631e-03 1.25196e-03 1.02714e-03 8.42867e-04 6.91802e-04 5.67933e-04 4.66341e-04 3.83003e-04 3.14625e-04 2.58509e-04 2.12447e-04 1.74629e-04 1.43573e-04 1.18065e-04 9.71092e-05 7.98896e-05 6.57372e-05 5.41032e-05 4.45373e-05 2.56693e-05 2.11395e-05 1.74127e-05 2.04940e-06 1.68879e-06 1.39191e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="BSL" name="BSL    - BAS SAINT LAURENT" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -68.1300 49.2800
+                                -67.9600 49.3800
+                                -67.3600 49.5000
+                                -67.3000 49.7600
+                                -66.4700 50.2100
+                                -65.3700 49.3100
+                                -67.6400 48.7200
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>2.48710e-03 2.01991e-03 1.64102e-03 1.33364e-03 1.08419e-03 8.81685e-04 7.17239e-04 5.83654e-04 4.75104e-04 3.86868e-04 3.15122e-04 2.56764e-04 2.09282e-04 1.70635e-04 1.39170e-04 1.13543e-04 9.26647e-05 7.56496e-05 6.17785e-05 5.04667e-05 4.12391e-05 3.37093e-05 2.75629e-05 2.25442e-05 1.84450e-05 1.50958e-05 8.65091e-06 7.08438e-06 5.80326e-06 4.75523e-06 5.56802e-07 4.56516e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="BSLE" name="BSLE   - BAS SAINT LAURENT EAST" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -66.4700 50.2100
+                                -64.9200 50.5300
+                                -64.3400 49.7800
+                                -65.3700 49.3100
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>6.60452e-04 5.51536e-04 4.61292e-04 3.86397e-04 3.24140e-04 2.72305e-04 2.29080e-04 1.92978e-04 1.62779e-04 1.37481e-04 1.16257e-04 9.84262e-05 8.34247e-05 7.07867e-05 6.01260e-05 5.11219e-05 4.35076e-05 3.70611e-05 3.15970e-05 2.69607e-05 2.30226e-05 1.96743e-05 1.68247e-05 1.43973e-05 1.23279e-05 1.05621e-05 6.33795e-06 5.43599e-06 4.66467e-06 4.00465e-06 4.91357e-07 4.22187e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="BSLW" name="BSLW   - BAS SAINT LAURENT WEST" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -69.1300 48.7100
+                                -68.1300 49.2800
+                                -67.6400 48.7200
+                                -68.7400 48.3600
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>6.96038e-04 5.76228e-04 4.77435e-04 3.95904e-04 3.28563e-04 2.72896e-04 2.26842e-04 1.88709e-04 1.57109e-04 1.30902e-04 1.09150e-04 9.10805e-05 7.60588e-05 6.35609e-05 5.31547e-05 4.44835e-05 3.72525e-05 3.12181e-05 2.61785e-05 2.19667e-05 1.84442e-05 1.54962e-05 1.30272e-05 1.09580e-05 9.22278e-06 7.76665e-06 4.58077e-06 3.86165e-06 3.25709e-06 2.74853e-06 3.31499e-07 2.80003e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="CHA" name="CHA    - CHAMPLAIN" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -73.0700 45.4300
+                                -73.1200 43.7800
+                                -73.8300 43.7800
+                                -73.8500 44.9300
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>6.70200e-04 5.68839e-04 4.83834e-04 4.12385e-04 3.52196e-04 3.01380e-04 2.58384e-04 2.21925e-04 1.90945e-04 1.64565e-04 1.42058e-04 1.22816e-04 1.06336e-04 9.21936e-05 8.00369e-05 6.95690e-05 6.05405e-05 5.27414e-05 4.59942e-05 4.01487e-05 3.50778e-05 3.06731e-05 2.68425e-05 2.35075e-05 2.06009e-05 1.80650e-05 1.10953e-05 9.74049e-06 8.55544e-06 7.51806e-06 9.44176e-07 8.30378e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="CHV" name="CHV    - CHARLEVOIX" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -69.9500 48.0500
+                                -69.4600 47.7900
+                                -70.2800 47.0900
+                                -70.7700 47.3800
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>8.18047e-03 6.99714e-03 5.98586e-03 5.12148e-03 4.38254e-03 3.75074e-03 3.21046e-03 2.74838e-03 2.35311e-03 2.01495e-03 1.72560e-03 1.47799e-03 1.26606e-03 1.08465e-03 9.29345e-04 7.96366e-04 6.82491e-04 5.84964e-04 5.01427e-04 4.29864e-04 3.68553e-04 3.16018e-04 2.70998e-04 2.32414e-04 1.99343e-04 1.70993e-04 1.02681e-04 8.80935e-05 7.55848e-05 6.48577e-05 7.95107e-06 6.82374e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="CLO" name="CLO    - CENTRAL LAKE ONTARIO" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -76.9300 44.2600
+                                -77.0700 44.0000
+                                -78.3700 43.3300
+                                -79.0700 43.9000
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>2.01715e-04 1.67991e-04 1.40015e-04 1.16788e-04 9.74882e-05 8.14383e-05 6.80806e-05 5.69549e-05 4.76809e-05 3.99446e-05 3.34862e-05 2.80906e-05 2.35796e-05 1.98055e-05 1.66458e-05 1.39985e-05 1.17791e-05 9.91716e-06 8.35417e-06 7.04129e-06 5.93780e-06 5.00978e-06 2.96019e-06 2.49993e-06 2.11220e-06 2.55055e-07 2.15684e-07 1.82464e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="CNH" name="CNH    - CENTRAL NEW HAMPSHIRE" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -71.6300 44.1100
+                                -71.0400 44.0300
+                                -71.4600 42.8100
+                                -72.0700 42.8900
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.45364e-03 1.27581e-03 1.12097e-03 9.86003e-04 8.68235e-04 7.65362e-04 6.75402e-04 5.96650e-04 5.27634e-04 4.67087e-04 4.13910e-04 3.67158e-04 3.26009e-04 2.89753e-04 2.57776e-04 2.29541e-04 2.04587e-04 1.82508e-04 1.62953e-04 1.45617e-04 1.30232e-04 1.16567e-04 7.30846e-05 6.55155e-05 5.87731e-05 7.53604e-06 6.76981e-06 6.08547e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="COCN" name="COCN   - COCHRANE NORTH" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -82.5000 49.9500
+                                -81.5800 50.3300
+                                -80.2100 48.9100
+                                -81.1000 48.5200
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>6.45162e-04 5.34226e-04 4.42728e-04 3.67200e-04 3.04802e-04 2.53211e-04 2.10519e-04 1.75163e-04 1.45858e-04 1.21548e-04 1.01368e-04 8.46006e-05 7.06589e-05 5.90575e-05 4.93960e-05 4.13440e-05 3.46283e-05 2.90230e-05 2.43410e-05 2.04275e-05 1.71540e-05 1.44139e-05 1.21187e-05 1.01950e-05 8.58153e-06 7.22739e-06 4.26315e-06 3.59424e-06 3.03183e-06 2.55868e-06 3.08627e-07 2.60706e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="COCS" name="COCS   - COCHRANE SOUTH" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -80.2100 48.9100
+                                -79.7800 48.4800
+                                -78.5800 47.4500
+                                -78.9800 47.1400
+                                -79.5000 46.8400
+                                -81.1000 48.5200
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>2.31486e-04 1.92444e-04 1.60112e-04 1.33316e-04 1.11089e-04 9.26379e-05 7.73092e-05 6.45643e-05 5.39596e-05 4.51288e-05 3.77697e-05 3.16322e-05 2.65099e-05 2.22318e-05 1.86560e-05 1.56653e-05 1.31621e-05 1.10655e-05 9.30833e-06 7.83466e-06 6.59795e-06 5.55946e-06 4.68687e-06 3.95325e-06 3.33610e-06 2.81664e-06 1.66541e-06 1.40737e-06 1.18982e-06 1.00632e-06 1.21638e-07 1.02960e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="GAT" name="GAT    - GATINEAU" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -77.2500 47.4300
+                                -76.2500 47.4100
+                                -73.8800 46.0200
+                                -74.4400 45.4300
+                                -75.4400 45.5200
+                                -76.7000 46.3400
+                                -77.2500 46.6700
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>4.68720e-03 3.75848e-03 3.01418e-03 2.41760e-03 1.93935e-03 1.55591e-03 1.24845e-03 1.00188e-03 8.04112e-04 6.45469e-04 5.18193e-04 4.16069e-04 3.34115e-04 2.68339e-04 2.15541e-04 1.73154e-04 1.39121e-04 1.11792e-04 8.98436e-05 7.22137e-05 5.80510e-05 4.66720e-05 3.75285e-05 3.01802e-05 2.42740e-05 1.95262e-05 1.09963e-05 8.84785e-06 7.12007e-06 5.73044e-06 6.58946e-07 5.30478e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="GATW" name="GATW   - GATINEAU WEST" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -78.5800 47.4500
+                                -77.2500 47.4300
+                                -77.2500 46.6700
+                                -76.7000 46.3400
+                                -78.3800 46.6000
+                                -78.9800 47.1400
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>4.61198e-04 3.92840e-04 3.35413e-04 2.87034e-04 2.46163e-04 2.11544e-04 1.82144e-04 1.57114e-04 1.35753e-04 1.17482e-04 1.01820e-04 8.83671e-05 7.67889e-05 6.68061e-05 5.81841e-05 5.07254e-05 4.42634e-05 3.86572e-05 3.37870e-05 2.95513e-05 2.58633e-05 2.26489e-05 1.38911e-05 1.21771e-05 1.06794e-05 1.33850e-06 1.17478e-06 1.03143e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="GNS" name="GNS    - GULF OF ST. LAWRENCE (NORTH SHORE)" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -64.9200 50.5300
+                                -62.8400 51.2400
+                                -62.7000 50.0300
+                                -64.3400 49.7900
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>5.77010e-04 4.77677e-04 3.95767e-04 3.28168e-04 2.72335e-04 2.26181e-04 1.87998e-04 1.56384e-04 1.30187e-04 1.08461e-04 9.04301e-05 7.54528e-05 6.30024e-05 5.26447e-05 4.40212e-05 3.68361e-05 3.08450e-05 2.58458e-05 2.16711e-05 1.81825e-05 1.52652e-05 1.28239e-05 1.07795e-05 9.06634e-06 7.62984e-06 6.42453e-06 3.78879e-06 3.19367e-06 2.69341e-06 2.27264e-06 2.74075e-07 2.31477e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="JMS" name="JMS    - JAMES BAY" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -82.2600 54.0000
+                                -78.5700 54.0000
+                                -78.4900 51.4100
+                                -80.7300 51.3600
+                                -82.1900 52.6200
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>6.41567e-04 5.31838e-04 4.41239e-04 3.66374e-04 3.04457e-04 2.53207e-04 2.10751e-04 1.75550e-04 1.46342e-04 1.22087e-04 1.01928e-04 8.51604e-05 7.12027e-05 5.95751e-05 4.98811e-05 4.17931e-05 3.50400e-05 2.93973e-05 2.46791e-05 2.07311e-05 1.21977e-05 1.02588e-05 1.23328e-06 1.03842e-06 8.43041e-20</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="KIP" name="KIP    - KIPAWA" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -78.9800 47.1400
+                                -78.3800 46.6000
+                                -78.8900 46.3600
+                                -79.5000 46.8400
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.08268e-03 9.33256e-04 8.05100e-04 6.95094e-04 6.00591e-04 5.19342e-04 4.49433e-04 3.89232e-04 3.37351e-04 2.92604e-04 2.53981e-04 2.20617e-04 1.91773e-04 1.66819e-04 1.45213e-04 1.26492e-04 1.10259e-04 9.61725e-05 8.39399e-05 7.33095e-05 6.40650e-05 5.60201e-05 4.90143e-05 4.29093e-05 3.75858e-05 3.29408e-05 2.02193e-05 1.77390e-05 1.55708e-05 1.36742e-05 1.71631e-06 1.50866e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="LCH" name="LCH    - LAURENTIAN CHANNEL" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -58.9500 45.9000
+                                -57.9300 46.4300
+                                -56.3900 45.0500
+                                -57.7800 44.8800
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.20903e-03 9.99146e-04 8.26410e-04 6.84122e-04 5.66814e-04 4.70016e-04 3.90074e-04 3.23997e-04 2.69333e-04 2.24072e-04 1.86566e-04 1.55461e-04 1.29641e-04 1.08193e-04 9.03608e-05 7.55234e-05 6.31681e-05 5.28716e-05 4.42843e-05 3.71170e-05 3.11305e-05 2.61265e-05 2.19408e-05 1.84372e-05 1.55024e-05 1.30424e-05 7.68533e-06 6.47309e-06 5.45501e-06 4.59946e-06 5.54294e-07 4.67827e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="LFN" name="LFN    - LAURENTIAN FAN" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -57.1900 44.2900
+                                -55.9500 44.2900
+                                -54.4100 40.9300
+                                -55.4100 40.6700
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.42206e-03 1.19284e-03 1.00332e-03 8.46155e-04 7.15443e-04 6.06420e-04 5.15231e-04 4.38747e-04 3.74423e-04 3.20184e-04 2.74332e-04 2.35475e-04 2.02468e-04 1.74368e-04 1.50393e-04 1.29896e-04 1.12338e-04 9.72703e-05 8.43177e-05 7.31652e-05 6.35481e-05 5.52434e-05 4.80626e-05 4.18460e-05 3.64581e-05 3.17835e-05 1.94067e-05 1.69367e-05 1.47881e-05 1.29176e-05 1.61258e-06 1.40967e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="LIR" name="LIR    - LABRADOR IAPETAN RIFT" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -62.8400 51.2400
+                                -62.7000 50.0300
+                                -55.1300 54.4200
+                                -57.5300 55.3500
+                                -61.6300 53.0000
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>2.08633e-04 1.73727e-04 1.44772e-04 1.20734e-04 1.00762e-04 8.41554e-05 7.03364e-05 5.88284e-05 4.92375e-05 4.12385e-05 3.45621e-05 2.89856e-05 2.43245e-05 2.04258e-05 1.71625e-05 1.44292e-05 1.21382e-05 1.02168e-05 8.60435e-06 7.25024e-06 6.11243e-06 5.15579e-06 3.04570e-06 2.57152e-06 2.17215e-06 2.62233e-07 2.21702e-07 1.87513e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="LSP" name="LSP    - LAURENTIAN SLOPE" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -57.2000 44.9500
+                                -56.8300 45.0000
+                                -56.3900 45.0500
+                                -55.0000 45.0000
+                                -55.0000 44.2900
+                                -57.1900 44.2900
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>6.20038e-03 5.44944e-03 4.79134e-03 4.21437e-03 3.70835e-03 3.26437e-03 2.87469e-03 2.53252e-03 2.23196e-03 1.96785e-03 1.73568e-03 1.53150e-03 1.35187e-03 1.19378e-03 1.05459e-03 9.31998e-04 8.23976e-04 7.28759e-04 6.44795e-04 5.70726e-04 5.05360e-04 4.47653e-04 3.96687e-04 3.51658e-04 3.11858e-04 2.76667e-04 1.71871e-04 1.52590e-04 1.35523e-04 1.20408e-04 1.52878e-05 1.35926e-05</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="MIR" name="MIR    - MIRAMICHI" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -66.4800 47.5100
+                                -66.0000 47.2200
+                                -66.8500 46.7000
+                                -67.3800 46.9700
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>3.06090e-03 2.49037e-03 2.02908e-03 1.65559e-03 1.35274e-03 1.10681e-03 9.06815e-04 7.43949e-04 6.11130e-04 5.02664e-04 4.13964e-04 3.41330e-04 2.81773e-04 2.32874e-04 1.92675e-04 1.59587e-04 1.32319e-04 1.09820e-04 9.12346e-05 7.58651e-05 6.31411e-05 5.25962e-05 3.06937e-05 2.56087e-05 2.13821e-05 2.55226e-06 2.13399e-06 1.78543e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="MNT" name="MNT    - MONTREAL" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -73.6000 46.1400
+                                -73.1000 45.6700
+                                -73.0700 45.4300
+                                -73.8500 44.9300
+                                -75.2900 44.5000
+                                -75.6200 44.9700
+                                -75.4400 45.5200
+                                -74.4400 45.4300
+                                -73.8800 46.0200
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>2.44809e-03 2.06565e-03 1.74484e-03 1.47542e-03 1.24893e-03 1.05830e-03 8.97686e-04 7.62216e-04 6.47832e-04 5.51148e-04 4.69339e-04 4.00046e-04 3.41294e-04 2.91429e-04 2.49065e-04 2.13038e-04 1.82372e-04 1.56244e-04 1.33962e-04 1.14944e-04 9.86966e-05 8.48048e-05 7.29173e-05 6.27367e-05 5.40112e-05 4.65271e-05 2.80720e-05 2.42095e-05 2.08895e-05 1.80340e-05 2.22518e-06 1.92283e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="NAN" name="NAN   - NORTHERN APPALACHIANS" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -66.0000 48.5200
+                                -63.1500 46.4700
+                                -64.5400 45.7000
+                                -66.9300 45.1000
+                                -70.4900 43.0000
+                                -70.4900 42.0000
+                                -72.2100 42.0300
+                                -72.2600 42.7100
+                                -72.2400 43.7600
+                                -72.2100 44.4300
+                                -71.5100 45.4700
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>3.28540e-03 2.71479e-03 2.24517e-03 1.85833e-03 1.53942e-03 1.27629e-03 1.05900e-03 8.79412e-04 7.30867e-04 6.07897e-04 5.06014e-04 4.21533e-04 3.51426e-04 2.93200e-04 2.44804e-04 2.04545e-04 1.71030e-04 1.43108e-04 1.19828e-04 1.00403e-04 8.41830e-05 7.06293e-05 4.15069e-05 3.48681e-05 2.93089e-05 3.52151e-06 2.96352e-06 2.49534e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="OBGH" name="OBGH   - ONTARIO BACKGROUND (H model)" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -83.0000 46.0000
+                                -79.5000 46.8400
+                                -78.8900 46.3600
+                                -77.5100 45.6000
+                                -75.6200 44.9700
+                                -75.2900 44.5000
+                                -75.1700 43.7600
+                                -75.0000 41.2800
+                                -80.0000 39.2100
+                                -84.9000 39.2200
+                                -84.9100 44.1600
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.49583e-03 1.23543e-03 1.02121e-03 8.44850e-04 6.99525e-04 5.79677e-04 4.80757e-04 3.99042e-04 3.31483e-04 2.75583e-04 2.29291e-04 1.90924e-04 1.59100e-04 1.32681e-04 1.10733e-04 9.24832e-05 7.72976e-05 6.46517e-05 5.41126e-05 4.53227e-05 3.79863e-05 3.18584e-05 1.87154e-05 1.57163e-05 1.32060e-05 1.58618e-06 1.33440e-06 1.12323e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="10.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="PEM" name="PEM    - PEMBROKE" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -78.3800 46.6000
+                                -76.7000 46.3400
+                                -75.4400 45.5200
+                                -75.6200 44.9700
+                                -77.5100 45.6000
+                                -78.8900 46.3600
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.01078e-03 8.29135e-04 6.80655e-04 5.59193e-04 4.59756e-04 3.78288e-04 3.11491e-04 2.56681e-04 2.11671e-04 1.74683e-04 1.44263e-04 1.19226e-04 9.86048e-05 8.16073e-05 6.75866e-05 5.60130e-05 4.64525e-05 3.85493e-05 3.20115e-05 2.65994e-05 2.21162e-05 1.83999e-05 1.53172e-05 1.27586e-05 1.06334e-05 8.86718e-06 5.17886e-06 4.32332e-06 3.61099e-06 3.01755e-06 3.60411e-07 3.01472e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="PMQ" name="PMQ    - H2 - PASSAMAQUODDY BAY" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -67.4500 45.2900
+                                -67.0000 45.3900
+                                -66.6400 44.6100
+                                -67.0900 44.5000
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.08293e-03 9.54710e-04 8.42899e-04 7.45253e-04 6.59851e-04 5.85047e-04 5.19429e-04 4.61783e-04 4.11068e-04 3.66385e-04 3.26961e-04 2.92127e-04 2.61306e-04 2.33998e-04 2.09770e-04 1.88246e-04 1.69100e-04 1.52047e-04 1.36839e-04 1.23262e-04 1.11125e-04 1.00265e-04 6.33665e-05 5.72592e-05 5.17765e-05 6.69114e-06 6.05824e-06 5.48847e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="QCR" name="QCR    - QUEBEC CITY REGION" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -70.7700 47.3800
+                                -70.2800 47.0900
+                                -71.3500 46.4500
+                                -71.9300 46.9100
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>7.50283e-04 6.21344e-04 5.14994e-04 4.27201e-04 3.54666e-04 2.94687e-04 2.45048e-04 2.03933e-04 1.69850e-04 1.41574e-04 1.18095e-04 9.85836e-05 8.23572e-05 6.88517e-05 5.76022e-05 4.82245e-05 4.04013e-05 3.38699e-05 2.84132e-05 2.38509e-05 2.00338e-05 1.68379e-05 1.41603e-05 1.19154e-05 1.00320e-05 8.45101e-06 4.98607e-06 4.20470e-06 3.54756e-06 2.99458e-06 3.61283e-07 3.05249e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="SAG" name="SAG    - SAGUENAY" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -72.2100 48.9700
+                                -69.7200 48.2900
+                                -70.3600 47.7200
+                                -72.6200 48.4300
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>30.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>2.16468e-03 1.92271e-03 1.70840e-03 1.51850e-03 1.35014e-03 1.20082e-03 1.06833e-03 9.50723e-04 8.46283e-04 7.53505e-04 6.71056e-04 5.97762e-04 5.32586e-04 4.74611e-04 4.23027e-04 3.77116e-04 3.36245e-04 2.99851e-04 2.67436e-04 2.38559e-04 2.12829e-04 1.89898e-04 1.69457e-04 1.51234e-04 1.34984e-04 1.20493e-04 7.52950e-05 6.72237e-05 6.00227e-05 5.35972e-05 6.83739e-06 6.10632e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="30.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="SEB" name="SEB    - SOUTHEAST CANADA BACKGROUND" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -79.7800 48.4800
+                                -75.2600 47.7800
+                                -72.6200 48.4300
+                                -72.2100 48.9700
+                                -69.9500 51.0300
+                                -57.0000 51.5500
+                                -56.1200 51.0700
+                                -60.0000 48.0000
+                                -63.1500 46.4700
+                                -66.0000 48.5300
+                                -71.5100 45.4800
+                                -72.2100 44.4300
+                                -72.2400 43.7600
+                                -73.1200 43.7800
+                                -73.0700 45.4300
+                                -73.1000 45.6700
+                                -73.6000 46.1400
+                                -73.8800 46.0200
+                                -76.2500 47.4100
+                                -77.2500 47.4300
+                                -78.5800 47.4500
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>2.24041e-03 1.85277e-03 1.53348e-03 1.27027e-03 1.05311e-03 8.73794e-04 7.25598e-04 6.03022e-04 5.01552e-04 4.17486e-04 3.47780e-04 2.89936e-04 2.41896e-04 2.01967e-04 1.68752e-04 1.41102e-04 1.18065e-04 9.88589e-05 8.28332e-05 6.94518e-05 5.82701e-05 4.89199e-05 2.87669e-05 2.41806e-05 2.03375e-05 2.44501e-06 2.05876e-06 1.73448e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="SLE" name="SLE    - SOUTH SHORE LAKE ERIE" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -82.0600 41.6700
+                                -80.6000 42.2800
+                                -80.2900 41.8600
+                                -81.7300 41.2700
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>8.37237e-04 6.93205e-04 5.74429e-04 4.76398e-04 3.95421e-04 3.28475e-04 2.73082e-04 2.27212e-04 1.89195e-04 1.57661e-04 1.31484e-04 1.09735e-04 9.16525e-05 7.66053e-05 6.40744e-05 5.36311e-05 4.49209e-05 3.76507e-05 3.15781e-05 2.65020e-05 2.22560e-05 1.87018e-05 1.10072e-05 9.26035e-06 7.79517e-06 9.37920e-07 7.90384e-07 6.66405e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="SVH" name="SVH    - SEVERN HIGHLANDS" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -94.4700 51.9100
+                                -88.9700 52.2800
+                                -89.3300 48.1600
+                                -94.4100 48.3400
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>8.69244e-04 7.20396e-04 5.97536e-04 4.96041e-04 4.12124e-04 3.42682e-04 2.85170e-04 2.37498e-04 1.97950e-04 1.65115e-04 1.37831e-04 1.15141e-04 9.62571e-05 8.05281e-05 6.74168e-05 5.64793e-05 4.73483e-05 3.97197e-05 3.33418e-05 2.80056e-05 1.64766e-05 1.38564e-05 1.66566e-06 1.40240e-06 1.13850e-19</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="TRR" name="TRR    - TROIS-RIVIERES" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -71.9300 46.9100
+                                -71.5300 46.6000
+                                -73.1000 45.6700
+                                -73.6000 46.1400
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>3.86420e-04 3.20261e-04 2.65646e-04 2.20523e-04 1.83212e-04 1.52334e-04 1.26760e-04 1.05562e-04 8.79759e-05 7.33753e-05 6.12436e-05 5.11554e-05 4.27598e-05 3.57676e-05 2.99396e-05 2.50785e-05 2.10207e-05 1.76311e-05 1.47975e-05 1.24272e-05 1.04429e-05 8.78077e-06 7.38746e-06 6.21876e-06 5.23784e-06 4.41401e-06 2.60518e-06 2.19768e-06 1.85482e-06 1.56620e-06 1.89013e-07 1.59745e-07</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="WLO" name="WLO    - WESTERN LAKE ONTARIO" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -80.2300 43.2400
+                                -79.0700 43.9000
+                                -78.3700 43.3300
+                                -77.7900 42.7800
+                                -78.9500 42.5200
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>8.52888e-04 7.24168e-04 6.15677e-04 5.24115e-04 4.46735e-04 3.81254e-04 3.25769e-04 2.78692e-04 2.38698e-04 2.04677e-04 1.75700e-04 1.50989e-04 1.29890e-04 1.11854e-04 9.64173e-05 8.31905e-05 7.18443e-05 6.21008e-05 5.37246e-05 4.65165e-05 4.03072e-05 3.49531e-05 2.12323e-05 1.84381e-05 1.60222e-05 1.99019e-06 1.73154e-06 1.50737e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="SCCECH" name="SCCECH - Stable Cratonic Core Eastern Canada H  (area 5.1089M km^2) Simplified magnitude recurrence parameters" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -83.0000 46.0000
+                                -86.0000 43.0000
+                                -89.0000 47.0000
+                                -89.3300 48.1600
+                                -88.9700 52.2800
+                                -94.4700 51.9100
+                                -94.4100 48.3400
+                                -89.3301 48.1601
+                                -89.0001 47.0001
+                                -110.0000 47.0000
+                                -110.0000 74.8480
+                                -98.6050 74.6700
+                                -97.6760 71.6410
+                                -97.6780 71.6420
+                                -97.9670 69.9570
+                                -95.2170 68.4350
+                                -96.4890 65.8820
+                                -91.4210 66.0530
+                                -87.6680 63.6120
+                                -86.6120 63.6260
+                                -83.5540 63.0420
+                                -78.1300 59.0060
+                                -70.8420 57.9530
+                                -63.8950 59.5910
+                                -61.7730 59.5650
+                                -60.7410 57.2710
+                                -58.7460 55.7950
+                                -57.5300 55.3500
+                                -61.6300 53.0000
+                                -62.6700 51.5000
+                                -69.9500 51.0300
+                                -72.2100 48.9700
+                                -72.6200 48.4300
+                                -75.2600 47.7800
+                                -79.7800 48.4800
+                                -80.2100 48.9100
+                                -81.5800 50.3300
+                                -80.7300 51.3600
+                                -78.4900 51.4100
+                                -78.5700 54.0000
+                                -82.2600 54.0000
+                                -82.1900 52.6200
+                                -80.7301 51.3601
+                                -81.5801 50.3301
+                                -82.5000 49.9500
+                                -81.1000 48.5200
+                                -79.5000 46.8400
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.78153e-02 1.46417e-02 1.20369e-02 9.89821e-03 8.14181e-03 6.69896e-03 5.51336e-03 4.53888e-03 3.73770e-03 3.07883e-03 2.53682e-03 2.09084e-03 1.72376e-03 1.42154e-03 1.17264e-03 9.67612e-04 7.98662e-04 6.59405e-04 5.44589e-04 4.49897e-04 2.60246e-04 2.15122e-04 2.54106e-05 2.10171e-05 1.69443e-18</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="SCCEAHE" name="SCCEAHE - Stable Cratonic Core Eastern Arctic H East (area 0.8687M km^2) Simplified magnitude recurrence parameters" tectonicRegion="Stable Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -63.8760 59.5880
+                                -64.4220 63.4940
+                                -64.5250 66.1280
+                                -62.2320 67.1800
+                                -60.4260 67.7610
+                                -57.3610 68.1260
+                                -61.1100 71.0880
+                                -63.7800 71.7320
+                                -69.2540 74.2260
+                                -67.0210 75.4600
+                                -62.0730 74.6900
+                                -60.2060 72.7830
+                                -57.6490 72.9110
+                                -55.5420 70.1640
+                                -55.1290 67.6150
+                                -52.4910 64.4480
+                                -48.9980 65.0550
+                                -51.2020 57.8680
+                                -55.6160 60.4260
+                                -55.6190 60.5550
+                                -60.0390 62.0290
+                                -61.5230 62.9070
+                                -63.3700 62.1530
+                                -60.8820 60.6060
+                                -55.7730 58.7850
+                                -55.8150 58.6230
+                                -51.8930 56.5550
+                                -50.0000 49.5000
+                                -53.0900 53.2100
+                                -56.1200 51.0700
+                                -57.0000 51.5500
+                                -60.3300 51.5520
+                                -55.1300 54.4200
+                                -54.2650 54.0580
+                                -53.0180 55.0860
+                                -53.0030 55.0810
+                                -56.5890 56.6650
+                                -58.6520 58.0390
+                                -60.0390 59.8060
+                                -61.7770 59.5640
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>3.02894e-03 2.48938e-03 2.04650e-03 1.68288e-03 1.38426e-03 1.13895e-03 9.37376e-04 7.71695e-04 6.35480e-04 5.23459e-04 4.31308e-04 3.55482e-04 2.93071e-04 2.41688e-04 1.99372e-04 1.64512e-04 1.35788e-04 1.12111e-04 9.25903e-05 7.64910e-05 4.42467e-05 3.65747e-05 4.32028e-06 3.57330e-06 2.88085e-19</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="20.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+    </sourceModel>
+</nrml>
