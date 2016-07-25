@@ -24,7 +24,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>3.75170e-03 3.27593e-03 2.86048e-03 2.49773e-03 2.18097e-03 1.90439e-03 1.66288e-03 1.45200e-03 1.26786e-03 1.10707e-03 9.66678e-04 8.44087e-04 7.37043e-04 6.43573e-04 5.61957e-04 4.90692e-04 4.28464e-04 3.74127e-04 3.26682e-04 2.85253e-04 2.49078e-04 2.17491e-04 1.89909e-04 1.65825e-04 1.44796e-04 1.26433e-04 1.10400e-04</occurRates>
+                <occurRates>3.75170e-03 3.27592e-03 2.86048e-03 2.49772e-03 2.18097e-03 1.90439e-03 1.66288e-03 1.45200e-03 1.26786e-03 1.10707e-03 9.66678e-04 8.44087e-04 7.37042e-04 6.43573e-04 5.61957e-04 4.90691e-04 4.28463e-04 3.74127e-04 3.26681e-04 2.85253e-04 2.49078e-04 2.17491e-04 1.89909e-04 1.65825e-04 1.44796e-04 1.26433e-04 1.10399e-04</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -59,7 +59,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.59509e-03 1.29241e-03 1.04717e-03 8.48462e-04 6.87461e-04 5.57011e-04 4.51315e-04 3.65675e-04 2.96286e-04 2.40064e-04 1.94510e-04 1.57601e-04 1.27695e-04 1.03464e-04 8.38313e-05 6.79238e-05 5.50348e-05 4.45916e-05 3.61301e-05 2.92742e-05 2.37192e-05 1.92184e-05 1.55716e-05 1.26168e-05 1.02227e-05 8.28284e-06 6.71112e-06</occurRates>
+                <occurRates>1.59509e-03 1.29241e-03 1.04717e-03 8.48462e-04 6.87461e-04 5.57011e-04 4.51315e-04 3.65675e-04 2.96286e-04 2.40064e-04 1.94510e-04 1.57601e-04 1.27695e-04 1.03464e-04 8.38312e-05 6.79237e-05 5.50348e-05 4.45916e-05 3.61301e-05 2.92742e-05 2.37192e-05 1.92183e-05 1.55715e-05 1.26167e-05 1.02226e-05 8.28283e-06 6.71112e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -146,7 +146,7 @@
             <magScaleRel>GSCCascadia</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="8.55" binWidth="0.1">
-                <occurRates>3.54509e-05 5.84486e-05 9.63655e-05 1.58880e-04 2.61949e-04 4.31880e-04 7.12050e-04 1.90327e-04</occurRates>
+                <occurRates>3.54510e-05 5.84488e-05 9.63657e-05 1.58880e-04 2.61949e-04 4.31881e-04 7.12052e-04 1.90325e-04</occurRates>
             </incrementalMFD>
             <rake>90.0</rake>
         </complexFaultSource>
@@ -180,7 +180,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.02072e-03 1.45944e-03 1.05407e-03 7.61288e-04 5.49831e-04 3.97109e-04 2.86808e-04 2.07143e-04 1.49607e-04 1.08052e-04 7.80392e-05 5.63629e-05 4.07075e-05 2.94005e-05 2.12342e-05 1.53361e-05 1.10763e-05 7.99976e-06 5.77773e-06 4.17290e-06 3.01383e-06 2.17670e-06 1.57210e-06 1.13543e-06 8.20051e-07 5.92272e-07 4.27762e-07</occurRates>
+                <occurRates>2.02072e-03 1.45944e-03 1.05407e-03 7.61287e-04 5.49831e-04 3.97109e-04 2.86807e-04 2.07143e-04 1.49607e-04 1.08052e-04 7.80392e-05 5.63629e-05 4.07074e-05 2.94005e-05 2.12342e-05 1.53361e-05 1.10763e-05 7.99976e-06 5.77773e-06 4.17290e-06 3.01383e-06 2.17670e-06 1.57210e-06 1.13543e-06 8.20051e-07 5.92272e-07 4.27762e-07</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -192,110 +192,65 @@
             </hypoDepthDist>
         </areaSource>
 
-        <complexFaultSource id="EISO-22" name="EISO  - outboard estimate of rupture - 16 km depth" tectonicRegion="Subduction Interface">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -127.3682 49.2563 5.0
-                            -128.2264 49.8263 5.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -127.2157 49.3524 10.0
-                            -128.0722 49.9224 10.0
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -127.0320 49.4674 16.0
-                            -127.8863 50.0374 16.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="EISO-22" name="EISO  - outboard estimate of rupture - 16 km depth" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -127.3682 49.2563
+                            -128.2264 49.8263
+                    </gml:posList>
+                </gml:LineString>
+                <dip>18.0</dip>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>16.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>GSCEISO</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="7.55" binWidth="0.1">
-                <occurRates>6.56109e-04</occurRates>
+                <occurRates>6.59061e-04</occurRates>
             </incrementalMFD>
             <rake>90.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
-        <complexFaultSource id="EISB-22" name="EISB  - Best estimate landward extent of rupture - 22 km depth" tectonicRegion="Subduction Interface">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -127.3682 49.2563 5.0
-                            -128.2264 49.8263 5.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -127.2157 49.3524 10.0
-                            -128.0722 49.9224 10.0
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -126.8475 49.5821 22.0
-                            -127.6995 50.1521 22.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="EISB-22" name="EISB  - Best estimate landward extent of rupture - 22 km depth" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -127.3682 49.2563
+                            -128.2264 49.8263
+                    </gml:posList>
+                </gml:LineString>
+                <dip>18.0</dip>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>22.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>GSCEISB</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="7.55" binWidth="0.1">
-                <occurRates>8.06742e-05 1.33009e-04 2.19295e-04 3.61557e-04 5.96106e-04</occurRates>
+                <occurRates>7.98754e-05 1.31692e-04 2.17124e-04 3.57977e-04 5.90204e-04</occurRates>
             </incrementalMFD>
             <rake>90.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
-        <complexFaultSource id="EISI-22" name="EISI  - inboard estimate of rupture - 28 km depth" tectonicRegion="Subduction Interface">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -127.3682 49.2563 5.0
-                            -128.2264 49.8263 5.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -127.2157 49.3524 10.0
-                            -128.0722 49.9224 10.0
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -126.6621 49.6966 28.0
-                            -127.5119 50.2666 28.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="EISI-22" name="EISI  - inboard estimate of rupture - 28 km depth" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -127.3682 49.2563
+                            -128.2264 49.8263
+                    </gml:posList>
+                </gml:LineString>
+                <dip>18.0</dip>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>28.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>GSCEISI</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="7.55" binWidth="0.1">
-                <occurRates>9.93321e-07 1.63771e-06 2.70013e-06 4.45176e-06 7.33970e-06 1.21011e-05 1.99514e-05 3.28943e-05 5.42335e-05 8.94159e-05</occurRates>
+                <occurRates>9.83486e-07 1.62149e-06 2.67339e-06 4.40768e-06 7.26703e-06 1.19813e-05 1.97538e-05 3.25686e-05 5.36965e-05 8.85306e-05</occurRates>
             </incrementalMFD>
             <rake>90.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
         <areaSource id="EXP" name="EXP  -  EXPLORER PLATE BENDING" tectonicRegion="Active Shallow Crust">
             <areaGeometry>
@@ -317,7 +272,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.42336e-02 1.97934e-02 1.61668e-02 1.32047e-02 1.07853e-02 8.80915e-03 7.19510e-03 5.87679e-03 4.80002e-03 3.92054e-03 3.20221e-03 2.61549e-03 2.13627e-03 1.74485e-03 1.42515e-03 1.16403e-03 9.50754e-04 7.76554e-04 6.34271e-04 5.18057e-04 4.23137e-04 3.45608e-04 2.82285e-04 2.30563e-04 1.88319e-04 3.24066e-10</occurRates>
+                <occurRates>2.42336e-02 1.97934e-02 1.61668e-02 1.32047e-02 1.07853e-02 8.80915e-03 7.19510e-03 5.87679e-03 4.80002e-03 3.92055e-03 3.20221e-03 2.61549e-03 2.13627e-03 1.74485e-03 1.42516e-03 1.16403e-03 9.50755e-04 7.76554e-04 6.34271e-04 5.18057e-04 4.23137e-04 3.45608e-04 2.82285e-04 2.30563e-04 1.88319e-04</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -349,7 +304,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>7.67417e-03 6.37791e-03 5.30060e-03 4.40526e-03 3.66116e-03 3.04275e-03 2.52879e-03 2.10164e-03 1.74665e-03 1.45162e-03 1.20642e-03 1.00264e-03 8.33285e-04 6.92533e-04 5.75555e-04 4.78337e-04 3.97540e-04 3.30391e-04 2.74584e-04 2.28203e-04 1.89657e-04 1.57621e-04 1.30997e-04 1.08870e-04 9.04806e-05 7.51973e-05 6.24956e-05 5.19393e-05 4.31660e-05</occurRates>
+                <occurRates>7.67417e-03 6.37791e-03 5.30060e-03 4.40527e-03 3.66116e-03 3.04275e-03 2.52879e-03 2.10165e-03 1.74665e-03 1.45162e-03 1.20642e-03 1.00264e-03 8.33285e-04 6.92533e-04 5.75556e-04 4.78337e-04 3.97540e-04 3.30391e-04 2.74584e-04 2.28203e-04 1.89657e-04 1.57621e-04 1.30997e-04 1.08870e-04 9.04806e-05 7.51973e-05 6.24956e-05 5.19393e-05 4.31661e-05 4.19719e-18</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -391,7 +346,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.35324e-03 1.05191e-03 8.17670e-04 6.35594e-04 4.94061e-04 3.84045e-04 2.98527e-04 2.32051e-04 1.80379e-04 1.40213e-04 1.08990e-04 8.47206e-05 6.58553e-05 5.11908e-05 3.97917e-05 3.09310e-05 2.40434e-05 1.86894e-05 1.45277e-05 1.12927e-05 8.77809e-06 6.82341e-06 5.30399e-06 4.12291e-06 3.20483e-06 2.49119e-06 1.93646e-06</occurRates>
+                <occurRates>1.35324e-03 1.05191e-03 8.17671e-04 6.35594e-04 4.94061e-04 3.84045e-04 2.98527e-04 2.32052e-04 1.80379e-04 1.40213e-04 1.08990e-04 8.47207e-05 6.58553e-05 5.11908e-05 3.97917e-05 3.09310e-05 2.40434e-05 1.86895e-05 1.45277e-05 1.12927e-05 8.77810e-06 6.82341e-06 5.30399e-06 4.12291e-06 3.20483e-06 2.49119e-06 1.93646e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -428,7 +383,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.82376e-02 1.58550e-02 1.37837e-02 1.19830e-02 1.04175e-02 9.05654e-03 7.87338e-03 6.84479e-03 5.95057e-03 5.17318e-03 4.49735e-03 3.90980e-03 3.39902e-03 2.95497e-03 2.56892e-03 2.23332e-03 1.94155e-03 1.68790e-03 1.46739e-03 1.27569e-03 1.10903e-03 9.64146e-04 8.38188e-04 7.28686e-04 6.33489e-04 5.50729e-04 4.78781e-04</occurRates>
+                <occurRates>1.82376e-02 1.58550e-02 1.37837e-02 1.19830e-02 1.04175e-02 9.05654e-03 7.87338e-03 6.84479e-03 5.95057e-03 5.17318e-03 4.49734e-03 3.90980e-03 3.39902e-03 2.95497e-03 2.56892e-03 2.23332e-03 1.94155e-03 1.68790e-03 1.46739e-03 1.27569e-03 1.10903e-03 9.64146e-04 8.38188e-04 7.28686e-04 6.33489e-04 5.50729e-04 4.78781e-04</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -499,7 +454,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>6.95584e-04 5.44121e-04 4.25639e-04 3.32956e-04 2.60455e-04 2.03741e-04 1.59377e-04 1.24673e-04 9.75253e-05 7.62892e-05 5.96773e-05 4.66826e-05 3.65175e-05 2.85658e-05 2.23456e-05 1.74799e-05 1.36737e-05 1.06962e-05 8.36713e-06 6.54520e-06 5.11998e-06 4.00511e-06 3.13300e-06 2.45079e-06 1.91713e-06 3.22600e-12</occurRates>
+                <occurRates>6.95584e-04 5.44121e-04 4.25639e-04 3.32956e-04 2.60455e-04 2.03741e-04 1.59377e-04 1.24673e-04 9.75253e-05 7.62892e-05 5.96773e-05 4.66826e-05 3.65175e-05 2.85658e-05 2.23457e-05 1.74799e-05 1.36737e-05 1.06962e-05 8.36714e-06 6.54520e-06 5.11999e-06 4.00511e-06 3.13300e-06 2.45079e-06 1.91713e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -538,7 +493,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.66593e-03 1.37143e-03 1.12899e-03 9.29406e-04 7.65107e-04 6.29853e-04 5.18508e-04 4.26847e-04 3.51390e-04 2.89272e-04 2.38135e-04 1.96038e-04 1.61382e-04 1.32853e-04 1.09368e-04 9.00339e-05 7.41178e-05 6.10154e-05 5.02292e-05 4.13497e-05 3.40400e-05 2.80225e-05 2.30687e-05 1.89906e-05 1.56335e-05 2.70122e-11</occurRates>
+                <occurRates>1.66593e-03 1.37143e-03 1.12899e-03 9.29406e-04 7.65107e-04 6.29853e-04 5.18508e-04 4.26847e-04 3.51390e-04 2.89272e-04 2.38135e-04 1.96037e-04 1.61382e-04 1.32853e-04 1.09368e-04 9.00339e-05 7.41178e-05 6.10154e-05 5.02292e-05 4.13497e-05 3.40400e-05 2.80224e-05 2.30687e-05 1.89906e-05 1.56335e-05</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -575,7 +530,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>8.52351e-04 6.62551e-04 5.15016e-04 4.00334e-04 3.11188e-04 2.41894e-04 1.88029e-04 1.46159e-04 1.13613e-04 8.83140e-05 6.86484e-05 5.33620e-05 4.14795e-05 3.22429e-05 2.50631e-05 1.94821e-05 1.51439e-05 1.17717e-05 9.15041e-06 7.11282e-06 5.52895e-06 4.29778e-06 3.34076e-06 2.59685e-06 2.01859e-06 1.56909e-06 1.21969e-06</occurRates>
+                <occurRates>8.52351e-04 6.62552e-04 5.15016e-04 4.00334e-04 3.11188e-04 2.41894e-04 1.88029e-04 1.46160e-04 1.13613e-04 8.83140e-05 6.86484e-05 5.33620e-05 4.14795e-05 3.22429e-05 2.50631e-05 1.94821e-05 1.51439e-05 1.17717e-05 9.15041e-06 7.11282e-06 5.52895e-06 4.29778e-06 3.34076e-06 2.59685e-06 2.01859e-06 1.56909e-06 1.21969e-06</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -608,7 +563,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>3.15576e-02 2.57161e-02 2.09558e-02 1.70767e-02 1.39157e-02 1.13398e-02 9.24068e-03 7.53016e-03 6.13626e-03 5.00039e-03 4.07478e-03 3.32050e-03 2.70585e-03 2.20497e-03 1.79682e-03 1.46421e-03 1.19317e-03 9.72307e-04 7.92325e-04 6.45659e-04 5.26142e-04 4.28749e-04 3.49384e-04 2.84710e-04 2.32008e-04 3.98772e-10</occurRates>
+                <occurRates>3.15576e-02 2.57161e-02 2.09558e-02 1.70767e-02 1.39157e-02 1.13398e-02 9.24068e-03 7.53015e-03 6.13626e-03 5.00039e-03 4.07477e-03 3.32050e-03 2.70585e-03 2.20497e-03 1.79681e-03 1.46421e-03 1.19317e-03 9.72306e-04 7.92324e-04 6.45658e-04 5.26142e-04 4.28749e-04 3.49384e-04 2.84710e-04 2.32008e-04</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -643,7 +598,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>8.16850e-01 6.41575e-01 5.03909e-01 3.95783e-01 3.10858e-01 2.44156e-01 1.91766e-01 1.50618e-01 1.18299e-01 9.29150e-02 7.29778e-02 5.73186e-02 4.50195e-02 3.53594e-02 2.77722e-02 2.18130e-02 1.71325e-02 1.34563e-02 1.05689e-02 8.30108e-03 6.51988e-03 5.12088e-03 4.02207e-03 3.15903e-03 2.48118e-03 4.18395e-09</occurRates>
+                <occurRates>8.16850e-01 6.41574e-01 5.03909e-01 3.95783e-01 3.10858e-01 2.44155e-01 1.91766e-01 1.50618e-01 1.18299e-01 9.29150e-02 7.29778e-02 5.73186e-02 4.50195e-02 3.53594e-02 2.77722e-02 2.18130e-02 1.71325e-02 1.34563e-02 1.05689e-02 8.30107e-03 6.51987e-03 5.12087e-03 4.02206e-03 3.15903e-03 2.48118e-03</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -678,7 +633,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>3.35488e-05 2.39793e-05 1.71394e-05 1.22506e-05 8.75620e-06 6.25857e-06 4.47337e-06 3.19738e-06 2.28536e-06 1.63348e-06 1.16754e-06 8.34513e-07 5.96475e-07 4.26336e-07 3.04727e-07 2.17807e-07 1.55679e-07 1.11273e-07 7.95335e-08 5.68472e-08 4.06321e-08 2.90421e-08 2.07581e-08 1.48371e-08 1.06049e-08 7.57996e-09 5.41784e-09 3.87245e-09 2.76786e-09</occurRates>
+                <occurRates>3.35488e-05 2.39793e-05 1.71394e-05 1.22506e-05 8.75620e-06 6.25857e-06 4.47337e-06 3.19738e-06 2.28536e-06 1.63348e-06 1.16754e-06 8.34512e-07 5.96475e-07 4.26336e-07 3.04727e-07 2.17807e-07 1.55679e-07 1.11273e-07 7.95334e-08 5.68472e-08 4.06321e-08 2.90421e-08 2.07581e-08 1.48370e-08 1.06049e-08 7.57996e-09 5.41784e-09 3.87245e-09 2.76787e-09 2.47947e-22</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -712,7 +667,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.24805e-02 1.02339e-02 8.39176e-03 6.88118e-03 5.64251e-03 4.62682e-03 3.79396e-03 3.11102e-03 2.55101e-03 2.09181e-03 1.71527e-03 1.40651e-03 1.15333e-03 9.45719e-04 7.75482e-04 6.35890e-04 5.21425e-04 4.27564e-04 3.50600e-04 2.87489e-04 2.35739e-04 1.93304e-04 1.58508e-04 1.29975e-04 1.06579e-04 8.73939e-05 7.16623e-05 5.87626e-05 4.81848e-05</occurRates>
+                <occurRates>1.24805e-02 1.02339e-02 8.39175e-03 6.88118e-03 5.64251e-03 4.62682e-03 3.79396e-03 3.11102e-03 2.55101e-03 2.09181e-03 1.71527e-03 1.40651e-03 1.15333e-03 9.45718e-04 7.75482e-04 6.35889e-04 5.21425e-04 4.27564e-04 3.50600e-04 2.87489e-04 2.35739e-04 1.93304e-04 1.58508e-04 1.29975e-04 1.06579e-04 8.73938e-05 7.16623e-05 5.87626e-05 4.81849e-05 4.65451e-18</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -748,7 +703,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>4.55425e-04 3.44788e-04 2.61029e-04 1.97617e-04 1.49610e-04 1.13265e-04 8.57495e-05 6.49183e-05 4.91477e-05 3.72082e-05 2.81692e-05 2.13261e-05 1.61453e-05 1.22231e-05 9.25376e-06 7.00574e-06 5.30384e-06 4.01537e-06 3.03992e-06 2.30143e-06 1.74234e-06 1.31907e-06 9.98631e-07 7.56033e-07 5.72370e-07 4.33324e-07 3.28056e-07 2.48362e-07 1.88027e-07</occurRates>
+                <occurRates>4.55425e-04 3.44788e-04 2.61029e-04 1.97617e-04 1.49610e-04 1.13265e-04 8.57495e-05 6.49183e-05 4.91477e-05 3.72082e-05 2.81692e-05 2.13261e-05 1.61453e-05 1.22231e-05 9.25376e-06 7.00574e-06 5.30383e-06 4.01537e-06 3.03992e-06 2.30143e-06 1.74234e-06 1.31907e-06 9.98631e-07 7.56033e-07 5.72370e-07 4.33324e-07 3.28056e-07 2.48362e-07 1.88027e-07 1.73698e-20</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -784,7 +739,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>3.47387e-03 2.74934e-03 2.17592e-03 1.72209e-03 1.36292e-03 1.07866e-03 8.53688e-04 6.75637e-04 5.34721e-04 4.23196e-04 3.34931e-04 2.65076e-04 2.09790e-04 1.66034e-04 1.31405e-04 1.03998e-04 8.23078e-05 6.51411e-05 5.15548e-05 4.08022e-05 3.22922e-05 2.55571e-05 2.02267e-05 1.60081e-05 1.26693e-05 1.00269e-05 7.93565e-06 6.28054e-06 4.97062e-06</occurRates>
+                <occurRates>3.47387e-03 2.74934e-03 2.17592e-03 1.72209e-03 1.36292e-03 1.07866e-03 8.53687e-04 6.75636e-04 5.34721e-04 4.23196e-04 3.34931e-04 2.65075e-04 2.09790e-04 1.66034e-04 1.31405e-04 1.03998e-04 8.23077e-05 6.51410e-05 5.15548e-05 4.08021e-05 3.22922e-05 2.55571e-05 2.02267e-05 1.60081e-05 1.26693e-05 1.00269e-05 7.93565e-06 6.28053e-06 4.97062e-06 4.71164e-19</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -804,10 +759,11 @@
                             <gml:posList>
                                 -124.4300 51.6500
                                 -120.6000 53.4000
+                                -117.0870 51.0330
                                 -114.0000 48.6000
                                 -114.9000 48.6000
                                 -114.8700 48.1300
-                                -119.7800 48.1000
+                                -119.8050 48.1000
                                 -119.7000 48.7000
                                 -122.0000 51.2000
                             </gml:posList>
@@ -856,7 +812,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>4.60564e-03 3.79260e-03 3.12309e-03 2.57176e-03 2.11777e-03 1.74391e-03 1.43606e-03 1.18255e-03 9.73792e-04 8.01887e-04 6.60329e-04 5.43760e-04 4.47769e-04 3.68724e-04 3.03632e-04 2.50032e-04 2.05893e-04 1.69547e-04 1.39616e-04 1.14970e-04 9.46738e-05 7.79609e-05 6.41984e-05 5.28653e-05 4.35329e-05 3.58480e-05 2.95197e-05 2.43085e-05 2.00173e-05</occurRates>
+                <occurRates>4.60564e-03 3.79260e-03 3.12309e-03 2.57176e-03 2.11777e-03 1.74391e-03 1.43606e-03 1.18255e-03 9.73792e-04 8.01887e-04 6.60328e-04 5.43760e-04 4.47769e-04 3.68724e-04 3.03632e-04 2.50032e-04 2.05893e-04 1.69547e-04 1.39616e-04 1.14970e-04 9.46738e-05 7.79609e-05 6.41983e-05 5.28653e-05 4.35329e-05 3.58480e-05 2.95197e-05 2.43085e-05 2.00173e-05 1.92821e-18</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -903,7 +859,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>3.95784e-03 3.15724e-03 2.51859e-03 2.00912e-03 1.60271e-03 1.27851e-03 1.01989e-03 8.13587e-04 6.49013e-04 5.17730e-04 4.13002e-04 3.29459e-04 2.62816e-04 2.09653e-04 1.67244e-04 1.33413e-04 1.06426e-04 8.48982e-05 6.77249e-05 5.40253e-05 4.30970e-05 3.43793e-05 2.74250e-05 2.18773e-05</occurRates>
+                <occurRates>3.95784e-03 3.15724e-03 2.51859e-03 2.00912e-03 1.60271e-03 1.27851e-03 1.01989e-03 8.13587e-04 6.49013e-04 5.17730e-04 4.13002e-04 3.29459e-04 2.62816e-04 2.09653e-04 1.67244e-04 1.33413e-04 1.06426e-04 8.48982e-05 6.77248e-05 5.40253e-05 4.30970e-05 3.43792e-05 2.74249e-05 2.18774e-05 1.73371e-18</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -987,7 +943,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.30857e-02 1.04387e-02 8.32713e-03 6.64270e-03 5.29900e-03 4.22711e-03 3.37204e-03 2.68994e-03 2.14581e-03 1.71175e-03 1.36550e-03 1.08928e-03 8.68940e-04 6.93169e-04 5.52954e-04 4.41101e-04 3.51874e-04 2.80697e-04 2.23917e-04 1.78622e-04 1.42490e-04 1.13667e-04 9.06743e-05 7.23324e-05</occurRates>
+                <occurRates>1.30857e-02 1.04387e-02 8.32713e-03 6.64270e-03 5.29900e-03 4.22711e-03 3.37204e-03 2.68994e-03 2.14581e-03 1.71175e-03 1.36550e-03 1.08928e-03 8.68940e-04 6.93169e-04 5.52954e-04 4.41101e-04 3.51874e-04 2.80696e-04 2.23917e-04 1.78622e-04 1.42490e-04 1.13667e-04 9.06743e-05 7.23325e-05 5.73212e-18</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1021,7 +977,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.54118e-04 1.23505e-04 9.89721e-05 7.93127e-05 6.35583e-05 5.09334e-05 4.08162e-05 3.27086e-05 2.62115e-05 2.10050e-05 1.68326e-05 1.34891e-05 1.08096e-05 8.66246e-06 6.94178e-06 5.56289e-06 4.45790e-06 3.57240e-06 2.86279e-06 2.29414e-06 1.83844e-06 1.47326e-06 1.18062e-06 9.46103e-07</occurRates>
+                <occurRates>1.54118e-04 1.23505e-04 9.89722e-05 7.93127e-05 6.35584e-05 5.09334e-05 4.08162e-05 3.27086e-05 2.62115e-05 2.10050e-05 1.68326e-05 1.34891e-05 1.08096e-05 8.66246e-06 6.94178e-06 5.56289e-06 4.45790e-06 3.57240e-06 2.86280e-06 2.29414e-06 1.83844e-06 1.47326e-06 1.18062e-06 9.46105e-07 7.50058e-20</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1033,489 +989,233 @@
             </hypoDepthDist>
         </areaSource>
 
-        <complexFaultSource id="HGT00" name="HGT - HAIDA GWAII THRUST beta=0" tectonicRegion="Subduction Interface">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -131.4207 51.8601 3.0
-                            -133.5493 53.5003 3.0
-                            -134.4235 54.5404 3.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -131.1848 51.9711 12.5
-                            -133.2899 53.5990 12.5
-                            -134.1394 54.6202 12.5
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -130.9478 52.0817 22.0
-                            -133.0294 53.6972 22.0
-                            -133.8540 54.6992 22.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="HGT00" name="HGT - HAIDA GWAII THRUST beta=0" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -131.4207 51.8601
+                            -133.5493 53.5003
+                            -134.4235 54.5404
+                    </gml:posList>
+                </gml:LineString>
+                <dip>25.0</dip>
+                <upperSeismoDepth>3.0</upperSeismoDepth>
+                <lowerSeismoDepth>22.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>GSCOffshoreThrustsHGT</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="7.05" binWidth="0.1">
-                <occurRates>1.51314e-03 1.51311e-03 1.51308e-03 1.51305e-03 1.51301e-03 1.51298e-03 1.51295e-03 1.51292e-03 1.51289e-03 1.51286e-03 1.51283e-03 1.51280e-03</occurRates>
+                <occurRates>1.51313e-03 1.51310e-03 1.51307e-03 1.51304e-03 1.51301e-03 1.51298e-03 1.51295e-03 1.51292e-03 1.51289e-03 1.51286e-03 1.51283e-03 1.51280e-03</occurRates>
             </incrementalMFD>
             <rake>90.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
-        <complexFaultSource id="HGT08" name="HGT - HAIDA GWAII THRUST beta=1.84" tectonicRegion="Subduction Interface">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -131.4207 51.8601 3.0
-                            -133.5493 53.5003 3.0
-                            -134.4235 54.5404 3.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -131.1848 51.9711 12.5
-                            -133.2899 53.5990 12.5
-                            -134.1394 54.6202 12.5
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -130.9478 52.0817 22.0
-                            -133.0294 53.6972 22.0
-                            -133.8540 54.6992 22.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="HGT08" name="HGT - HAIDA GWAII THRUST beta=1.84" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -131.4207 51.8601
+                            -133.5493 53.5003
+                            -134.4235 54.5404
+                    </gml:posList>
+                </gml:LineString>
+                <dip>25.0</dip>
+                <upperSeismoDepth>3.0</upperSeismoDepth>
+                <lowerSeismoDepth>22.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>GSCOffshoreThrustsHGT</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="7.05" binWidth="0.1">
-                <occurRates>3.39323e-03 2.82236e-03 2.34753e-03 1.95258e-03 1.62408e-03 1.35085e-03 1.12358e-03 9.34553e-04 7.77324e-04 6.46548e-04 5.37774e-04 4.47298e-04</occurRates>
+                <occurRates>3.39323e-03 2.82236e-03 2.34753e-03 1.95258e-03 1.62408e-03 1.35085e-03 1.12358e-03 9.34553e-04 7.77325e-04 6.46548e-04 5.37774e-04 4.47299e-04</occurRates>
             </incrementalMFD>
             <rake>90.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
-        <complexFaultSource id="WIN00" name="WIN - WINONA THRUST beta=0" tectonicRegion="Subduction Interface">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -128.0946 49.9940 2.0
-                            -129.7462 50.9150 2.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -128.0424 50.0315 3.5
-                            -129.6931 50.9525 3.5
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -127.9902 50.0690 5.0
-                            -129.6398 50.9900 5.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="WIN00" name="WIN - WINONA THRUST beta=0" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -128.0946 49.9940
+                            -129.7462 50.9150
+                    </gml:posList>
+                </gml:LineString>
+                <dip>15.0</dip>
+                <upperSeismoDepth>2.0</upperSeismoDepth>
+                <lowerSeismoDepth>5.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>GSCOffshoreThrustsWIN</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="7.05" binWidth="0.1">
-                <occurRates>1.77978e-03 1.77975e-03 1.77971e-03 1.77968e-03 1.77964e-03 1.77960e-03 1.42366e-03</occurRates>
+                <occurRates>1.77978e-03 1.77975e-03 1.77971e-03 1.77967e-03 1.77964e-03 1.77960e-03 1.42366e-03</occurRates>
             </incrementalMFD>
             <rake>90.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
-        <complexFaultSource id="WIN08" name="WIN - WINONA THRUST beta=1.84" tectonicRegion="Subduction Interface">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -128.0946 49.9940 2.0
-                            -129.7462 50.9150 2.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -128.0424 50.0315 3.5
-                            -129.6931 50.9525 3.5
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -127.9902 50.0690 5.0
-                            -129.6398 50.9900 5.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="WIN08" name="WIN - WINONA THRUST beta=1.84" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -128.0946 49.9940
+                            -129.7462 50.9150
+                    </gml:posList>
+                </gml:LineString>
+                <dip>15.0</dip>
+                <upperSeismoDepth>2.0</upperSeismoDepth>
+                <lowerSeismoDepth>5.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>GSCOffshoreThrustsWIN</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="7.05" binWidth="0.1">
-                <occurRates>1.94097e-03 1.61442e-03 1.34281e-03 1.11690e-03 9.28993e-04 7.72701e-04 5.23454e-04</occurRates>
+                <occurRates>1.94097e-03 1.61442e-03 1.34281e-03 1.11690e-03 9.28994e-04 7.72701e-04 5.23455e-04</occurRates>
             </incrementalMFD>
             <rake>90.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
-        <complexFaultSource id="QCSS00" name="QCSS - QUEEN CHARLOTTE - STRIKE SLIP beta = 0" tectonicRegion="Active Shallow Fault">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -130.6740 51.4600 0.0
-                            -130.9600 51.6760 0.0
-                            -131.3570 51.9930 0.0
-                            -131.4720 52.0810 0.0
-                            -131.4980 52.1490 0.0
-                            -131.6060 52.2250 0.0
-                            -131.6160 52.2280 0.0
-                            -131.7310 52.3310 0.0
-                            -131.8860 52.4470 0.0
-                            -132.0360 52.5460 0.0
-                            -132.2820 52.7150 0.0
-                            -132.3770 52.7890 0.0
-                            -132.4440 52.8490 0.0
-                            -132.4880 52.8920 0.0
-                            -132.5600 52.9460 0.0
-                            -132.5630 52.9500 0.0
-                            -132.7450 53.1010 0.0
-                            -132.8640 53.2060 0.0
-                            -132.8960 53.2350 0.0
-                            -132.9120 53.2510 0.0
-                            -133.0270 53.3640 0.0
-                            -133.1090 53.4400 0.0
-                            -133.1210 53.4520 0.0
-                            -134.1600 54.4900 0.0
-                            -134.6130 55.0190 0.0
-                            -135.0610 55.5590 0.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -130.6740 51.4600 10.0
-                            -130.9600 51.6760 10.0
-                            -131.3570 51.9930 10.0
-                            -131.4720 52.0810 10.0
-                            -131.4980 52.1490 10.0
-                            -131.6060 52.2250 10.0
-                            -131.6160 52.2280 10.0
-                            -131.7310 52.3310 10.0
-                            -131.8860 52.4470 10.0
-                            -132.0360 52.5460 10.0
-                            -132.2820 52.7150 10.0
-                            -132.3770 52.7890 10.0
-                            -132.4440 52.8490 10.0
-                            -132.4880 52.8920 10.0
-                            -132.5600 52.9460 10.0
-                            -132.5630 52.9500 10.0
-                            -132.7450 53.1010 10.0
-                            -132.8640 53.2060 10.0
-                            -132.8960 53.2350 10.0
-                            -132.9120 53.2510 10.0
-                            -133.0270 53.3640 10.0
-                            -133.1090 53.4400 10.0
-                            -133.1210 53.4520 10.0
-                            -134.1600 54.4900 10.0
-                            -134.6130 55.0190 10.0
-                            -135.0610 55.5590 10.0
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -130.6740 51.4600 20.0
-                            -130.9600 51.6760 20.0
-                            -131.3570 51.9930 20.0
-                            -131.4720 52.0810 20.0
-                            -131.4980 52.1490 20.0
-                            -131.6060 52.2250 20.0
-                            -131.6160 52.2280 20.0
-                            -131.7310 52.3310 20.0
-                            -131.8860 52.4470 20.0
-                            -132.0360 52.5460 20.0
-                            -132.2820 52.7150 20.0
-                            -132.3770 52.7890 20.0
-                            -132.4440 52.8490 20.0
-                            -132.4880 52.8920 20.0
-                            -132.5600 52.9460 20.0
-                            -132.5630 52.9500 20.0
-                            -132.7450 53.1010 20.0
-                            -132.8640 53.2060 20.0
-                            -132.8960 53.2350 20.0
-                            -132.9120 53.2510 20.0
-                            -133.0270 53.3640 20.0
-                            -133.1090 53.4400 20.0
-                            -133.1210 53.4520 20.0
-                            -134.1600 54.4900 20.0
-                            -134.6130 55.0190 20.0
-                            -135.0610 55.5590 20.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="QCSS00" name="QCSS - QUEEN CHARLOTTE - STRIKE SLIP beta = 0" tectonicRegion="Active Shallow Fault">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -130.6740 51.4600
+                            -130.9600 51.6760
+                            -131.3570 51.9930
+                            -131.4720 52.0810
+                            -131.4980 52.1490
+                            -131.6060 52.2250
+                            -131.6160 52.2280
+                            -131.7310 52.3310
+                            -131.8860 52.4470
+                            -132.0360 52.5460
+                            -132.2820 52.7150
+                            -132.3770 52.7890
+                            -132.4440 52.8490
+                            -132.4880 52.8920
+                            -132.5600 52.9460
+                            -132.5630 52.9500
+                            -132.7450 53.1010
+                            -132.8640 53.2060
+                            -132.8960 53.2350
+                            -132.9120 53.2510
+                            -133.0270 53.3640
+                            -133.1090 53.4400
+                            -133.1210 53.4520
+                            -134.1600 54.4900
+                            -134.6130 55.0190
+                            -135.0610 55.5590
+                    </gml:posList>
+                </gml:LineString>
+                <dip>90.0</dip>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>WC1994_QCSS</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.55" binWidth="0.1">
-                <occurRates>9.97123e-04 9.97103e-04 9.97083e-04 9.97063e-04 9.97043e-04 9.97023e-04 9.97004e-04 9.96984e-04 9.96964e-04 9.96944e-04 9.96924e-04 9.96904e-04 9.96884e-04 9.96864e-04 9.96844e-04 9.96824e-04 9.96804e-04 9.96784e-04 6.97736e-04</occurRates>
+                <occurRates>9.97139e-04 9.97119e-04 9.97099e-04 9.97079e-04 9.97059e-04 9.97039e-04 9.97019e-04 9.96999e-04 9.96979e-04 9.96959e-04 9.96939e-04 9.96919e-04 9.96899e-04 9.96879e-04 9.96859e-04 9.96840e-04 9.96820e-04 9.96800e-04 6.97748e-04</occurRates>
             </incrementalMFD>
             <rake>0.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
-        <complexFaultSource id="QCSS08" name="QCSS - QUEEN CHARLOTTE - STRIKE SLIP beta = 1.84" tectonicRegion="Active Shallow Fault">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -130.6740 51.4600 0.0
-                            -130.9600 51.6760 0.0
-                            -131.3570 51.9930 0.0
-                            -131.4720 52.0810 0.0
-                            -131.4980 52.1490 0.0
-                            -131.6060 52.2250 0.0
-                            -131.6160 52.2280 0.0
-                            -131.7310 52.3310 0.0
-                            -131.8860 52.4470 0.0
-                            -132.0360 52.5460 0.0
-                            -132.2820 52.7150 0.0
-                            -132.3770 52.7890 0.0
-                            -132.4440 52.8490 0.0
-                            -132.4880 52.8920 0.0
-                            -132.5600 52.9460 0.0
-                            -132.5630 52.9500 0.0
-                            -132.7450 53.1010 0.0
-                            -132.8640 53.2060 0.0
-                            -132.8960 53.2350 0.0
-                            -132.9120 53.2510 0.0
-                            -133.0270 53.3640 0.0
-                            -133.1090 53.4400 0.0
-                            -133.1210 53.4520 0.0
-                            -134.1600 54.4900 0.0
-                            -134.6130 55.0190 0.0
-                            -135.0610 55.5590 0.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -130.6740 51.4600 10.0
-                            -130.9600 51.6760 10.0
-                            -131.3570 51.9930 10.0
-                            -131.4720 52.0810 10.0
-                            -131.4980 52.1490 10.0
-                            -131.6060 52.2250 10.0
-                            -131.6160 52.2280 10.0
-                            -131.7310 52.3310 10.0
-                            -131.8860 52.4470 10.0
-                            -132.0360 52.5460 10.0
-                            -132.2820 52.7150 10.0
-                            -132.3770 52.7890 10.0
-                            -132.4440 52.8490 10.0
-                            -132.4880 52.8920 10.0
-                            -132.5600 52.9460 10.0
-                            -132.5630 52.9500 10.0
-                            -132.7450 53.1010 10.0
-                            -132.8640 53.2060 10.0
-                            -132.8960 53.2350 10.0
-                            -132.9120 53.2510 10.0
-                            -133.0270 53.3640 10.0
-                            -133.1090 53.4400 10.0
-                            -133.1210 53.4520 10.0
-                            -134.1600 54.4900 10.0
-                            -134.6130 55.0190 10.0
-                            -135.0610 55.5590 10.0
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -130.6740 51.4600 20.0
-                            -130.9600 51.6760 20.0
-                            -131.3570 51.9930 20.0
-                            -131.4720 52.0810 20.0
-                            -131.4980 52.1490 20.0
-                            -131.6060 52.2250 20.0
-                            -131.6160 52.2280 20.0
-                            -131.7310 52.3310 20.0
-                            -131.8860 52.4470 20.0
-                            -132.0360 52.5460 20.0
-                            -132.2820 52.7150 20.0
-                            -132.3770 52.7890 20.0
-                            -132.4440 52.8490 20.0
-                            -132.4880 52.8920 20.0
-                            -132.5600 52.9460 20.0
-                            -132.5630 52.9500 20.0
-                            -132.7450 53.1010 20.0
-                            -132.8640 53.2060 20.0
-                            -132.8960 53.2350 20.0
-                            -132.9120 53.2510 20.0
-                            -133.0270 53.3640 20.0
-                            -133.1090 53.4400 20.0
-                            -133.1210 53.4520 20.0
-                            -134.1600 54.4900 20.0
-                            -134.6130 55.0190 20.0
-                            -135.0610 55.5590 20.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="QCSS08" name="QCSS - QUEEN CHARLOTTE - STRIKE SLIP beta = 1.84" tectonicRegion="Active Shallow Fault">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -130.6740 51.4600
+                            -130.9600 51.6760
+                            -131.3570 51.9930
+                            -131.4720 52.0810
+                            -131.4980 52.1490
+                            -131.6060 52.2250
+                            -131.6160 52.2280
+                            -131.7310 52.3310
+                            -131.8860 52.4470
+                            -132.0360 52.5460
+                            -132.2820 52.7150
+                            -132.3770 52.7890
+                            -132.4440 52.8490
+                            -132.4880 52.8920
+                            -132.5600 52.9460
+                            -132.5630 52.9500
+                            -132.7450 53.1010
+                            -132.8640 53.2060
+                            -132.8960 53.2350
+                            -132.9120 53.2510
+                            -133.0270 53.3640
+                            -133.1090 53.4400
+                            -133.1210 53.4520
+                            -134.1600 54.4900
+                            -134.6130 55.0190
+                            -135.0610 55.5590
+                    </gml:posList>
+                </gml:LineString>
+                <dip>90.0</dip>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>WC1994_QCSS</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.55" binWidth="0.1">
-                <occurRates>8.61575e-03 7.16625e-03 5.96061e-03 4.95780e-03 4.12371e-03 3.42994e-03 2.85289e-03 2.37292e-03 1.97370e-03 1.64165e-03 1.36546e-03 1.13574e-03 9.44662e-04 7.85734e-04 6.53543e-04 5.43591e-04 4.52138e-04 3.76071e-04 2.24933e-04</occurRates>
+                <occurRates>8.61576e-03 7.16625e-03 5.96061e-03 4.95780e-03 4.12371e-03 3.42994e-03 2.85289e-03 2.37292e-03 1.97371e-03 1.64165e-03 1.36546e-03 1.13574e-03 9.44663e-04 7.85734e-04 6.53543e-04 5.43591e-04 4.52138e-04 3.76071e-04 2.24933e-04</occurRates>
             </incrementalMFD>
             <rake>0.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
-        <complexFaultSource id="FWF00" name="FWF - FAIRWEATHER FAULT beta = 0" tectonicRegion="Active Shallow Fault">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -135.0620 55.5590 0.0
-                            -135.3310 55.8630 0.0
-                            -135.9580 56.8800 0.0
-                            -136.5390 57.6180 0.0
-                            -136.7560 57.9380 0.0
-                            -137.1700 58.4830 0.0
-                            -137.4950 58.6840 0.0
-                            -137.7820 58.9220 0.0
-                            -138.4860 59.4690 0.0
-                            -138.8510 59.7370 0.0
-                            -139.4250 60.0880 0.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -135.0620 55.5590 10.0
-                            -135.3310 55.8630 10.0
-                            -135.9580 56.8800 10.0
-                            -136.5390 57.6180 10.0
-                            -136.7560 57.9380 10.0
-                            -137.1700 58.4830 10.0
-                            -137.4950 58.6840 10.0
-                            -137.7820 58.9220 10.0
-                            -138.4860 59.4690 10.0
-                            -138.8510 59.7370 10.0
-                            -139.4250 60.0880 10.0
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -135.0620 55.5590 20.0
-                            -135.3310 55.8630 20.0
-                            -135.9580 56.8800 20.0
-                            -136.5390 57.6180 20.0
-                            -136.7560 57.9380 20.0
-                            -137.1700 58.4830 20.0
-                            -137.4950 58.6840 20.0
-                            -137.7820 58.9220 20.0
-                            -138.4860 59.4690 20.0
-                            -138.8510 59.7370 20.0
-                            -139.4250 60.0880 20.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="FWF00" name="FWF - FAIRWEATHER FAULT beta = 0" tectonicRegion="Active Shallow Fault">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -135.0620 55.5590
+                            -135.3310 55.8630
+                            -135.9580 56.8800
+                            -136.5390 57.6180
+                            -136.7560 57.9380
+                            -137.1700 58.4830
+                            -137.4950 58.6840
+                            -137.7820 58.9220
+                            -138.4860 59.4690
+                            -138.8510 59.7370
+                            -139.4250 60.0880
+                    </gml:posList>
+                </gml:LineString>
+                <dip>90.0</dip>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>WC1994_QCSS</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.55" binWidth="0.1">
-                <occurRates>9.84102e-04 9.84082e-04 9.84062e-04 9.84043e-04 9.84023e-04 9.84003e-04 9.83984e-04 9.83964e-04 9.83944e-04 9.83925e-04 9.83905e-04 9.83885e-04 9.83866e-04 9.83846e-04 9.83826e-04 9.83807e-04 9.83787e-04 9.83767e-04 9.83748e-04 1.96748e-04</occurRates>
+                <occurRates>9.84100e-04 9.84080e-04 9.84060e-04 9.84041e-04 9.84021e-04 9.84001e-04 9.83982e-04 9.83962e-04 9.83942e-04 9.83923e-04 9.83903e-04 9.83883e-04 9.83864e-04 9.83844e-04 9.83824e-04 9.83805e-04 9.83785e-04 9.83765e-04 9.83746e-04 1.96747e-04</occurRates>
             </incrementalMFD>
             <rake>0.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
-        <complexFaultSource id="FWF08" name="FWF - FAIRWEATHER FAULT beta = 1.84" tectonicRegion="Active Shallow Fault">
-            <complexFaultGeometry>
-                <faultTopEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -135.0620 55.5590 0.0
-                            -135.3310 55.8630 0.0
-                            -135.9580 56.8800 0.0
-                            -136.5390 57.6180 0.0
-                            -136.7560 57.9380 0.0
-                            -137.1700 58.4830 0.0
-                            -137.4950 58.6840 0.0
-                            -137.7820 58.9220 0.0
-                            -138.4860 59.4690 0.0
-                            -138.8510 59.7370 0.0
-                            -139.4250 60.0880 0.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultTopEdge>
-                <intermediateEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -135.0620 55.5590 10.0
-                            -135.3310 55.8630 10.0
-                            -135.9580 56.8800 10.0
-                            -136.5390 57.6180 10.0
-                            -136.7560 57.9380 10.0
-                            -137.1700 58.4830 10.0
-                            -137.4950 58.6840 10.0
-                            -137.7820 58.9220 10.0
-                            -138.4860 59.4690 10.0
-                            -138.8510 59.7370 10.0
-                            -139.4250 60.0880 10.0
-                        </gml:posList>
-                    </gml:LineString>
-                </intermediateEdge>
-                <faultBottomEdge>
-                    <gml:LineString>
-                        <gml:posList>
-                            -135.0620 55.5590 20.0
-                            -135.3310 55.8630 20.0
-                            -135.9580 56.8800 20.0
-                            -136.5390 57.6180 20.0
-                            -136.7560 57.9380 20.0
-                            -137.1700 58.4830 20.0
-                            -137.4950 58.6840 20.0
-                            -137.7820 58.9220 20.0
-                            -138.4860 59.4690 20.0
-                            -138.8510 59.7370 20.0
-                            -139.4250 60.0880 20.0
-                        </gml:posList>
-                    </gml:LineString>
-                </faultBottomEdge>
-            </complexFaultGeometry>
+        <simpleFaultSource id="FWF08" name="FWF - FAIRWEATHER FAULT beta = 1.84" tectonicRegion="Active Shallow Fault">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -135.0620 55.5590
+                            -135.3310 55.8630
+                            -135.9580 56.8800
+                            -136.5390 57.6180
+                            -136.7560 57.9380
+                            -137.1700 58.4830
+                            -137.4950 58.6840
+                            -137.7820 58.9220
+                            -138.4860 59.4690
+                            -138.8510 59.7370
+                            -139.4250 60.0880
+                    </gml:posList>
+                </gml:LineString>
+                <dip>90.0</dip>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
             <magScaleRel>WC1994_QCSS</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.55" binWidth="0.1">
-                <occurRates>9.20778e-03 7.65868e-03 6.37019e-03 5.29847e-03 4.40707e-03 3.66563e-03 3.04892e-03 2.53598e-03 2.10933e-03 1.75446e-03 1.45929e-03 1.21378e-03 1.00957e-03 8.39725e-04 6.98450e-04 5.80944e-04 4.83207e-04 4.01912e-04 3.34295e-04 5.97822e-05</occurRates>
+                <occurRates>9.20778e-03 7.65868e-03 6.37019e-03 5.29848e-03 4.40707e-03 3.66563e-03 3.04893e-03 2.53598e-03 2.10933e-03 1.75446e-03 1.45929e-03 1.21378e-03 1.00957e-03 8.39725e-04 6.98451e-04 5.80944e-04 4.83207e-04 4.01913e-04 3.34295e-04 5.97819e-05</occurRates>
             </incrementalMFD>
             <rake>0.0</rake>
-        </complexFaultSource>
+        </simpleFaultSource>
 
         <areaSource id="QCFA" name="QCFA - QUEEN CHARLOTTE FAULT - AREA" tectonicRegion="Active Shallow Crust">
             <areaGeometry>
@@ -1542,7 +1242,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>1.80673e-01 1.49877e-01 1.24331e-01 1.03139e-01 8.55590e-02 7.09756e-02 5.88779e-02 4.88423e-02 4.05172e-02 3.36111e-02 2.78821e-02 2.31297e-02 1.91873e-02 1.59168e-02 1.32038e-02 1.09533e-02 9.08629e-03 7.53754e-03 6.25278e-03 5.18700e-03 4.30289e-03 3.73207e-09</occurRates>
+                <occurRates>1.80673e-01 1.49877e-01 1.24331e-01 1.03139e-01 8.55590e-02 7.09756e-02 5.88779e-02 4.88423e-02 4.05172e-02 3.36111e-02 2.78821e-02 2.31297e-02 1.91873e-02 1.59168e-02 1.32038e-02 1.09533e-02 9.08629e-03 7.53754e-03 6.25278e-03 5.18700e-03 4.30289e-03 3.13873e-16</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
@@ -1580,7 +1280,7 @@
             <magScaleRel>PointMSR</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>3.75299e-02 3.16427e-02 2.66790e-02 2.24940e-02 1.89654e-02 1.59904e-02 1.34820e-02 1.13671e-02 9.58402e-03 8.08061e-03 6.81303e-03 5.74429e-03 4.84321e-03 4.08347e-03 3.44291e-03 2.90283e-03 2.44748e-03 2.06355e-03 1.73985e-03 1.46692e-03 1.23681e-03 1.08175e-09</occurRates>
+                <occurRates>3.75299e-02 3.16427e-02 2.66790e-02 2.24940e-02 1.89654e-02 1.59904e-02 1.34820e-02 1.13671e-02 9.58402e-03 8.08061e-03 6.81303e-03 5.74430e-03 4.84321e-03 4.08347e-03 3.44291e-03 2.90283e-03 2.44748e-03 2.06355e-03 1.73985e-03 1.46692e-03 1.23681e-03 9.07790e-17</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
