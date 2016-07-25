@@ -20,7 +20,7 @@ file paths must be manually specified
 
 period = '0.2'
 job = 'chv_nbcc'
-job_num = '604'
+job_num = '616'
 
 tmpper = period.replace('.','')
 
@@ -47,7 +47,7 @@ period = sys.argv[3]
 # read frisk data
 ###############################################################################
 
-friskpath = path.join('..','data','gscfrisk_comparisons',friskfolder,friskfile)
+friskpath = path.join('..','..','data','gscfrisk_comparisons',friskfolder,friskfile)
 friskprobs = array([0.02, 0.01375, 0.01, 0.00445, 0.0021, 0.001, 0.0005, 0.000404, 0.0002, 0.0001])
 
 friskhaz = []
@@ -67,7 +67,7 @@ for line in lines:
 ###############################################################################
 # read OQ data
 ###############################################################################
-hazcurvefile = path.join('..','jobs_hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
+hazcurvefile = path.join('..','..','jobs','hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
 
 # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
 try:
@@ -139,7 +139,7 @@ for lon, lat, curve in zip(curlon, curlat, curves):
 outtxt = jobhead + oqhead + oqt + frhead + frt + rathead + rat + pcdhead + pcd
 
 # write to file
-csvfile =  path.join('..','jobs_hazard',job, job + '_hazard_ratio_' + str(period) + '_' + job_num +'.csv')
+csvfile =  path.join('..','..','jobs','hazard',job, job + '_hazard_ratio_' + str(period) + '_' + job_num +'.csv')
 f = open(csvfile, 'wb')
 f.write(outtxt)
 f.close()
