@@ -6,9 +6,8 @@
 #            e.g. python make_openquake_source_file.py SWCan_T3EclC1.pkl swcan
 #####################################################################################
 
-def make_incremental_occurrence_text(m, effN0, binwid):
-    betacurve, mrange = get_oq_incrementalMFD(m['src_beta'][i], effN0, \
-                                              m['min_mag'], m['max_mag'][j], binwid)
+def make_incremental_occurrence_text(beta, effN0, mmin, mmax, binwid):
+    betacurve, mrange = get_oq_incrementalMFD(beta, effN0, mmin, mmax, binwid)
     
     # convert cummulative rates to annual occurrence rates
     occ_rates = []
@@ -110,7 +109,6 @@ for i, bl in enumerate(betalist):
             # write area sources
             #######################################################################
             if m['src_type'] == 'area':
-                print m['src_type']
                 
                 # rename source code if "." exists
                 m['src_code'].replace('.', '')
@@ -170,7 +168,12 @@ for i, bl in enumerate(betalist):
                 
                 # set incremental recurrence pars
                 binwid = 0.1
-                octxt = make_incremental_occurrence_text(m, m['src_N0'][i], binwid)
+                effN0 = m['src_N0'][i] * m['src_weight']
+                
+                octxt = make_incremental_occurrence_text(m['src_beta'][i], effN0, \
+                                                         m['min_mag'], m['max_mag'][j], \
+                                                         binwid)
+                                                         
                 newxml += '            <incrementalMFD minMag="'+str('%0.2f' % (m['min_mag']+0.5*binwid))+'" binWidth="'+str(binwid)+'">\n'
                 newxml += '                <occurRates>'+octxt+'</occurRates>\n'
                 newxml += '            </incrementalMFD>\n'
@@ -229,8 +232,8 @@ for i, bl in enumerate(betalist):
                     ###################################################################
                     # do complex faults
                     ###################################################################
-                    #if m['fault_dip'][0] != m['fault_dip'][1]: # old
-                    if m['fault_dip'][0] >= 0: # catches all faults
+                    if m['fault_dip'][0] != m['fault_dip'][1]:
+                    #if m['fault_dip'][0] >= 0: # catches all faults
                         #if m['fault_dip'][0] > 0:
                         if m['src_code'].startswith('CASCADIA'):
                             src_code = 'CIS'
@@ -265,8 +268,7 @@ for i, bl in enumerate(betalist):
                         newxml += '                <intermediateEdge>\n'
                         newxml += '                    <gml:LineString>\n'
                         newxml += '                        <gml:posList>\n'
-                    
-                        
+                                            
                         # calculate lat lons from upper edge
                         # get intermediate h-dist
                         interhdist = (m['src_dep'][1] - m['src_dep'][0]) / tan(radians(m['fault_dip'][0]))
@@ -332,24 +334,13 @@ for i, bl in enumerate(betalist):
                             # adjust N0 value to account for weighting of fault sources
                             effN0 = m['src_N0'][i] * m['src_weight']
                             
-                            if m['max_mag'][j] - m['min_mag'] < 0.4:
-                                binwid = 0.1
-                            else:
-                                binwid = 0.1
-                    
-                            betacurve, mrange = get_oq_incrementalMFD(m['src_beta'][i], effN0, \
-                                                                      m['min_mag'], m['max_mag'][j], binwid)
-                            
-                            # convert cummulative rates to annual occurrence rates
-                            occ_rates = []
-                            for b in range(0, len(betacurve[0:-1])):
-                                occ_rates.append(betacurve[b] - betacurve[b+1])
-                            occ_rates.append(betacurve[-1])
-                            
-                            # make text object                        
-                            octxt = str('%0.5e' % occ_rates[0])
-                            for bc in occ_rates[1:]:
-                                octxt += ' ' + str('%0.5e' % bc)
+                            if m['src_code'].startswith('QCSS'):
+                                print '\n', m, '\n'
+                                hgm = m
+                                
+                            octxt = make_incremental_occurrence_text(m['src_beta'][i], effN0, \
+                                                                     m['min_mag'], m['max_mag'][j], \
+                                                                     binwid)
                     
                             # make text
                             newxml += '            <incrementalMFD minMag="'+str('%0.2f' % (m['min_mag']+0.5*binwid))+'" binWidth="'+str(binwid)+'">\n'
@@ -443,19 +434,13 @@ for i, bl in enumerate(betalist):
                         if m['src_beta'][i] > -99:
                             # adjust N0 value to account for weighting of fault sources
                             effN0 = m['src_N0'][i] * m['src_weight']
-                            #effN0 = m['src_N0'][i] # TEMPORARY ONLY!!!!!!!!!!!!!
                             
-                    
-                            if m['max_mag'][j] - m['min_mag'] < 0.1:
-                                binwid = 0.1
-                            else:
-                                binwid = 0.1
-                    
-                            betacurve, mrange = get_oq_incrementalMFD(m['src_beta'][i], effN0, \
-                                                                      m['min_mag'], m['max_mag'][j], binwid)
-                            octxt = str('%0.5e' % betacurve[0])
-                            for bc in betacurve[1:]:
-                                octxt += ' ' + str('%0.5e' % bc)
+                            if m['src_code'].startswith('QCSS'):
+                                hgm = m
+                            
+                            octxt = make_incremental_occurrence_text(m['src_beta'][i], effN0, \
+                                                                     m['min_mag'], m['max_mag'][j], \
+                                                                     binwid)
                     
                             # make text
                             newxml += '            <incrementalMFD minMag="'+str('%0.2f' % (m['min_mag']+0.5*binwid))+'" binWidth="'+str(binwid)+'">\n'
@@ -500,8 +485,8 @@ for i, bl in enumerate(betalist):
         
 ######################################################################
 # now that the source file have been written, make the logic tree file
-# if multimodel - adjust weights
-if multimods == 'True':
+#if multimodel - adjust weights:
+if multimods == True:
     branch_wt = array(branch_wt)
     branch_wt *= m['src_reg_wt']
     print 'Branch Weights: ', m['src_reg_wt']
