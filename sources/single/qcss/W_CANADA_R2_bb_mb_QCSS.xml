@@ -40,7 +40,7 @@
                 <upperSeismoDepth>0.0</upperSeismoDepth>
                 <lowerSeismoDepth>20.0</lowerSeismoDepth>
             </simpleFaultGeometry>
-            <magScaleRel>WC1994_QCSS</magScaleRel>
+            <magScaleRel>WC1994</magScaleRel>
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.55" binWidth="0.1">
                 <occurRates>3.96219e-02 3.26632e-02 2.68752e-02 2.20610e-02 1.80567e-02 1.47261e-02 1.19559e-02 9.65167e-03 7.73513e-03 6.14102e-03 4.81511e-03 3.71227e-03 2.79496e-03 2.03199e-03 1.39737e-03 8.69527e-04 4.30484e-04 6.53049e-05</occurRates>

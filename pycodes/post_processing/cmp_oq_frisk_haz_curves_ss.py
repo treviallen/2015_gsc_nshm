@@ -19,9 +19,9 @@ manually prior to each test
 ###############################################################################
 
 period = '1.0'
-job = 'chv_nbcc'
-job_num = '601'
-fpath = 'CHVcomparison' #'VICMsimple' # VICMsimple, VICM_d50, VICMsimple2
+job = 'qcss_nbcc'
+job_num = '625'
+fpath = 'QCSScomparison' #'CHVcomparison' #'VICMsimple' # VICMsimple, VICM_d50, VICMsimple2
 
 '''
    397 | successful | 2016-05-11 18:38:32 | VICMbest 2015 NBCC Hazard - BEST BRANCHES
@@ -40,8 +40,9 @@ fpath = 'CHVcomparison' #'VICMsimple' # VICMsimple, VICM_d50, VICMsimple2
 #friskfile = 'OQ_'+job.upper()+'besttest'+period+'_000thperc.sol'
 #friskfile = 'OQ_VICMbesttest'+period+'_000thperc.sol' # 3 GMMs
 friskfile = 'OQ_CHVregion_'+period+'_20s_000thperc.sol' # full model - 20 slices
+friskfile = 'OQ_QCSS_'+period+'_000thperc.sol' # full model - 20 slices
 #friskfile = 'OQ_VICMbGMPE_'+period+'_000thperc.sol' # best GMM
-friskpath = path.join('..','..','..','openquake','OQ_GSCFRISK_comparisons',fpath,friskfile)
+friskpath = path.join('..','..','data','gscfrisk_comparisons',fpath,friskfile)
 #friskhaz = loadtxt(friskpath, delimiter=',', skiprows=4, usecols = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
 friskprobs = [0.02, 0.01375, 0.01, 0.00445, 0.0021, 0.001, 0.0005, 0.000404, 0.0002, 0.0001]
 
@@ -64,14 +65,12 @@ for line in lines:
 ###############################################################################
 # read OQ data
 ###############################################################################
-hazcurvefile = path.join('..','jobs_hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
+
+hazcurvefile = path.join('..','..','jobs','hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
+hazcurvefile = path.join('..','..','jobs','hazard',job,'out','hazard_curve-rlz-000_'+job_num+'-SA('+period+').xml')
 
 # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
-try:
-    lines = open(hazcurvefile, 'r').readlines()
-except IOError, e:
-    hazcurvefile = path.join(job,'out','hazard_curve-smltp_b1-gsimltp_@_@_b31_@_@_@_@_-SA(0.2).xml')
-    lines = open(hazcurvefile, 'r').readlines()
+lines = open(hazcurvefile, 'r').readlines()
 lines[2] = 'xmlns="http://openquake.org/xmlns/nrml/0.4"\n'
 out = open(hazcurvefile, 'w')
 out.writelines(lines)
@@ -123,8 +122,8 @@ for lon, lat, curve in zip(curlon, curlat, curves):
             if ii == 6:
               i += 1
               ii = 0
-              plt.savefig(path.join('..','jobs_hazard',job,'cmp_oq_frisk_hazcurves'+str(i)+'_'+period+'_2km.png'), format='png',bbox_inches='tight')
+              plt.savefig(path.join('..','..','jobs','hazard',job,'cmp_oq_frisk_hazcurves'+str(i)+'_'+period+'_'+job_num+'.png'), format='png',bbox_inches='tight')
               fig = plt.figure(i, figsize=(14, 10))
 
-plt.savefig(path.join('..','jobs_hazard',job,'cmp_oq_frisk_hazcurves'+str(i)+'_'+period+'_2km.png'), format='png',bbox_inches='tight')
+plt.savefig(path.join('..','..','jobs','hazard',job,'cmp_oq_frisk_hazcurves'+str(i)+'_'+period+'_'+job_num+'.png'), format='png',bbox_inches='tight')
 plt.show()
