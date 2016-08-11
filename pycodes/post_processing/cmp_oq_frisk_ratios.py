@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 #from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
 from numpy import array, diff, exp, log, interp, loadtxt, vstack, mean
 from oq_tools import return_annualised_haz_curves
-import matplotlib.pylab as plt
 from os import path, sep
 import warnings, sys
 reload(sys) # for unicode chars
@@ -75,7 +74,6 @@ imls = array(metadata['imls'])
 ###############################################################################
 i = 1
 ii = 0
-fig = plt.figure(i, figsize=(14, 10))
 yhaz = 1./2475.
 
 # set headers
