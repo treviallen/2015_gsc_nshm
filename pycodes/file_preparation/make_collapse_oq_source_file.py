@@ -243,8 +243,8 @@ for m in model:
             ###################################################################
             # do complex faults
             ###################################################################
-            #if m['fault_dip'][0] != m['fault_dip'][1]: # old
-            if m['fault_dip'][0] >= 0: # catches all faults
+            if m['fault_dip'][0] != m['fault_dip'][1]:
+            #if m['fault_dip'][0] >= 0: # catches all faults
                 #if m['fault_dip'][0] > 0:
                 if m['src_code'].startswith('CASCADIA'):
                     src_code = 'CIS'
