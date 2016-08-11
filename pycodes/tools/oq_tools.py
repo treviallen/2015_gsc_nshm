@@ -235,7 +235,7 @@ def map_haz(fig, plt, haz_map_file, sitelon, sitelat, **kwargs):
         mbuffer: map buffer in degrees
     '''
 
-    from oq_output.hazard_map_converter import parse_nrml_hazard_map
+    from openquake.nrmllib.hazard.parsers import GMFScenarioParser
     from mpl_toolkits.basemap import Basemap
     from numpy import arange, array, log10, mean, mgrid, percentile
     from matplotlib.mlab import griddata
@@ -261,6 +261,7 @@ def map_haz(fig, plt, haz_map_file, sitelon, sitelat, **kwargs):
             if key == 'mbuffer':
                 mbuff = kwargs[key]
     
+    gmfsp = GMFScenarioParser(haz_map_file).parse()
     metadata, values = parse_nrml_hazard_map(haz_map_file)
     
     hazvals = []
