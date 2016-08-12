@@ -7,9 +7,8 @@
 #####################################################################################
 
 #####################################################################################
-def make_incremental_occurrence_text(m, effN0, binwid, j):
-    betacurve, mrange = get_oq_incrementalMFD(m['src_beta'][i], effN0, \
-                                              m['min_mag'], m['max_mag'][j], binwid)
+def make_incremental_occurrence_text(beta, effN0, mmin, mmax, binwid):
+    betacurve, mrange = get_oq_incrementalMFD(beta, effN0, mmin, mmax, binwid)
     
     # convert cummulative rates to annual occurrence rates
     occ_rates = []
@@ -343,19 +342,9 @@ for i, bl in enumerate(betalist):
                                 else:
                                     binwid = 0.1
                         
-                                betacurve, mrange = get_oq_incrementalMFD(m['src_beta'][i], effN0, \
-                                                                          m['min_mag'] , m['max_mag'][j], binwid)
-                                
-                                # convert cummulative rates to annual occurrence rates
-                                occ_rates = []
-                                for b in range(0, len(betacurve[0:-1])):
-                                    occ_rates.append(betacurve[b] - betacurve[b+1])
-                                occ_rates.append(betacurve[-1])
-                                
-                                # make text object                        
-                                octxt = str('%0.5e' % occ_rates[0])
-                                for bc in occ_rates[1:]:
-                                    octxt += ' ' + str('%0.5e' % bc)
+                                octxt = make_incremental_occurrence_text(m['src_beta'][i], effN0, \
+                                                                     m['min_mag'], m['max_mag'][j], \
+                                                                     binwid)
                         
                                 # make text
                                 newxml += '            <incrementalMFD minMag="'+str('%0.2f' % (m['min_mag']+0.5*binwid))+'" binWidth="'+str(binwid)+'">\n'
@@ -458,11 +447,9 @@ for i, bl in enumerate(betalist):
                                 else:
                                     binwid = 0.1
                         
-                                betacurve, mrange = get_oq_incrementalMFD(m['src_beta'][i], effN0, \
-                                                                          m['min_mag'], m['max_mag'][j], binwid)
-                                octxt = str('%0.5e' % betacurve[0])
-                                for bc in betacurve[1:]:
-                                    octxt += ' ' + str('%0.5e' % bc)
+                                octxt = make_incremental_occurrence_text(m['src_beta'][i], effN0, \
+                                                                     m['min_mag'], m['max_mag'][j], \
+                                                                     binwid)
                         
                                 # make text
                                 newxml += '            <incrementalMFD minMag="'+str('%0.2f' % (m['min_mag']+0.5*binwid))+'" binWidth="'+str(binwid)+'">\n'
@@ -503,7 +490,7 @@ for i, bl in enumerate(betalist):
         	file_src = single_src
         	
         # write new data to file
-        outxml = path.join('temp_source_files', '_'.join((outbase,bl,ml+'.xml')))
+        outxml = path.join('temp_source_files', '_'.join((outbase,bl,ml,file_src+'.xml')))
         
         f = open(outxml,'w')
         f.write(newxml)
