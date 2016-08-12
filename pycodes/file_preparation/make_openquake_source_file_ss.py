@@ -163,6 +163,7 @@ for i, bl in enumerate(betalist):
                     # set incremental recurrence pars
                     binwid = 0.1
                     octxt = make_incremental_occurrence_text(m, m['src_N0'][i], binwid, j)
+                    
                     newxml += '            <incrementalMFD minMag="'+str('%0.2f' % (m['min_mag']+0.5*binwid))+'" binWidth="'+str(binwid)+'">\n'
                     newxml += '                <occurRates>'+octxt+'</occurRates>\n'
                     newxml += '            </incrementalMFD>\n'
@@ -337,11 +338,7 @@ for i, bl in enumerate(betalist):
                                 # adjust N0 value to account for weighting of fault sources
                                 effN0 = m['src_N0'][i] * m['src_weight']
                                 
-                                if m['max_mag'][j] - m['min_mag'] < 0.4:
-                                    binwid = 0.1
-                                else:
-                                    binwid = 0.1
-                        
+                                binwid = 0.1
                                 octxt = make_incremental_occurrence_text(m['src_beta'][i], effN0, \
                                                                      m['min_mag'], m['max_mag'][j], \
                                                                      binwid)
@@ -440,13 +437,8 @@ for i, bl in enumerate(betalist):
                                 # adjust N0 value to account for weighting of fault sources
                                 effN0 = m['src_N0'][i] * m['src_weight']
                                 #effN0 = m['src_N0'][i] # TEMPORARY ONLY!!!!!!!!!!!!!
-                                
-                        
-                                if m['max_mag'][j] - m['min_mag'] < 0.1:
-                                    binwid = 0.1
-                                else:
-                                    binwid = 0.1
-                        
+                                                                
+                                binwid = 0.1                        
                                 octxt = make_incremental_occurrence_text(m['src_beta'][i], effN0, \
                                                                      m['min_mag'], m['max_mag'][j], \
                                                                      binwid)
@@ -487,7 +479,7 @@ for i, bl in enumerate(betalist):
         if single_src == 'CASCADIA':
             file_src = 'CIS'
         else:
-        	file_src = single_src
+            file_src = single_src
         	
         # write new data to file
         outxml = path.join('temp_source_files', '_'.join((outbase,bl,ml,file_src+'.xml')))
