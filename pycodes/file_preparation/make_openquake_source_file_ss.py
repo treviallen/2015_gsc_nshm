@@ -209,9 +209,6 @@ for i, bl in enumerate(betalist):
                     newxml += '            </hypoDepthDist>\n'
                     newxml += '        </areaSource>\n\n'
                     
-                    if m['src_code'] == 'VICM':
-                        print m
-        
                 #######################################################################
                 # now make fault sources
                 #######################################################################
@@ -243,17 +240,6 @@ for i, bl in enumerate(betalist):
                             newxml += '                    <gml:LineString>\n'
                             newxml += '                        <gml:posList>\n'
                         
-                            '''
-                            # not needed - appears to be fixed
-                            # if CAS, remove second last point
-                            if m['src_code'] == 'CASCADIA':
-                                print m['src_shape']
-                                a = m['src_shape'][:-2]
-                                b = m['src_shape'][-1]
-                                m['src_shape'] = vstack((a,b))
-                                print m['src_shape']
-                            '''
-                                
                             # calculate lat lons from surface projection
                             # get upper h-dist
                             upperhdist = m['src_dep'][0] / tan(radians(m['fault_dip'][0]))
@@ -414,8 +400,8 @@ for i, bl in enumerate(betalist):
                             elif src_code.startswith('WIN'):
                                 newxml += '            <magScaleRel>GSCOffshoreThrustsWIN</magScaleRel>\n'
                             elif src_code.startswith('HGT'):
-                                #newxml += '            <magScaleRel>GSCOffshoreThrustsHGT</magScaleRel>\n'
-                                newxml += '            <magScaleRel>PointMSR</magScaleRel>\n'
+                                newxml += '            <magScaleRel>GSCOffshoreThrustsHGT</magScaleRel>\n'
+                                #newxml += '            <magScaleRel>PointMSR</magScaleRel>\n'
                             elif src_code.startswith('QCSS') or src_code.startswith('FWF'):
                                 newxml += '            <magScaleRel>WC1994_QCSS</magScaleRel>\n'
                             elif src_code.startswith('EISO'):
