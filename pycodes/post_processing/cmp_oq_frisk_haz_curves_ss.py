@@ -18,9 +18,9 @@ manually prior to each test
 # settings
 ###############################################################################
 
-period = '1.0'
+period = '0.2'
 job = 'qcss_nbcc'
-job_num = '625'
+job_num = '628'
 fpath = 'QCSScomparison' #'CHVcomparison' #'VICMsimple' # VICMsimple, VICM_d50, VICMsimple2
 
 '''

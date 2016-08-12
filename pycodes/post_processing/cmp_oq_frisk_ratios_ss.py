@@ -18,15 +18,16 @@ file paths must be manually specified
 # settings
 ###############################################################################
 
-period = '0.2'
-job = 'chv_nbcc'
-job_num = '616'
+period = '1.0'
+job = 'qcss_nbcc'
+job_num = '628'
 
 tmpper = period.replace('.','')
 
 # set frisk files
 friskfolder = 'CHVcomparison'
-friskfile   = 'OQ_CHVregion_0.2_100s_000thperc.sol'
+friskfolder = 'QCSScomparison'
+friskfile   = 'OQ_QCSS_1.0_000thperc.sol'
 
 
 '''
@@ -68,14 +69,10 @@ for line in lines:
 # read OQ data
 ###############################################################################
 hazcurvefile = path.join('..','..','jobs','hazard',job,'out','hazard_curve-mean_'+job_num+'-SA('+period+').xml')
+hazcurvefile = path.join('..','..','jobs','hazard',job,'out','hazard_curve-rlz-000_'+job_num+'-SA('+period+').xml')
 
-# Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
-try:
-    lines = open(hazcurvefile, 'r').readlines()
-except IOError, e:
-    print
-    print 'File 1 not found.'
-    sys.exit(1)
+lines = open(hazcurvefile, 'r').readlines()
+
 lines[2] = 'xmlns="http://openquake.org/xmlns/nrml/0.4"\n'
 out = open(hazcurvefile, 'w')
 out.writelines(lines)
