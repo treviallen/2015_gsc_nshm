@@ -334,10 +334,6 @@ for i, bl in enumerate(betalist):
                             # adjust N0 value to account for weighting of fault sources
                             effN0 = m['src_N0'][i] * m['src_weight']
                             
-                            if m['src_code'].startswith('QCSS'):
-                                print '\n', m, '\n'
-                                hgm = m
-                                
                             octxt = make_incremental_occurrence_text(m['src_beta'][i], effN0, \
                                                                      m['min_mag'], m['max_mag'][j], \
                                                                      binwid)
@@ -434,9 +430,6 @@ for i, bl in enumerate(betalist):
                         if m['src_beta'][i] > -99:
                             # adjust N0 value to account for weighting of fault sources
                             effN0 = m['src_N0'][i] * m['src_weight']
-                            
-                            if m['src_code'].startswith('QCSS'):
-                                hgm = m
                             
                             octxt = make_incremental_occurrence_text(m['src_beta'][i], effN0, \
                                                                      m['min_mag'], m['max_mag'][j], \
