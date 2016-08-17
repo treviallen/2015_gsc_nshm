@@ -297,7 +297,7 @@ for i, bl in enumerate(betalist):
                             # get fault area scaling model
                             '''
                             src_code = m['src_code']
-                            if src_code == 'CIS':
+                            if src_code == 'CIS' or src_code == 'CASCADIA':
                                 newxml += '            <magScaleRel>GSCCascadia</magScaleRel>\n'
                             elif src_code.startswith('WIN'):
                                 newxml += '            <magScaleRel>GSCOffshoreThrustsWIN</magScaleRel>\n'
@@ -372,14 +372,16 @@ for i, bl in enumerate(betalist):
                             newxml += '                <gml:LineString>\n'
                             newxml += '                    <gml:posList>\n'
                         
+                            # simple fauls use surface projection!
+                            '''
                             # calculate lat lons from surface projection
                             # get upper h-dist
                             upperhdist = m['src_dep'][0] / tan(radians(m['fault_dip'][0]))
                             upperxy = get_line_parallels(m['src_shape'], upperhdist)[0]
-                        
-                            # make upper text
+                            '''
+                            
                             xytxt = ''
-                            for xy in upperxy:
+                            for xy in m['src_shape']:
                                 xytxt += '                            ' + \
                                          ' '.join((str('%0.4f' % xy[0]), str('%0.4f' % xy[1])))+'\n'
                             newxml += xytxt
@@ -395,7 +397,7 @@ for i, bl in enumerate(betalist):
                             # get fault area scaling model
                             '''
                             src_code = m['src_code']
-                            if src_code == 'CIS':
+                            if src_code == 'CIS' or src_code == 'CASCADIA':
                                 newxml += '            <magScaleRel>GSCCascadia</magScaleRel>\n'
                             elif src_code.startswith('WIN'):
                                 newxml += '            <magScaleRel>GSCOffshoreThrustsWIN</magScaleRel>\n'
