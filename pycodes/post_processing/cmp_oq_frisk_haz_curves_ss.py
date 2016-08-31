@@ -20,18 +20,8 @@ manually prior to each test
 
 period = '0.2'
 job = 'qcss_nbcc'
-job_num = '628'
+job_num = '644'
 fpath = 'QCSScomparison' #'CHVcomparison' #'VICMsimple' # VICMsimple, VICM_d50, VICMsimple2
-
-'''
-   397 | successful | 2016-05-11 18:38:32 | VICMbest 2015 NBCC Hazard - BEST BRANCHES
-   399 | successful | 2016-05-11 19:28:32 | VICMbest 2015 NBCC Hazard - 3 GMMs
-   400 | successful | 2016-05-11 19:51:35 | VICMbest 2015 NBCC Hazard - LOW GMM
-   401 | successful | 2016-05-11 20:00:57 | VICMbest 2015 NBCC Hazard - HIGH GMM
-   402 | successful | 2016-05-11 20:17:31 | VICMbest 2015 NBCC Hazard - 3 GMMs - REVERSE ORDER
-   403 | successful | 2016-05-19 21:11:45 | VICMbest 2015 NBCC Hazard - LOW GMM
-   404 | successful | 2016-05-19 22:03:13 | VICMbest 2015 NBCC Hazard - 3 GMMs - REVERSE ORDER # updated base.py and it worked with VICMsimple!   
-'''
 
 ###############################################################################
 # read frisk sol data

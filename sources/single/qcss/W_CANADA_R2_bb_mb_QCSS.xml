@@ -40,11 +40,14 @@
                 <upperSeismoDepth>0.0</upperSeismoDepth>
                 <lowerSeismoDepth>20.0</lowerSeismoDepth>
             </simpleFaultGeometry>
-            <magScaleRel>WC1994_QCSS</magScaleRel>
+            <!--<magScaleRel>WC1994_QCSS</magScaleRel>-->
+            <magScaleRel>GSCEISB</magScaleRel>
+            <!--<magScaleRel>GSCCascadia</magScaleRel>-->
             <ruptAspectRatio>1.0</ruptAspectRatio>
             <incrementalMFD minMag="6.55" binWidth="0.1">
                 <occurRates>1.39174e-02 1.15759e-02 9.62842e-03 8.00854e-03 6.66120e-03 5.54052e-03 4.60839e-03 3.83308e-03 3.18821e-03 2.65183e-03 2.20569e-03 1.83460e-03 1.52595e-03 1.26923e-03 1.05569e-03 8.78086e-04 7.30358e-04 1.30610e-04</occurRates>
             </incrementalMFD>
+            <!--<truncGutenbergRichterMFD aValue="4.1177" bValue="0.8" minMag="6.5" maxMag="8.22"/>-->
             <rake>0.0</rake>
         </simpleFaultSource>
 

@@ -20,7 +20,7 @@ file paths must be manually specified
 
 period = '1.0'
 job = 'qcss_nbcc'
-job_num = '628'
+job_num = '640'
 
 tmpper = period.replace('.','')
 
