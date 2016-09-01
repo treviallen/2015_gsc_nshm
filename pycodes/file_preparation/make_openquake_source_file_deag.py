@@ -37,9 +37,9 @@ from os import path
 ########################################################################################
 
 # this section needs to be edited
-sitename = 'Victoria'
-sitelat = 48.43
-sitelon = -123.37
+sitename = 'QCF site'
+sitelat = 53.45
+sitelon = -132.80
 maxgmpedist = 400.
 
 ########################################################################################
