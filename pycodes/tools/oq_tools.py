@@ -438,7 +438,7 @@ def get_line_parallels(pts, rngkm):
 # renames obspy tool to something I remember
 # returns rngkm (km), az, baz (degrees)
 def distance(lat1, lon1, lat2, lon2):
-    from obspy.core.util.geodetics import gps2DistAzimuth
+    from obspy.geodetics.base import gps2dist_azimuth
     
     rngm, az, baz = gps2DistAzimuth(lat1, lon1, lat2, lon2)
     

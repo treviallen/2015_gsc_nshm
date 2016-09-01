@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml"
+      xmlns="http://openquake.org/xmlns/nrml/0.4">
+
+    <sourceModel name="W_CANADA_R2">
+
+        <areaSource id="CST" name="CST  -  COASTAL MOUNTAINS REVISED OCT 2013 (was CSTN and CSTS(placeholder - not included) in Trial 2)" tectonicRegion="Active Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -136.7770 58.5170
+                                -133.6690 59.2860
+                                -130.6630 57.0120
+                                -126.7030 53.2690
+                                -124.4300 51.6500
+                                -127.0900 50.0700
+                                -130.3800 51.6200
+                                -130.9300 52.0600
+                                -129.7000 52.6000
+                                -130.6200 53.6500
+                                -131.5000 54.4000
+                                -133.4800 54.5000
+                                -136.6440 58.4020
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>15.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>6.47685e-03 5.22951e-03 4.23183e-03 3.43214e-03 2.78975e-03 2.27261e-03 1.85539e-03 1.51806e-03 1.24472e-03 1.02275e-03 8.42102e-04 6.94773e-04 5.74357e-04 4.75730e-04 3.94779e-04 3.28200e-04 2.73329e-04 2.28018e-04 1.90529e-04 1.59453e-04 1.33644e-04 7.85210e-05 6.59954e-05 5.55394e-05 6.68528e-06 5.63948e-06 4.76247e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="15.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="EXP" name="EXP  -  EXPLORER PLATE BENDING" tectonicRegion="Active Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -130.3800 51.6200
+                                -127.0900 50.0700
+                                -127.7500 49.6400
+                                -130.9000 51.3300
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>15.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>3.35695e-02 2.79895e-02 2.33397e-02 1.94645e-02 1.62346e-02 1.35421e-02 1.12975e-02 9.42595e-03 7.86534e-03 6.56385e-03 5.47834e-03 4.57286e-03 3.81747e-03 3.18722e-03 2.66132e-03 2.22245e-03 1.85616e-03 1.55041e-03 1.29517e-03 1.08207e-03 9.04137e-04 5.28882e-04 6.31445e-05 5.27788e-05 4.41197e-05</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="15.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="HEC" name="HEC  -  HECATE STRAIT" tectonicRegion="Active Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -133.4800 54.5000
+                                -131.5000 54.4000
+                                -130.6200 53.6500
+                                -129.7000 52.6000
+                                -130.9300 52.0600
+                                -132.7500 53.4000
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>15.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>8.14431e-03 6.68535e-03 5.48880e-03 4.50729e-03 3.70200e-03 3.04118e-03 2.49881e-03 2.05356e-03 1.68797e-03 1.38773e-03 1.14112e-03 9.38516e-04 7.72032e-04 6.35203e-04 5.22726e-04 4.30248e-04 3.54199e-04 2.91648e-04 2.40190e-04 1.97849e-04 1.63003e-04 9.40240e-05 7.74938e-05 6.38819e-05 7.52442e-06 6.20511e-06 5.11809e-06</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="15.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="OFS" name="OFS  -  OFFSHORE" tectonicRegion="Active Shallow Offshore">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -130.9000 51.3300
+                                -127.7500 49.6400
+                                -128.5000 49.1500
+                                -127.9300 48.7600
+                                -128.2000 47.3500
+                                -129.5000 47.3500
+                                -131.5000 51.0000
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>10.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>8.61956e-01 6.85676e-01 5.45475e-01 4.33963e-01 3.45264e-01 2.74709e-01 2.18583e-01 1.73932e-01 1.38410e-01 1.10148e-01 8.76607e-02 6.97681e-02 5.55303e-02 4.42003e-02 3.51838e-02 2.80080e-02 2.22968e-02 1.77511e-02 1.41328e-02 1.12527e-02 8.95989e-03 4.99425e-03 5.68151e-04 4.52457e-04 3.60340e-04</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="7.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+                <hypoDepth probability="0.25" depth="10.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <simpleFaultSource id="HGT00" name="HGT - HAIDA GWAII THRUST beta=0" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -131.4950 51.8250
+                            -133.6310 53.4690
+                            -134.5130 54.5150
+                    </gml:posList>
+                </gml:LineString>
+                <dip>25.0</dip>
+                <upperSeismoDepth>3.0</upperSeismoDepth>
+                <lowerSeismoDepth>22.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
+            <magScaleRel>GSCOffshoreThrustsHGT</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="7.05" binWidth="0.1">
+                <occurRates>7.71107e-04 7.71092e-04 7.71076e-04 7.71061e-04 7.71046e-04 7.71030e-04 7.71015e-04 5.57057e-04 5.33275e-04 4.87389e-04 7.45021e-05 7.45006e-05</occurRates>
+            </incrementalMFD>
+            <rake>90.0</rake>
+        </simpleFaultSource>
+
+        <simpleFaultSource id="HGT08" name="HGT - HAIDA GWAII THRUST beta=1.84" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -131.4950 51.8250
+                            -133.6310 53.4690
+                            -134.5130 54.5150
+                    </gml:posList>
+                </gml:LineString>
+                <dip>25.0</dip>
+                <upperSeismoDepth>3.0</upperSeismoDepth>
+                <lowerSeismoDepth>22.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
+            <magScaleRel>GSCOffshoreThrustsHGT</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="7.05" binWidth="0.1">
+                <occurRates>2.27571e-03 1.89285e-03 1.57440e-03 1.30952e-03 1.08921e-03 9.05961e-04 7.53543e-04 4.59137e-04 3.64925e-04 2.79617e-04 3.60664e-05 2.99986e-05</occurRates>
+            </incrementalMFD>
+            <rake>90.0</rake>
+        </simpleFaultSource>
+
+        <simpleFaultSource id="WIN00" name="WIN - WINONA THRUST beta=0" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -128.1640 49.9440
+                            -129.8170 50.8650
+                    </gml:posList>
+                </gml:LineString>
+                <dip>15.0</dip>
+                <upperSeismoDepth>2.0</upperSeismoDepth>
+                <lowerSeismoDepth>5.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
+            <magScaleRel>GSCOffshoreThrustsWIN</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="7.05" binWidth="0.1">
+                <occurRates>5.55255e-04 3.83329e-04 3.83321e-04 3.50280e-04 5.29774e-05 5.29763e-05 4.23803e-05</occurRates>
+            </incrementalMFD>
+            <rake>90.0</rake>
+        </simpleFaultSource>
+
+        <simpleFaultSource id="WIN08" name="WIN - WINONA THRUST beta=1.84" tectonicRegion="Subduction Interface">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -128.1640 49.9440
+                            -129.8170 50.8650
+                    </gml:posList>
+                </gml:LineString>
+                <dip>15.0</dip>
+                <upperSeismoDepth>2.0</upperSeismoDepth>
+                <lowerSeismoDepth>5.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
+            <magScaleRel>GSCOffshoreThrustsWIN</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="7.05" binWidth="0.1">
+                <occurRates>6.74468e-04 3.92697e-04 3.26630e-04 2.50274e-04 3.22816e-05 2.68506e-05 1.81895e-05</occurRates>
+            </incrementalMFD>
+            <rake>90.0</rake>
+        </simpleFaultSource>
+
+        <simpleFaultSource id="QCSS00" name="QCSS - QUEEN CHARLOTTE - STRIKE SLIP beta = 0" tectonicRegion="Active Shallow Fault">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -130.6740 51.4600
+                            -130.9600 51.6760
+                            -131.3570 51.9930
+                            -131.4720 52.0810
+                            -131.4980 52.1490
+                            -131.6060 52.2250
+                            -131.6160 52.2280
+                            -131.7310 52.3310
+                            -131.8860 52.4470
+                            -132.0360 52.5460
+                            -132.2820 52.7150
+                            -132.3770 52.7890
+                            -132.4440 52.8490
+                            -132.4880 52.8920
+                            -132.5600 52.9460
+                            -132.5630 52.9500
+                            -132.7450 53.1010
+                            -132.8640 53.2060
+                            -132.8960 53.2350
+                            -132.9120 53.2510
+                            -133.0270 53.3640
+                            -133.1090 53.4400
+                            -133.1210 53.4520
+                            -134.1600 54.4900
+                            -134.6130 55.0190
+                            -135.0610 55.5590
+                    </gml:posList>
+                </gml:LineString>
+                <dip>90.0</dip>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
+            <magScaleRel>WC1994_QCSS</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="6.55" binWidth="0.1">
+                <occurRates>6.68470e-04 6.68457e-04 6.68443e-04 6.68430e-04 6.68417e-04 6.68403e-04 6.68390e-04 6.68377e-04 6.68363e-04 6.68350e-04 6.68337e-04 6.68323e-04 6.68310e-04 6.68296e-04 6.68283e-04 6.07240e-04 4.64825e-04 1.45268e-04 4.57656e-05</occurRates>
+            </incrementalMFD>
+            <rake>0.0</rake>
+        </simpleFaultSource>
+
+        <simpleFaultSource id="QCSS08" name="QCSS - QUEEN CHARLOTTE - STRIKE SLIP beta = 1.84" tectonicRegion="Active Shallow Fault">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -130.6740 51.4600
+                            -130.9600 51.6760
+                            -131.3570 51.9930
+                            -131.4720 52.0810
+                            -131.4980 52.1490
+                            -131.6060 52.2250
+                            -131.6160 52.2280
+                            -131.7310 52.3310
+                            -131.8860 52.4470
+                            -132.0360 52.5460
+                            -132.2820 52.7150
+                            -132.3770 52.7890
+                            -132.4440 52.8490
+                            -132.4880 52.8920
+                            -132.5600 52.9460
+                            -132.5630 52.9500
+                            -132.7450 53.1010
+                            -132.8640 53.2060
+                            -132.8960 53.2350
+                            -132.9120 53.2510
+                            -133.0270 53.3640
+                            -133.1090 53.4400
+                            -133.1210 53.4520
+                            -134.1600 54.4900
+                            -134.6130 55.0190
+                            -135.0610 55.5590
+                    </gml:posList>
+                </gml:LineString>
+                <dip>90.0</dip>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
+            <magScaleRel>WC1994_QCSS</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="6.55" binWidth="0.1">
+                <occurRates>7.01158e-03 5.83196e-03 4.85080e-03 4.03471e-03 3.35591e-03 2.79132e-03 2.32171e-03 1.93111e-03 1.60622e-03 1.33599e-03 1.11123e-03 9.24274e-04 7.68775e-04 6.39437e-04 5.31859e-04 4.05099e-04 2.57568e-04 7.00857e-05 1.83053e-05</occurRates>
+            </incrementalMFD>
+            <rake>0.0</rake>
+        </simpleFaultSource>
+
+        <simpleFaultSource id="FWF00" name="FWF - FAIRWEATHER FAULT beta = 0" tectonicRegion="Active Shallow Fault">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -135.0620 55.5590
+                            -135.3310 55.8630
+                            -135.9580 56.8800
+                            -136.5390 57.6180
+                            -136.7560 57.9380
+                            -137.1700 58.4830
+                            -137.4950 58.6840
+                            -137.7820 58.9220
+                            -138.4860 59.4690
+                            -138.8510 59.7370
+                            -139.4250 60.0880
+                    </gml:posList>
+                </gml:LineString>
+                <dip>90.0</dip>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
+            <magScaleRel>WC1994_QCSS</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="6.55" binWidth="0.1">
+                <occurRates>6.58448e-04 6.58434e-04 6.58421e-04 6.58408e-04 6.58395e-04 6.58382e-04 6.58369e-04 6.58355e-04 6.58342e-04 6.58329e-04 6.58316e-04 6.58303e-04 6.58290e-04 6.58276e-04 6.58263e-04 6.58250e-04 4.97947e-04 3.39829e-04 6.44074e-05 1.28813e-05</occurRates>
+            </incrementalMFD>
+            <rake>0.0</rake>
+        </simpleFaultSource>
+
+        <simpleFaultSource id="FWF08" name="FWF - FAIRWEATHER FAULT beta = 1.84" tectonicRegion="Active Shallow Fault">
+            <simpleFaultGeometry>
+                <gml:LineString>
+                    <gml:posList>
+                            -135.0620 55.5590
+                            -135.3310 55.8630
+                            -135.9580 56.8800
+                            -136.5390 57.6180
+                            -136.7560 57.9380
+                            -137.1700 58.4830
+                            -137.4950 58.6840
+                            -137.7820 58.9220
+                            -138.4860 59.4690
+                            -138.8510 59.7370
+                            -139.4250 60.0880
+                    </gml:posList>
+                </gml:LineString>
+                <dip>90.0</dip>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </simpleFaultGeometry>
+            <magScaleRel>WC1994_QCSS</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="6.55" binWidth="0.1">
+                <occurRates>7.48857e-03 6.22870e-03 5.18079e-03 4.30918e-03 3.58421e-03 2.98121e-03 2.47965e-03 2.06248e-03 1.71549e-03 1.42688e-03 1.18682e-03 9.87151e-04 8.21074e-04 6.82937e-04 5.68041e-04 4.72474e-04 3.00438e-04 1.73717e-04 2.71878e-05 4.86199e-06</occurRates>
+            </incrementalMFD>
+            <rake>0.0</rake>
+        </simpleFaultSource>
+
+        <areaSource id="QCFA" name="QCFA - QUEEN CHARLOTTE FAULT - AREA" tectonicRegion="Active Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -131.5000 51.0000
+                                -133.5010 52.7010
+                                -135.4920 55.4690
+                                -134.3760 55.7010
+                                -133.4800 54.5000
+                                -132.7500 53.4010
+                                -130.9300 52.0600
+                                -130.3800 51.6200
+                                -130.9000 51.3300
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>15.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.69702e-01 1.45375e-01 1.24577e-01 1.06790e-01 9.15743e-02 7.85528e-02 6.74056e-02 5.78599e-02 4.96828e-02 4.26757e-02 3.66693e-02 3.15189e-02 2.71011e-02 2.33104e-02 2.00567e-02 1.72630e-02 1.48635e-02 8.96118e-03 7.72083e-03 9.50614e-04 8.19593e-04 6.08043e-17</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="15.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="FWFA" name="FWFA - FAIRWEATHER FAULT - AREA" tectonicRegion="Active Shallow Crust">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -135.4910 55.4680
+                                -136.3640 56.5560
+                                -137.7900 58.1900
+                                -138.9000 59.0330
+                                -139.9930 59.8130
+                                -139.9770 60.7520
+                                -138.1130 59.4950
+                                -136.6240 58.3980
+                                -135.3500 56.9400
+                                -134.3760 55.7010
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>5.0</upperSeismoDepth>
+                <lowerSeismoDepth>15.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>3.26315e-02 2.89332e-02 2.56758e-02 2.28043e-02 2.02711e-02 1.80344e-02 1.60581e-02 1.43104e-02 1.27637e-02 1.13938e-02 1.01795e-02 9.10236e-03 8.14610e-03 7.29651e-03 6.54110e-03 5.86891e-03 5.27031e-03 3.31511e-03 2.98209e-03 3.83363e-04 3.45442e-04 2.62290e-17</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="10.0"/>
+                <hypoDepth probability="0.25" depth="15.0"/>
+                <hypoDepth probability="0.25" depth="5.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+    </sourceModel>
+</nrml>
