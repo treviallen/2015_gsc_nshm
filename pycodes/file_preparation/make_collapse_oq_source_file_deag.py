@@ -84,7 +84,7 @@ from os import path
 sitename = 'QCFsite'
 sitelat = 53.45
 sitelon = -132.80
-maxgmpedist = 400.
+maxgmpedist = 200.
 
 ########################################################################################
 
