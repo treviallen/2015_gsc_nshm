@@ -1,9 +1,11 @@
 #####################################################################################
 # reads pkl file of 2015NBCC hazard model and outputs as OpenQuake source files 
-# for best, upper & lower models as well as the source logic tree
+# for sources within a given distance of the site, as well as the source logic tree
+#
+# NOTE: lines 86-89 should be modified for each site of interest
 
-# Usage: python make_openquake_source_file.py <path to pkl file> <output base name>
-#            e.g. python make_openquake_source_file.py SWCan_T3EclC1.pkl swcan
+# Usage: python make_collapse_oq_source_file_deag.py <path to pkl file> <include src weights>
+#            e.g. python make_collapse_oq_source_file4deag.py ../../data/pkl_files/SECan_H2_src_model.pkl True
 #####################################################################################
 
 def make_incremental_occurrence_text(m, effN0, binwid):
