@@ -8,23 +8,6 @@
 #            e.g. python make_collapse_oq_source_file4deag.py ../../data/pkl_files/SECan_H2_src_model.pkl True
 #####################################################################################
 
-def make_incremental_occurrence_text(m, effN0, binwid):
-    betacurve, mrange = get_oq_incrementalMFD(m['src_beta'][i], effN0, \
-                                              m['min_mag'], m['max_mag'][j], binwid)
-    
-    # convert cummulative rates to annual occurrence rates
-    occ_rates = []
-    for b in range(0, len(betacurve[0:-1])):
-        occ_rates.append(betacurve[b] - betacurve[b+1])
-    occ_rates.append(betacurve[-1])
-    
-    # make text object                        
-    octxt = str('%0.5e' % occ_rates[0])
-    for bc in occ_rates[1:]:
-        octxt += ' ' + str('%0.5e' % bc)
-        
-    return octxt
-
 def make_collapse_occurrence_text(m, binwid):
     from numpy import zeros    
     
