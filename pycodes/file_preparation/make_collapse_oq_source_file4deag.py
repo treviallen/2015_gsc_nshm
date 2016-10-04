@@ -59,17 +59,17 @@ start main code here
 #import datetime as dt
 from sys import argv
 import pickle
-from oq_tools import beta2bval, get_oq_incrementalMFD, get_line_parallels, distance
+from oq_tools import beta2bval, get_oq_incrementalMFD, get_line_parallels, distance, reckon
 from numpy import array, log10, max, min, tan, radians, unique, isinf, isnan, concatenate
 from os import path
 
 ########################################################################################
 
 # this section needs to be edited
-sitename = 'QCFsite'
-sitelat = 53.45
-sitelon = -132.80
-maxgmpedist = 200.
+sitename = 'VICTORIA'
+sitelat = 48.43
+sitelon = -123.37 
+maxgmpedist = 310.  # 310 km required for Victoria to Explorer
 
 ########################################################################################
 
@@ -134,12 +134,28 @@ for m in model:
     writesrc = False
     srclola = m['src_shape']
     for lo, la in srclola:
+        
         rngkm, az, baz = distance(sitelat, sitelon, la, lo)
         
         # check if in distance rng
         if rngkm <= maxgmpedist:
             writesrc = True
-    
+            
+    # get more representative coords for faults
+    if m['src_type'] == 'fault':
+        # get approx down-dip coords based on dip and seis depth
+        dd_dist = m['src_dep'][0] / tan(radians(m['fault_dip'][0]))
+        ddxy = get_line_parallels( m['src_shape'], dd_dist)[0]
+        
+        # now get distances from down-dip edges
+        for lo, la in ddxy:        
+            rngkm, az, baz = distance(sitelat, sitelon, la, lo)
+            
+            # check if in distance rng
+            if rngkm <= maxgmpedist:
+                print m['src_code']
+                writesrc = True
+        
     #######################################################################
     # write area sources
     #######################################################################
@@ -255,7 +271,7 @@ for m in model:
             ###################################################################
             # do complex faults
             ###################################################################
-            if m['fault_dip'][0] != m['fault_dip'][1]: # old
+            if m['fault_dip'][0] != m['fault_dip'][1]:
             #if m['fault_dip'][0] >= 0: # catches all faults
                 #if m['fault_dip'][0] > 0:
                 if m['src_code'].startswith('CASCADIA'):
