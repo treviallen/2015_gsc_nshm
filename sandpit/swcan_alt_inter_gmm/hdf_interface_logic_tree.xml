@@ -79,6 +79,7 @@
             <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="bs3"
                                 applyToTectonicRegionType="Active Shallow Crust">
 
+                <!-- 
                 <logicTreeBranch branchID="b31">
                     <uncertaintyModel gmpe_table="../gm_tables/Wcrust_high_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.3</uncertaintyWeight>
@@ -93,6 +94,7 @@
                     <uncertaintyModel gmpe_table="../gm_tables/Wcrust_low_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.2</uncertaintyWeight>
                 </logicTreeBranch>
+                -->
 
             </logicTreeBranchSet>
         </logicTreeBranchingLevel>

@@ -361,7 +361,10 @@ for m in model:
             # else do simple fault
             ###################################################################
             elif m['fault_dip'][0] == m['fault_dip'][1]:
-                
+                print 'Fault:', m['src_code']
+                if m['src_code'] == 'CSF':
+                    cm = m
+                    
                 # id subcript
                 idsub = str("%0.1f" % beta2bval(m['src_beta'][0]))
                 idsub = idsub.replace(".", "")
@@ -372,7 +375,7 @@ for m in model:
                 newxml += '                <gml:LineString>\n'
                 newxml += '                    <gml:posList>\n'
             
-                # simple fauls use surface projection!
+                # simple faults use surface projection!
                 '''
                 # calculate lat lons from surface projection
                 # get upper h-dist
@@ -423,6 +426,7 @@ for m in model:
                 if m['src_beta'][0] > -99:
                     
                     octxt = make_collapse_occurrence_text(m, binwid)
+                    print octxt
                                 
                     # make text
                     newxml += '            <incrementalMFD minMag="'+str('%0.2f' % (m['min_mag']+0.5*binwid))+'" binWidth="'+str(binwid)+'">\n'

@@ -62,7 +62,7 @@ from os import path
 
 inputpkl = argv[1]
 multimods = argv[2] # for setting weights of alternative models (True or False)
-src_folder = argv[3] # folder for github sources to be included in source_model_logic_tree.xml
+src_folder = argv[3] # folder for github sources to be included in source_model_logic_tree.xml - e.g. "../../../sources/collapsed/southeastern_canada/"
 
 # read pickle
 pklfile = open(inputpkl, 'rb')
