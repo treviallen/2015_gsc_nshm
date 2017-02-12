@@ -29,22 +29,22 @@
                 </logicTreeBranch>
                 -->
                 
-                <logicTreeBranch branchID="b12">
+                <logicTreeBranch branchID="b11">
                     <uncertaintyModel>BooreEtAl2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
                 
-                <logicTreeBranch branchID="b13">
+                <logicTreeBranch branchID="b12">
                     <uncertaintyModel>ChiouYoungs2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
 
-                <logicTreeBranch branchID="b14">
+                <logicTreeBranch branchID="b13">
                     <uncertaintyModel>AbrahamsonEtAl2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
                 
-                <logicTreeBranch branchID="b15">
+                <logicTreeBranch branchID="b14">
                     <uncertaintyModel>CampbellBozorgnia2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
@@ -100,22 +100,22 @@
                 </logicTreeBranch>
                 -->
                 
-                <logicTreeBranch branchID="b32">
+                <logicTreeBranch branchID="b31">
                     <uncertaintyModel>BooreEtAl2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
                 
-                <logicTreeBranch branchID="b33">
+                <logicTreeBranch branchID="b32">
                     <uncertaintyModel>ChiouYoungs2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
 
-                <logicTreeBranch branchID="b34">
+                <logicTreeBranch branchID="b33">
                     <uncertaintyModel>AbrahamsonEtAl2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
                 
-                <logicTreeBranch branchID="b35">
+                <logicTreeBranch branchID="b34">
                     <uncertaintyModel>CampbellBozorgnia2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
@@ -193,22 +193,22 @@
                 </logicTreeBranch>
                 -->
                 
-                <logicTreeBranch branchID="b62">
+                <logicTreeBranch branchID="b61">
                     <uncertaintyModel>BooreEtAl2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
                 
-                <logicTreeBranch branchID="b63">
+                <logicTreeBranch branchID="b62">
                     <uncertaintyModel>ChiouYoungs2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
 
-                <logicTreeBranch branchID="b64">
+                <logicTreeBranch branchID="b63">
                     <uncertaintyModel>AbrahamsonEtAl2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
                 
-                <logicTreeBranch branchID="b65">
+                <logicTreeBranch branchID="b64">
                     <uncertaintyModel>CampbellBozorgnia2014</uncertaintyModel>
                     <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
