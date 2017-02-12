@@ -105,12 +105,15 @@ for lon, lat, curve in zip(curlon, curlat, curves):
                 
             if ii == 6:
               plt.savefig(path.join('..','..','jobs','hazard',job, '_'.join((job,'oq_frisk_hazcurves',period,job_num,str(i)+'.png'))), format='png',bbox_inches='tight')
+
+              plt.savefig(path.join('..','..','jobs','hazard',job, '_'.join((job,'oq_frisk_hazcurves',period,job_num,str(i)+'.pdf'))), format='pdf',bbox_inches='tight')
               i += 1
               ii = 0
               fig = plt.figure(i, figsize=(14, 10))
 
 if ii != 0:
     plt.savefig(path.join('..','..','jobs','hazard',job, '_'.join((job,'oq_frisk_hazcurves',period,job_num,str(i)+'.png'))), format='png',bbox_inches='tight')
+    plt.savefig(path.join('..','..','jobs','hazard',job, '_'.join((job,'oq_frisk_hazcurves',period,job_num,str(i)+'.pdf'))), format='pdf',bbox_inches='tight')
 
 plt.show()
 
