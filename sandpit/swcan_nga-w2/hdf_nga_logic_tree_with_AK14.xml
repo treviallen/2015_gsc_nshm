@@ -22,31 +22,32 @@
                     <uncertaintyModel gmpe_table="../../gm_tables/WcrustFRjb_high_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.3</uncertaintyWeight>
                 </logicTreeBranch>
-                
+                -->
+
                 <logicTreeBranch branchID="b11">
                     <uncertaintyModel>AkkarEtAlRjb2014</uncertaintyModel>
                     <uncertaintyWeight>0.33</uncertaintyWeight>
                 </logicTreeBranch>
-                -->
+                
                 
                 <logicTreeBranch branchID="b12">
                     <uncertaintyModel>BooreEtAl2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.17</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b13">
                     <uncertaintyModel>ChiouYoungs2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.17</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b14">
                     <uncertaintyModel>AbrahamsonEtAl2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.17</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b15">
                     <uncertaintyModel>CampbellBozorgnia2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.16</uncertaintyWeight>
                 </logicTreeBranch>
 
             </logicTreeBranchSet>
@@ -93,31 +94,33 @@
                     <uncertaintyModel gmpe_table="../../gm_tables/Wcrust_low_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.2</uncertaintyWeight>
                 </logicTreeBranch>
+                -->
                 
                 <logicTreeBranch branchID="b31">
                     <uncertaintyModel>AkkarEtAlRjb2014</uncertaintyModel>
                     <uncertaintyWeight>0.33</uncertaintyWeight>
                 </logicTreeBranch>
-                -->
+                
+                
                 
                 <logicTreeBranch branchID="b32">
                     <uncertaintyModel>BooreEtAl2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.17</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b33">
                     <uncertaintyModel>ChiouYoungs2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.17</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b34">
                     <uncertaintyModel>AbrahamsonEtAl2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.17</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b35">
                     <uncertaintyModel>CampbellBozorgnia2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.16</uncertaintyWeight>
                 </logicTreeBranch>
 
             </logicTreeBranchSet>
@@ -186,31 +189,31 @@
                     <uncertaintyModel gmpe_table="../../gm_tables/Woffshore_high_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.3</uncertaintyWeight>
                 </logicTreeBranch>
+                -->
                 
                 <logicTreeBranch branchID="b61">
                     <uncertaintyModel>AkkarEtAlRjb2014</uncertaintyModel>
                     <uncertaintyWeight>0.33</uncertaintyWeight>
                 </logicTreeBranch>
-                -->
                 
                 <logicTreeBranch branchID="b62">
                     <uncertaintyModel>BooreEtAl2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.17</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b63">
                     <uncertaintyModel>ChiouYoungs2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.17</uncertaintyWeight>
                 </logicTreeBranch>
 
                 <logicTreeBranch branchID="b64">
                     <uncertaintyModel>AbrahamsonEtAl2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.17</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b65">
                     <uncertaintyModel>CampbellBozorgnia2014</uncertaintyModel>
-                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                    <uncertaintyWeight>0.16</uncertaintyWeight>
                 </logicTreeBranch>
 
             </logicTreeBranchSet>
