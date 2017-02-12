@@ -173,7 +173,7 @@
             <rake>90.0</rake>
         </complexFaultSource>
 
-        <areaSource id="CST" name="CST  -  COASTAL MOUNTAINS REVISED OCT 2013" tectonicRegion="Active Shallow Crust">
+        <areaSource id="CST" name="CST  -  COASTAL MOUNTAINS REVISED OCT 2013 (was CSTN and CSTS(placeholder - not included) in Trial 2)" tectonicRegion="Active Shallow Crust">
             <areaGeometry>
                 <gml:Polygon>
                     <gml:exterior>

@@ -22,12 +22,13 @@
                     <uncertaintyModel gmpe_table="../../gm_tables/WcrustFRjb_high_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.3</uncertaintyWeight>
                 </logicTreeBranch>
-                -->
+                
 
                 <logicTreeBranch branchID="b11">
                     <uncertaintyModel>AkkarEtAlRjb2014</uncertaintyModel>
                     <uncertaintyWeight>0.33</uncertaintyWeight>
                 </logicTreeBranch>
+                -->
                 
                 <logicTreeBranch branchID="b12">
                     <uncertaintyModel>BooreEtAl2014</uncertaintyModel>
