@@ -49,27 +49,32 @@
                 
                 <logicTreeBranch branchID="b21">
                     <uncertaintyModel>AbrahamsonEtAl2015SInter</uncertaintyModel>
-                    <uncertaintyWeight>0.2</uncertaintyWeight>
+                    <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b22">
                     <uncertaintyModel>ZhaoEtAl2006SInter</uncertaintyModel>
-                    <uncertaintyWeight>0.2</uncertaintyWeight>
+                    <uncertaintyWeight>0.12</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b23">
-                    <uncertaintyModel>AtkinsonMacias2009</uncertaintyModel>
-                    <uncertaintyWeight>0.2</uncertaintyWeight>
+                    <uncertaintyModel>ZhaoEtAl2006SInterCascadia</uncertaintyModel>
+                    <uncertaintyWeight>0.13</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b24">
-                    <uncertaintyModel>GhofraniAtkinson2014</uncertaintyModel>
-                    <uncertaintyWeight>0.2</uncertaintyWeight>
+                    <uncertaintyModel>AtkinsonMacias2009</uncertaintyModel>
+                    <uncertaintyWeight>0.25</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b25">
-                    <uncertaintyModel>AtkinsonBoore2003SInter</uncertaintyModel>
-                    <uncertaintyWeight>0.2</uncertaintyWeight>
+                    <uncertaintyModel>GhofraniAtkinson2014</uncertaintyModel>
+                    <uncertaintyWeight>0.12</uncertaintyWeight>
+                </logicTreeBranch>
+                
+                <logicTreeBranch branchID="b26">
+                    <uncertaintyModel>GhofraniAtkinson2014Cascadia</uncertaintyModel>
+                    <uncertaintyWeight>0.13</uncertaintyWeight>
                 </logicTreeBranch>
 
             </logicTreeBranchSet>
@@ -79,7 +84,6 @@
             <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="bs3"
                                 applyToTectonicRegionType="Active Shallow Crust">
 
-                <!-- 
                 <logicTreeBranch branchID="b31">
                     <uncertaintyModel gmpe_table="../gm_tables/Wcrust_high_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.3</uncertaintyWeight>
@@ -94,7 +98,6 @@
                     <uncertaintyModel gmpe_table="../gm_tables/Wcrust_low_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.2</uncertaintyWeight>
                 </logicTreeBranch>
-                -->
 
             </logicTreeBranchSet>
         </logicTreeBranchingLevel>
