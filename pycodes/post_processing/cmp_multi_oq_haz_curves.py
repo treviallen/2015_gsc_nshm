@@ -143,9 +143,9 @@ for lon1, lat1, curve1 in zip(curlon1, curlat1, curves1):
     ###############################################################################
     # make plot pretty
     ###############################################################################
+    plt.semilogy([0, 2.5], [yhaz, yhaz], 'k--')
     
     plt.grid(which='both')
-    plt.semilogy([0, 2.5], [yhaz, yhaz], ' k--')
      
     # get x lims from haz curve 1
     thaz = exp(interp(log(1e-4), log(curve1[::-1]), log(imls1[::-1])))

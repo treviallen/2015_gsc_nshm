@@ -30,7 +30,6 @@
             <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="bs2"
                                 applyToTectonicRegionType="Subduction Interface">
 
-                <!--
                 <logicTreeBranch branchID="b21">
                     <uncertaintyModel gmpe_table="../../gm_tables/WinterfaceCombo_lowclC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.2</uncertaintyWeight>
@@ -45,7 +44,7 @@
                     <uncertaintyModel gmpe_table="../../gm_tables/WinterfaceCombo_highclC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.3</uncertaintyWeight>
                 </logicTreeBranch>
-                -->
+                <!--
                 
                 <logicTreeBranch branchID="b21">
                     <uncertaintyModel>AbrahamsonEtAl2015SInter</uncertaintyModel>
@@ -76,6 +75,8 @@
                     <uncertaintyModel>GhofraniAtkinson2014Cascadia</uncertaintyModel>
                     <uncertaintyWeight>0.13</uncertaintyWeight>
                 </logicTreeBranch>
+                
+                -->
 
             </logicTreeBranchSet>
         </logicTreeBranchingLevel>
@@ -104,8 +105,9 @@
         
         <logicTreeBranchingLevel branchingLevelID="bl4">
             <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="bs4"
-                                applyToTectonicRegionType="Subduction IntraSlab30">
+                                applyToTectonicRegionType="Subduction IntraSlab">
                 
+                <!--
                 <logicTreeBranch branchID="b41">
                     <uncertaintyModel gmpe_table="../../gm_tables/WinslabD30_low_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.2</uncertaintyWeight>
@@ -119,6 +121,37 @@
                 <logicTreeBranch branchID="b43">
                     <uncertaintyModel gmpe_table="../../gm_tables/WinslabD30_high_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>0.3</uncertaintyWeight>
+                </logicTreeBranch>
+                -->
+                
+                <logicTreeBranch branchID="b41">
+                    <uncertaintyModel>AtkinsonBoore2003SSlabCascadia</uncertaintyModel>
+                    <uncertaintyWeight>0.13</uncertaintyWeight>
+                </logicTreeBranch>
+                
+                <logicTreeBranch branchID="b42">
+                    <uncertaintyModel>AtkinsonBoore2003SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.12</uncertaintyWeight>
+                </logicTreeBranch>
+                
+                <logicTreeBranch branchID="b43">
+                    <uncertaintyModel>AbrahamsonEtAl2015SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                </logicTreeBranch>
+                
+                <logicTreeBranch branchID="b44">
+                    <uncertaintyModel>GarciaEtAl2005SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.25</uncertaintyWeight>
+                </logicTreeBranch>
+                
+                <logicTreeBranch branchID="b45">
+                    <uncertaintyModel>ZhaoEtAl2006SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.12</uncertaintyWeight>
+                </logicTreeBranch>
+                
+                <logicTreeBranch branchID="b46">
+                    <uncertaintyModel>ZhaoEtAl2006SSlabCascadia</uncertaintyModel>
+                    <uncertaintyWeight>0.13</uncertaintyWeight>
                 </logicTreeBranch>
 
             </logicTreeBranchSet>

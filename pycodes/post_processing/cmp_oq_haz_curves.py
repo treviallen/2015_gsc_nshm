@@ -37,12 +37,13 @@ job2 = hazcurvefile2.split('_')[-1].split('-')[0]
 ###############################################################################
 
 def get_oq_haz_curves(hazcurvefile):
-    # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
-    lines = open(hazcurvefile, 'r').readlines()
-    lines[2] = 'xmlns="http://openquake.org/xmlns/nrml/0.4"\n'
-    out = open(hazcurvefile, 'w')
-    out.writelines(lines)
-    out.close()
+    if hazcurvefile.endswith('xml'):
+        # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
+        lines = open(hazcurvefile, 'r').readlines()
+        lines[2] = 'xmlns="http://openquake.org/xmlns/nrml/0.4"\n'
+        out = open(hazcurvefile, 'w')
+        out.writelines(lines)
+        out.close()
     
     # get annualize the curves.
     curves, curlon, curlat, metadata = return_annualised_haz_curves(hazcurvefile)

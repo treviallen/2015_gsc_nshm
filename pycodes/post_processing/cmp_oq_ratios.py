@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 #from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
-from numpy import array, diff, exp, log, interp, loadtxt, vstack, mean
+from numpy import array, diff, exp, log, interp, loadtxt, vstack, mean, around
 from oq_tools import return_annualised_haz_curves
 from os import path, sep
 import warnings, sys
@@ -34,12 +34,13 @@ job2 = hazcurvefile2.split('_')[-1].split('-')[0]
 ###############################################################################
 
 def get_oq_haz_curves(hazcurvefile):
-    # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
-    lines = open(hazcurvefile, 'r').readlines()
-    lines[2] = 'xmlns="http://openquake.org/xmlns/nrml/0.4"\n'
-    out = open(hazcurvefile, 'w')
-    out.writelines(lines)
-    out.close()
+    if hazcurvefile.endswith('xml'):
+        # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
+        lines = open(hazcurvefile, 'r').readlines()
+        lines[2] = 'xmlns="http://openquake.org/xmlns/nrml/0.4"\n'
+        out = open(hazcurvefile, 'w')
+        out.writelines(lines)
+        out.close()
     
     # get annualize the curves.
     curves, curlon, curlat, metadata = return_annualised_haz_curves(hazcurvefile)
@@ -93,7 +94,8 @@ for lon1, lat1, curve1 in zip(curlon1, curlat1, curves1):
     
     # loop thru 2nd OQ curves
     for lon2, lat2, curve2 in zip(curlon2, curlat2, curves2):
-        if lon2 == lon1 and lat2 == lat2:
+        if around(lon2, decimals=2) == around(lon1, decimals=2) \
+           and around(lat2, decimals=2) == around(lat1, decimals=2):
             
             # interp to nbcc probs
             oqinterp1 = exp(interp(log(nbccprobs[::-1]), log(curve1[::-1]), log(imls1[::-1])))[::-1]
@@ -101,7 +103,8 @@ for lon1, lat1, curve1 in zip(curlon1, curlat1, curves1):
             
             # loop thru places to get title
             for place, plon, plat in zip(places, place_lon, place_lat):
-                if plat == lat1 and plon == lon1:
+                if around(plon, decimals=2) == around(lon1, decimals=2) \
+                   and around(plat, decimals=2) == around(lat1, decimals=2):
                     wrtplace = place
                     
             # set OQ1 text
