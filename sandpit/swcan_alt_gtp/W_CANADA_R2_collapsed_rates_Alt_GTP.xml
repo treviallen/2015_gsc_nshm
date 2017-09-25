@@ -403,42 +403,118 @@
             </hypoDepthDist>
         </areaSource>
 
-        <areaSource id="GTP" name="GTP  -  GEORGIA STRAIT/PUGET SOUND (DEEP)" tectonicRegion="Subduction IntraSlab50">
+        <areaSource id="GTPC" name="GTPC  -  GEORGIA STRAIT/PUGET SOUND CENTRE (DEEP)" tectonicRegion="Subduction IntraSlab50">
             <areaGeometry>
                 <gml:Polygon>
                     <gml:exterior>
                         <gml:LinearRing>
                             <gml:posList>
-                                -123.8500 49.5500
-                                -122.9000 49.0000
-                                -122.0000 48.0000
-                                -122.0000 47.0000
-                                -123.3000 47.0000
-                                -123.2200 47.5300
-                                -123.3500 47.8700
-                                -123.8300 48.2500
-                                -124.7500 48.8500
+                                -124.0684 49.5616
+                                -122.9502 48.8939
+                                -122.2059 48.0321
+                                -122.1947 47.0061
+                                -122.7493 47.0014
+                                -122.7137 47.5025
+                                -122.7566 47.9961
+                                -123.3700 48.6100
+                                -124.4566 49.2820
                             </gml:posList>
                         </gml:LinearRing>
                     </gml:exterior>
                 </gml:Polygon>
-                <upperSeismoDepth>40.0</upperSeismoDepth>
-                <lowerSeismoDepth>60.0</lowerSeismoDepth>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
             </areaGeometry>
             <magScaleRel>PointMSR</magScaleRel>
-            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <ruptAspectRatio>1.5</ruptAspectRatio>
             <incrementalMFD minMag="4.85" binWidth="0.1">
-                <occurRates>2.64780e-02 2.36778e-02 2.11758e-02 1.89399e-02 1.69418e-02 1.51557e-02 1.35592e-02 1.21319e-02 1.08557e-02 9.71461e-03 8.69414e-03 7.78146e-03 6.96512e-03 6.23488e-03 5.58160e-03 4.99712e-03 4.47415e-03 4.00617e-03 3.58738e-03 3.21256e-03 2.87709e-03 2.57680e-03 1.61554e-03 1.44708e-03 1.85164e-04 1.65875e-04 1.48603e-04</occurRates>
+                <occurRates>3.26209e-06 2.37878e-06 1.73600e-06 1.26786e-06 9.26650e-07 6.77763e-07 4.96078e-07 3.63352e-07 2.66319e-07 1.95329e-07 1.43357e-07 1.05280e-07 7.73645e-08 5.68856e-08 4.18522e-08 3.08094e-08 2.26928e-08 1.67236e-08 1.23309e-08 9.09667e-09 6.71401e-09 4.95777e-09 3.29634e-09 2.43628e-09 6.00463e-10 4.44165e-10 3.28681e-10</occurRates>
             </incrementalMFD>
             <nodalPlaneDist>
                 <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
             </nodalPlaneDist>
             <hypoDepthDist>
                 <hypoDepth probability="0.50" depth="50.0"/>
-                <hypoDepth probability="0.25" depth="50.0"/>
-                <hypoDepth probability="0.25" depth="50.0"/>
+                <hypoDepth probability="0.25" depth="45.0"/>
+                <hypoDepth probability="0.25" depth="55.0"/>
             </hypoDepthDist>
         </areaSource>
+
+        <areaSource id="GTPE" name="GTPE  -  GEORGIA STRAIT/PUGET SOUND EAST EAST (DEEP)" tectonicRegion="Subduction IntraSlab50">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -123.6724 49.8434
+                                -122.4868 49.1221
+                                -121.6449 48.0132
+                                -121.6942 47.0000
+                                -122.1947 47.0061
+                                -122.2059 48.0321
+                                -122.9502 48.8939
+                                -124.0684 49.5616
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.5</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>4.98190e-08 3.45755e-08 2.40029e-08 1.66673e-08 1.15759e-08 8.04116e-09 5.58659e-09 3.88176e-09 2.69746e-09 1.87465e-09 1.30292e-09 9.05618e-10 6.29498e-10 4.37586e-10 3.04193e-10 2.11470e-10 1.47015e-10 1.02207e-10 7.10579e-11 4.94026e-11 3.43474e-11 2.38804e-11 1.49430e-11 1.03895e-11 2.40787e-12 1.67416e-12 1.16402e-12</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="60.0"/>
+                <hypoDepth probability="0.25" depth="55.0"/>
+                <hypoDepth probability="0.25" depth="65.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+        <areaSource id="GTPW" name="GTPW  -  GEORGIA STRAIT/PUGET SOUND WEST (DEEP)" tectonicRegion="Subduction IntraSlab50">
+            <areaGeometry>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                -124.4566 49.2820
+                                -123.3700 48.6100
+                                -122.7566 47.9961
+                                -122.7137 47.5025
+                                -122.7493 47.0014
+                                -123.3000 47.0000
+                                -123.2200 47.5300
+                                -123.3500 47.8700
+                                -123.8300 48.2500
+                                -124.9276 48.9602
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+                <upperSeismoDepth>0.0</upperSeismoDepth>
+                <lowerSeismoDepth>20.0</lowerSeismoDepth>
+            </areaGeometry>
+            <magScaleRel>PointMSR</magScaleRel>
+            <ruptAspectRatio>1.5</ruptAspectRatio>
+            <incrementalMFD minMag="4.85" binWidth="0.1">
+                <occurRates>1.00199e-06 7.05630e-07 4.97367e-07 3.50877e-07 2.47743e-07 1.75067e-07 1.23811e-07 8.76301e-08 6.20693e-08 4.39967e-08 3.12085e-08 2.21526e-08 1.57350e-08 1.11838e-08 7.95390e-09 5.66019e-09 4.03025e-09 2.87127e-09 2.04666e-09 1.45962e-09 1.04147e-09 7.43462e-10 4.77867e-10 3.41429e-10 8.13485e-11 5.81689e-11 4.16098e-11</occurRates>
+            </incrementalMFD>
+            <nodalPlaneDist>
+                <nodalPlane probability="1.0" strike="0.0" dip="90.0" rake="0.0" />
+            </nodalPlaneDist>
+            <hypoDepthDist>
+                <hypoDepth probability="0.50" depth="50.0"/>
+                <hypoDepth probability="0.25" depth="45.0"/>
+                <hypoDepth probability="0.25" depth="55.0"/>
+            </hypoDepthDist>
+        </areaSource>
+
+
 
         <areaSource id="HEC" name="HEC  -  HECATE STRAIT" tectonicRegion="Active Shallow Crust">
             <areaGeometry>
