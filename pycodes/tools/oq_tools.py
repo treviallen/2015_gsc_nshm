@@ -6,34 +6,61 @@ Created on Tue Oct 21 16:17:40 2014
 """
 
 def return_annualised_haz_curves(hazcurvefile):
-    from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
-    hcm = HazardCurveXMLParser(hazcurvefile).parse()
     from numpy import array, log
     
-    #extract curve lat/lons from POES
+    # set lists to fill
     curvelat = []
     curvelon = []
     hazcurves = []
-    for loc, poes in hcm:
-        curvelon.append(loc.x)
-        curvelat.append(loc.y)
-        hazcurves.append((poes))
     
-    curvelon = array(curvelon)  
-    curvelat = array(curvelat)
-    hazcurves = array(hazcurves)
+    # try parsing old xml first
+    if hazcurvefile.endswith('xml'):
+        from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
+        #from oq_output.hazard_curve_converter import read_hazard_curves
+        from oq_output.hazard_curve_converter import HazardCurveXMLParser
+        
+        hcm = HazardCurveXMLParser(hazcurvefile).parse()
+        
+        #extract curve lat/lons from POES
+        for loc, poes in hcm:
+            curvelon.append(loc.x)
+            curvelat.append(loc.y)
+            hazcurves.append((poes))
+        
+        investigation_time = float(hcm.metadata['investigation_time'])
+        metadata = hcm.metadata
+        
+    # from OQ V2.2, returns csv files only
+    elif hazcurvefile.endswith('csv'):
+        print 'perhaps here?'
+        csvlines = open(hazcurvefile).readlines()
+        
+        # get investigation time
+        investigation_time = float(csvlines[0].split(',')[1].split('=')[-1])
+        
+        # get intesity measures
+        header = csvlines[1].strip().split(',')[2:]
+        imls = array([float(x.split(':')[0]) for x in header])
+        metadata = {'imls': imls}
+        	
+        # get site data
+        for line in csvlines[2:]:
+            dat = line.split(',')
+            curvelon.append(float(dat[0]))
+            curvelat.append(float(dat[1]))
+            hazcurves.append(array([float(x) for x in dat[2:]]))
     
-    investigation_time = float(hcm.metadata['investigation_time'])
-    
+    # now get annualised curves
     annual_hazcurves = []
     for i, hazcurve in enumerate(hazcurves):
         # for curves, plot annual probablility
-        P0 = 1 - hazcurve
+        print hazcurve
+        P0 = 1 - array(hazcurve)
         n = -1*log(P0)
         annual_hazcurves.append(n / investigation_time)
         
-    return annual_hazcurves, curvelon, curvelat, hcm.metadata
-    
+    return annual_hazcurves, curvelon, curvelat, metadata
+        
 # return curves for given time interval
 def return_haz_curves(hazcurvefile):
     from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser

@@ -67,6 +67,7 @@ cs = (cmap(arange(ncolours)))
 ###############################################################################
 
 def get_oq_haz_curves(hazcurvefile):
+    print hazcurvefile
     if hazcurvefile.endswith('xml'):
         # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
         lines = open(hazcurvefile, 'r').readlines()
@@ -75,8 +76,10 @@ def get_oq_haz_curves(hazcurvefile):
         out.writelines(lines)
         out.close()
     
-    # get annualize the curves.
+    # get annualize the curves
+    print 'do i get here?'
     curves, curlon, curlat, metadata = return_annualised_haz_curves(hazcurvefile)
+    print 'what about here?'
     imls = array(metadata['imls'])
     
     return curves, curlon, curlat, metadata, imls
