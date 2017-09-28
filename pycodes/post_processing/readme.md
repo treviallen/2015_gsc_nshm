@@ -16,7 +16,7 @@ Plotting multiple hazard curves:
 	
 	~/2015_gsc_nshm/shared/swcan_sites_cities.csv (for example)
 
-* "relativePaths" are folder paths relative to the config file
+* "relativePaths" are folder paths to hazard curve outputs relative to the config file
 
 * To run:
 
