@@ -94,7 +94,9 @@ yhaz = 1./2475.
 ###############################################################################
 
 # make path to hazcurvefile
-hazcurvefile1 = path.join(relativepaths[0], ''.join(('hazard_curve-mean_',jobs[0],'-SA(',period,').xml'))) # will need to be changed with OQ V2.2
+#hazcurvefile1 = path.join(relativepaths[0], ''.join(('hazard_curve-mean_',jobs[0],'-SA(',period,').xml'))) # will need to be changed with OQ V2.2
+rootpath = path.split(conf_file)[0]
+hazcurvefile1 = path.join(rootpath, relativepaths[0], 'hazard_curve-mean_1.csv')
 
 # get data from first job
 curves1, curlon1, curlat1, metadata1, imls1 = get_oq_haz_curves(hazcurvefile1)
