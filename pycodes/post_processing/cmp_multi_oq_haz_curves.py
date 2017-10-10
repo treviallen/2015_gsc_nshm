@@ -118,9 +118,13 @@ for lon1, lat1, curve1 in zip(curlon1, curlat1, curves1):
         jj = j + 1
         
         # make path for subsequent jobs
+        '''
         root = path.split(conf_file)[0]
         filestr = ''.join(('hazard_curve-mean-SA(',period,')_',jobs[jj].strip(),'.csv'))
         hazcurvefilex = path.join(root, relativepaths[jj].strip(), filestr)
+        '''
+        hazcurvefilex = path.join(rootpath, relativepaths[jj].strip(), 'hazard_curve-mean_1.csv')
+            
         
         # get data from subsequent jobs
         curvepath = path.join(conf_file.split(path.sep)[0:-1])
