@@ -1,7 +1,7 @@
-ncpus = 128 
+ncpus = 256 
 mem = 256GB
 walltime = 3:00:00
-jobfs = 100GB
+jobfs = 300GB
 sandpit_path = /short/w84/NSHA18/sandpit/
 model_rel_path = 2015_gsc_nshm/jobs/hazard/secan_collapsed_rates
 shared_rel_path = 2015_gsc_nshm/shared
