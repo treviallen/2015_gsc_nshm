@@ -7,5 +7,5 @@ model_rel_path = 2015_gsc_nshm/jobs/hazard/secan_nbcc_locs
 shared_rel_path = 2015_gsc_nshm/shared
 gsim_lt_filename = hdf_gmpe_logic_tree.xml
 model_output_base = /short/w84/NSHA18/sandpit/tia547/2015_gsc_nshm/jobs/hazard/secan_nbcc_locs
-job_file = job_nsha_localities.ini
+job_file = job_sites.ini
 job_type = hazcurve
