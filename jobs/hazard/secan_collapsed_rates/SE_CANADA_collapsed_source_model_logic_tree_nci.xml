@@ -8,17 +8,17 @@
                                 branchSetID="bs1">
 
                 <logicTreeBranch branchID="b1">
-                    <uncertaintyModel>../../../../../sources/collapsed/southeastern_canada/SE_CANADA_H2_collapsed_rates.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../../sources/collapsed/southeastern_canada/SE_CANADA_H2_collapsed_rates.xml</uncertaintyModel>
                     <uncertaintyWeight>0.4</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b2">
-                    <uncertaintyModel>../../../../../sources/collapsed/southeastern_canada/SE_CANADA_HY_collapsed_rates.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../../sources/collapsed/southeastern_canada/SE_CANADA_HY_collapsed_rates.xml</uncertaintyModel>
                     <uncertaintyWeight>0.4</uncertaintyWeight>
                 </logicTreeBranch>
                 
                 <logicTreeBranch branchID="b3">
-                    <uncertaintyModel>../../../../../sources/collapsed/southeastern_canada/SE_CANADA_R2_collapsed_rates.xml</uncertaintyModel>
+                    <uncertaintyModel>../../../../sources/collapsed/southeastern_canada/SE_CANADA_R2_collapsed_rates.xml</uncertaintyModel>
                     <uncertaintyWeight>0.2</uncertaintyWeight>
                 </logicTreeBranch>
 
