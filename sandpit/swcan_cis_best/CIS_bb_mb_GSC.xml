@@ -3,7 +3,7 @@
       xmlns="http://openquake.org/xmlns/nrml/0.4">
 
     <sourceModel name="CIS_bb_mb">
-
+      <sourceGroup name="group1" tectonicRegion="Subduction Interface">
         <complexFaultSource id="CIS" name="CASCADIA INTERFACE SOURCE" tectonicRegion="Subduction Interface">
             <complexFaultGeometry>
                 <faultTopEdge>
@@ -83,6 +83,6 @@
             </incrementalMFD>
             <rake>90.0</rake>
         </complexFaultSource>
-
+      </sourceGroup>
     </sourceModel>
 </nrml>
