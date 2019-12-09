@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml"
+      xmlns="http://openquake.org/xmlns/nrml/0.4">
+
+    <sourceModel name="CIS_bb_mb">
+
+        <complexFaultSource id="CIS" name="CASCADIA INTERFACE SOURCE" tectonicRegion="Subduction Interface">
+            <complexFaultGeometry>
+                <faultTopEdge>
+                    <gml:LineString>
+                        <gml:posList>
+                            -125.5676 40.4240 5.0
+                            -125.7781 41.0541 5.0
+                            -125.9569 42.0246 5.0
+                            -125.9891 42.9993 5.0
+                            -125.9428 43.9850 5.0
+                            -125.8578 44.7771 5.0
+                            -125.7950 45.3080 5.0
+                            -125.6721 45.9565 5.0
+                            -125.5708 46.3485 5.0
+                            -125.4138 46.9581 5.0
+                            -125.3876 47.2505 5.0
+                            -125.4845 47.5094 5.0
+                            -125.7429 47.6854 5.0
+                            -126.7479 48.1388 5.0
+                            -126.9958 48.2481 5.0
+                            -127.7339 48.5833 5.0
+                            -127.8211 48.6402 5.0
+                        </gml:posList>
+                    </gml:LineString>
+                </faultTopEdge>
+                <intermediateEdge>
+                    <gml:LineString>
+                        <gml:posList>
+                            -124.8004 40.5688 15.0
+                            -124.9926 41.1587 15.0
+                            -125.1497 42.0695 15.0
+                            -125.1673 42.9932 15.0
+                            -125.1090 43.9504 15.0
+                            -125.0143 44.7268 15.0
+                            -124.9464 45.2392 15.0
+                            -124.8183 45.8646 15.0
+                            -124.7150 46.2408 15.0
+                            -124.5428 46.8725 15.0
+                            -124.5045 47.2991 15.0
+                            -124.7008 47.7968 15.0
+                            -125.2011 48.1644 15.0
+                            -126.2362 48.6346 15.0
+                            -126.4803 48.7426 15.0
+                            -127.1967 49.0693 15.0
+                            -127.1773 49.0666 15.0
+                        </gml:posList>
+                    </gml:LineString>
+                </intermediateEdge>
+                <faultBottomEdge>
+                    <gml:LineString>
+                        <gml:posList>
+                            -124.1510 40.6882 27.0
+                            -124.3280 41.2434 27.0
+                            -124.4678 42.1028 27.0
+                            -124.4741 42.9832 27.0
+                            -124.4064 43.9164 27.0
+                            -124.3039 44.6796 27.0
+                            -124.2321 45.1764 27.0
+                            -124.1003 45.7821 27.0
+                            -123.9955 46.1452 27.0
+                            -123.8086 46.8021 27.0
+                            -123.7608 47.3548 27.0
+                            -124.0327 48.0349 27.0
+                            -124.7106 48.5531 27.0
+                            -125.7960 49.0508 27.0
+                            -126.0376 49.1582 27.0
+                            -126.7439 49.4816 27.0
+                            -127.3355 48.5703 27.0
+                        </gml:posList>
+                    </gml:LineString>
+                </faultBottomEdge>
+            </complexFaultGeometry>
+            <magScaleRel>GSCCascadia</magScaleRel>
+            <ruptAspectRatio>1.0</ruptAspectRatio>
+            <incrementalMFD minMag="8.55" binWidth="0.1">
+                <occurRates>9.91049e-05 1.40637e-04 1.99573e-04 2.83207e-04 4.01890e-04 5.70310e-04 6.87892e-05</occurRates>
+            </incrementalMFD>
+            <rake>90.0</rake>
+        </complexFaultSource>
+
+    </sourceModel>
+</nrml>
