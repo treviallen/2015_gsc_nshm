@@ -7,6 +7,8 @@ import warnings, sys
 reload(sys) # for unicode chars
 sys.setdefaultencoding("latin-1")
 warnings.filterwarnings("ignore")
+import matplotlib as mpl
+mpl.style.use('classic')
 
 # set NBCC probabilities
 nbccprobs = array([1., 0.5, 0.2, 0.1, 0.05, 0.02,  0.01375, 0.01, 0.00445, 0.0021, 0.001, 0.0005, 0.000404, 0.0002, 0.0001])

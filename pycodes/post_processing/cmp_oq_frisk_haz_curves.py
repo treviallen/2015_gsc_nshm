@@ -1,13 +1,18 @@
 from __future__ import unicode_literals
-from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
+#from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
 #from openquake.nrmllib.hazard.parsers import HazardCurveXMLParser
 from numpy import array, exp, log, interp, loadtxt, ceil
-from oq_tools import return_annualised_haz_curves
+#from oq_tools import return_annualised_haz_curves
+from hazard_tools import parse_oq_xml_poes
 import matplotlib.pylab as plt
+import matplotlib as mpl
+mpl.style.use('classic')
 from os import path, sep
 import warnings, sys
-reload(sys) # for unicode chars
-sys.setdefaultencoding("latin-1")
+import importlib
+importlib.reload(sys) # for unicode chars
+#sys.setdefaultencoding("latin-1")
+import codecs
 warnings.filterwarnings("ignore")
 
 
@@ -31,12 +36,13 @@ period = sys.argv[3]
 tmpper = period.replace('.','')
 friskfile = 'NBCC2015Loc_mean_hazcurves_'+tmpper+'.csv'
 friskpath = path.join('..','..','data','nbcc_mean_haz_curves',friskfile)
-friskhaz = loadtxt(friskpath, delimiter=',', skiprows=4, usecols = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
+filecp = codecs.open(friskpath, encoding = 'latin-1')
+friskhaz = loadtxt(filecp, delimiter=',', skiprows=4, usecols = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
 friskprobs = [0.02, 0.01375, 0.01, 0.00445, 0.0021, 0.001, 0.0005, 0.000404, 0.0002, 0.0001]
 
 # get place names
 places = []
-lines = open(friskpath).readlines()[4:]
+lines = open(friskpath, encoding = 'latin-1').readlines()[4:]
 for line in lines:
     places.append(', '.join(line.strip().split(',')[-2:]))
 
@@ -48,11 +54,12 @@ hazcurvefile = path.join('..','..','jobs','hazard',job,'out','hazard_curve-mean_
 
 # Change the number 0.5 to 0.4 in hazard_curve-mean.xml so that it will run with the built-in parser.
 #try:
+"""
 lines = open(hazcurvefile, 'r').readlines()
 '''
 except IOError, e:
     print
-    print 'File 1 not found.'
+    print('File 1 not found.')
     sys.exit(1)
 '''    
 lines[2] = 'xmlns="http://openquake.org/xmlns/nrml/0.4"\n'
@@ -63,6 +70,26 @@ out.close()
 # get annualize the curves.
 curves, curlon, curlat, metadata = return_annualised_haz_curves(hazcurvefile)
 imls = array(metadata['imls'])
+"""
+try:
+    calcDetails, calcDat = parse_oq_xml_poes(hazcurvefile)
+    imls = calcDat['imls']
+    curlon = calcDat['lons']
+    curlat = calcDat['lats']
+    curves = calcDat['annual_poes']
+except:
+    hazcurvefile='../../jobs/hazard/secan_collapsed_rates/secan_collapse_hazard_ratio_0.2_617_summary.csv'
+    
+    lines = open(hazcurvefile, encoding = 'latin-1').readlines()[1:]
+    curlon = []
+    curlat = []
+    curves = []
+    for line in lines:
+        dat = line.strip().split(',')
+        curlon.append(float(dat[0]))
+        curlat.append(float(dat[1]))
+        curves.append(array([float(x) for x in dat[4:]]))
+    
 
 ###############################################################################
 # plt OQ & Frisk data
@@ -80,8 +107,11 @@ for lon, lat, curve in zip(curlon, curlat, curves):
         if fh[0] == lon and fh[1] == lat:
             ii += 1
             ax = plt.subplot(2,3,ii)
-            h1 = plt.semilogy(imls, curve, 'r-', lw=2.0)
-            h2 = plt.semilogy(fh[3:-1], friskprobs, 'k-', lw=2.0)
+            try:
+                h1 = plt.semilogy(imls, curve, '-', c='darkorange', lw=2.0)
+            except:
+                h1 = plt.semilogy(curve, friskprobs, '-', c='darkorange', lw=2.0)
+            h2 = plt.semilogy(fh[3:-1], friskprobs, '--', c='blue', lw=2.5)
             plt.title(places[p])#.encode('utf8'))
             plt.grid(which='both')
             plt.semilogy([0, 2.5], [yhaz, yhaz], 'k--')
