@@ -9,7 +9,7 @@
                                 applyToTectonicRegionType="Active Shallow Fault">
 
                 <logicTreeBranch branchID="b11">
-                    <uncertaintyModel gmpe_table="../gm_tables/WcrustFRjb_med_clC.hdf5">GMPETable</uncertaintyModel>
+                    <uncertaintyModel gmpe_table="../../gm_tables/WcrustFRjb_med_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>1.0</uncertaintyWeight>
                 </logicTreeBranch>
                 
@@ -21,7 +21,7 @@
                                 applyToTectonicRegionType="Subduction Interface">
 
                 <logicTreeBranch branchID="b21">
-                    <uncertaintyModel gmpe_table="../gm_tables/WinterfaceCombo_medclC.hdf5">GMPETable</uncertaintyModel>
+                    <uncertaintyModel gmpe_table="../../gm_tables/WinterfaceCombo_medclC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>1.0</uncertaintyWeight>
                 </logicTreeBranch>
                 
@@ -33,7 +33,7 @@
                                 applyToTectonicRegionType="Active Shallow Crust">
 
                 <logicTreeBranch branchID="b31">
-                    <uncertaintyModel gmpe_table="../gm_tables/Wcrust_med_clC.hdf5">GMPETable</uncertaintyModel>
+                    <uncertaintyModel gmpe_table="../../gm_tables/Wcrust_med_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>1.0</uncertaintyWeight>
                 </logicTreeBranch>
 
@@ -45,7 +45,7 @@
                                 applyToTectonicRegionType="Subduction IntraSlab30">
                 
                 <logicTreeBranch branchID="b41">
-                    <uncertaintyModel gmpe_table="../gm_tables/WinslabD30_med_clC.hdf5">GMPETable</uncertaintyModel>
+                    <uncertaintyModel gmpe_table="../../gm_tables/WinslabD30_med_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>1.0</uncertaintyWeight>
                 </logicTreeBranch>
                 
@@ -57,7 +57,7 @@
                                 applyToTectonicRegionType="Subduction IntraSlab50">
                 
                 <logicTreeBranch branchID="b51">
-                    <uncertaintyModel gmpe_table="../gm_tables/WinslabD50_med_clC.hdf5">GMPETable</uncertaintyModel>
+                    <uncertaintyModel gmpe_table="../../gm_tables/WinslabD50_med_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>1.0</uncertaintyWeight>
                 </logicTreeBranch>
                 
@@ -69,7 +69,7 @@
                                 applyToTectonicRegionType="Active Shallow Offshore">
 
                 <logicTreeBranch branchID="b61">
-                    <uncertaintyModel gmpe_table="../gm_tables/Woffshore_med_clC.hdf5">GMPETable</uncertaintyModel>
+                    <uncertaintyModel gmpe_table="../../gm_tables/Woffshore_med_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>1.0</uncertaintyWeight>
                 </logicTreeBranch>
                                 
@@ -81,7 +81,7 @@
                                 applyToTectonicRegionType="Stable Shallow Crust">
 
                 <logicTreeBranch branchID="b71">
-                    <uncertaintyModel gmpe_table="../gm_tables/ENA_med_clC.hdf5">GMPETable</uncertaintyModel>
+                    <uncertaintyModel gmpe_table="../../gm_tables/ENA_med_clC.hdf5">GMPETable</uncertaintyModel>
                     <uncertaintyWeight>1.0</uncertaintyWeight>
                 </logicTreeBranch>
                 
